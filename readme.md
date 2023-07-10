@@ -1,0 +1,5 @@
+- [physics gre (1986)](pdfs/pgre_1986.pdf) and [solutions](pdfs/pgre_1986_solutions.pdf)
+- [physics gre (1992)](pdfs/pgre_1992.pdf) and [solutions](pdfs/pgre_1992_solutions.pdf)
+- [physics gre (1996)](pdfs/pgre_1996.pdf) and [solutions](pdfs/pgre_1996_solutions.pdf)
+- [physics gre (2001)](pdfs/pgre_2001.pdf) and [solutions](pdfs/pgre_2001_solutions.pdf)
+- [physics gre (2008)](pdfs/pgre_2008.pdf) and [solutions](pdfs/pgre_2008_solutions.pdf)
