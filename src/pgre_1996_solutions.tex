@@ -1,0 +1,2315 @@
+\documentclass{article}
+\title{Solutions to 1996 Physics GRE}
+%\date{}
+\author{Jonathan F. Dooley}
+%\date{\vspace{-10ex}}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} 						% clear all header fields
+\renewcommand{\headrulewidth}{0pt} 	% no line in header area
+\fancyfoot{} 							% clear all footer fields
+\fancyfoot[C]{\thepage}                                     % page number in "outer" position of footer line
+\fancyfoot[R]{GR0877 Solutions v.1.2}              % other info in "inner" position of footer line
+
+\usepackage{textcomp}
+
+\usepackage{enumitem}              			% \description{}
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+\setlist[description]{style=multiline,topsep=10pt, font=\normalfont,%
+    align=parright}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setcounter{secnumdepth}{0}
+\usepackage[]{units}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{float}
+\usepackage{braket}
+\usepackage[makeroom]{cancel} % allows canceling
+\usepackage[dvipsnames]{xcolor}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%       FIRST PAGE    %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+\centering
+{\scshape\LARGE Solutions to 1996 Physics GRE \par}
+\vspace{.5cm}
+
+{\scshape\Large Detailed solutions to GR9677\par}
+\vspace{6cm}
+
+{\huge Version 1.0 \par}
+\vspace{1cm}
+{\large \today\par}
+\vspace{6cm}
+
+This solution manual is not officially endorsed by ETS. All solutions are the work of Jonathan F. Dooley and are distributed for free. The solutions, sans ETS questions, are \textcopyright  \hspace{.001in} 2015 by Jonathan F. Dooley. Special thanks to \textit{grephysics.net} by Y. Chang and \textit{Conquering the Physics GRE} by Y. Kahn and A. Anderson. Educational Testing Service, ETS, Graduate Record Examinations, and GRE are registered trademarks of Educational Testing Service \hspace{.001in} \textregistered. The examination questions are \textcopyright  \hspace{.001in} 1996 
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%       1       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 1:}} The capacitor will discharge when disconnected from the voltage source which mean that the current will have an exponential decay curve. Therefore, we can immediately eliminate choices (A), (C), and (E).\\\\
+Kirchoff's loop tells us that the initial circuit (when connected to \textit{a}) is
+
+\begin{gather}
+V - I(t) r - \frac{Q(t)}{C} = 0
+\end{gather}
+\\
+Therefore, when the switch is connected to \textit{b} we have
+
+\begin{gather}
+0 - I(t) R - \frac{Q(t)}{C} = 0 \hspace{.1in} \rightarrow \hspace{.1in} I(t) = \frac{Q(t)}{RC} \nonumber
+\end{gather}
+\\
+At $t = 0$ the capacitor has charge $Q_{0} = CV$. Therefore, 
+
+\begin{gather}
+\boxed{I(0) = \frac{Q_{0}}{RC} = \frac{V}{R}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       2       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 2:}} According to Faraday's Law the emf generated in the circuit is
+
+\begin{gather}
+\mathcal{E} = -\frac{\partial B}{\partial t} A
+\end{gather}
+\\
+the problem tells us that the magnetic field, $B$, is \textbf{decreasing} in magnitude at the rate of $150\unitfrac{[T]}{[s]}$. We calculate the area, $A$, of the circuit as $0.01\unit{[m^{2}]}$
+
+\begin{gather}
+\mathcal{E} = -(-150\unitfrac{[T]}{[s]}) \cdot 0.01\unit{[m^{2}]} = 1.5\unit{[V]}\nonumber
+\end{gather}
+\\
+We can then use Ohm's law to calculate the current through the circuit:
+
+\begin{gather}
+IR  = V - \mathcal{E}\\
+\nonumber\\
+I (10\unit{[\Omega]}) = 5.0\unit{[V]} - 1.5\unit{[V]} = 3.5\unit{[V]} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{I = \frac{3.5\unit{[V]}}{10\unit{[\Omega]}} = 0.35\unit{[A]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       3       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 3:}} The equation for electrostatic potential is
+
+\begin{gather}
+V = \int{\vec{E} \cdot d\vec{l}} = \int{\frac{dq}{4 \pi \epsilon_{0} r}}
+\end{gather}
+\\
+where r is the distance from the charged ring to point $P$, which can be found via symmetry and the pythagorean theorem:
+
+\begin{gather}
+r^{2} = R^{2} +x^{2} \hspace{.1in} \rightarrow \hspace{.1in} r = \sqrt{R^{2} +x^{2}}\nonumber
+\end{gather}
+\\
+Therefore, the electric potential at point $P$ is 
+
+\begin{gather}
+V = \int{\frac{dq}{4 \pi \epsilon_{0}}\frac{1}{\sqrt{R^{2} +x^{2}}}} = \frac{1}{4 \pi \epsilon_{0} \sqrt{R^{2} +x^{2}}} \int{dq} = \frac{Q}{4 \pi \epsilon_{0} \sqrt{R^{2} +x^{2}}} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       4       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 4:}} The equation for angular frequency in SHM, $\omega$, is 
+
+\begin{gather}
+\omega = \sqrt{\frac{k}{m}}
+\end{gather}
+\\
+where $k$ is the spring constant and $m$ is the mass of the particle. We can solve for $k$ using the equation for force (equating Hooke's law with Coulomb's Law) and the potential found in the previous problem:
+
+\begin{gather}
+F = -k x = qE = -q \cdot \nabla V = -q \frac{dV}{dx} \\
+\nonumber\\
+kx =\frac{qQ}{4 \pi \epsilon_{0}} \cdot \frac{d}{dx} \left(  \frac{1}{\sqrt{R^{2} + x^{2}}}   \right) = \frac{qQ}{4 \pi \epsilon_{0}} \frac{x}{(R^{2} + x^{2})^{3/2}}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} k = \frac{qQ}{4 \pi \epsilon_{0} (R^{2} + x^{2})^{3/2}} \nonumber
+\end{gather}
+\\
+Plugging this into our equation for angular frequency we get the the solution
+
+\begin{gather}
+\omega = \sqrt{\frac{1}{m} \frac{qQ}{4 \pi \epsilon_{0} (R^{2} + x^{2})^{3/2}}}\nonumber
+\end{gather}
+\\
+Since $R \gg x$ we can cancel out x which give us the answer
+
+\begin{gather}
+\boxed{\omega = \sqrt{\frac{qQ}{4 \pi \epsilon_{0} m R^{3}}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       5       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 5:}} In order for the car to be traveling at a constant speed with $F_{air}$ opposing its direction of travel, it must have a tangential acceleration in the direction of $F_{C}$. As it travels around the circular road, the car experiences a centripetal acceleration in the direction of $F_{A}$. Therefore, to find the force of the road on the tires we must add the forces due to the car's tangential and centripetal acceleration. Using simple vector addition, we find that
+
+\begin{gather}
+\boxed{F_{tires} = F_{A} + F_{C} = F_{B}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       6       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 6:}} The problem states that the block travels down the incline at a constant speed. Therefore, there is no change in the kinetic energy of the block. Since the block has potential energy $U = mgh$ at the top and $U = 0$ at the bottom of the incline, the energy dissipated by friction must be equal to $\boxed{mgh}$ (since $\Delta U$ is not transformed into kinetic energy).
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       7       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 7:}} The velocity of the center of mass follows the equation
+
+\begin{gather}
+V_{CM} =\frac{ \sum_{i}{m_{i}v_{i}} } { \sum_{i}{m_{i}} }\\
+\nonumber\\
+\therefore \hspace{.1in} V_{CM} = \frac{ m_{1}v_{1} + m_{2}v_{2}} { m_{1} + m_{2}} = \frac{ mv_{1} + 0} { 3m}= \frac{v_{1}}{3}\nonumber
+\end{gather}
+\\
+We can find $v_{1}$ through conservation of energy, equating potential energy at the starting height, $h$, to the kinetic energy at the time on the collision:
+
+\begin{gather}
+\frac{1}{2}mv_{1}^{2} = mgh \hspace{.1in} \rightarrow \hspace{.1in} v_{1} = \sqrt{2gh}\nonumber
+\end{gather}
+\\
+In the CM frame, when dealing with elastic collisions, $v_{i} = v_{f}$. The kinetic energy right at collision, $T$, is therefore 
+
+\begin{gather}
+T = \frac{1}{2}mV_{CM}^{2} = \frac{1}{2}m \frac{v_{1}^{2}}{9} = \frac{mgh}{9}\nonumber
+\end{gather}
+\\
+We are looking for the height that the ball rises to after the collision, $h'$. Because energy is conserved the kinetic energy, $T$, is equal to the potential energy at $h'$:
+
+\begin{gather}
+\frac{mgh}{9} = mgh' \hspace{.1in} \rightarrow \hspace{.1in} \boxed{h' = \frac{h}{9}} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       8       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 8:}} The equation for simple harmonic motion comes from restoring force of the particle (Hooke's Law):
+
+\begin{gather}
+F = F_{rest} \hspace{.1in} \rightarrow \hspace{.1in} F - F_{rest} = m\ddot{x} + kx = 0
+\end{gather}
+\\
+Adding in the dampening force given in the problem statement give us
+
+\begin{gather}
+F = F_{rest} + f \hspace{.1in} \rightarrow \hspace{.1in} F - f - F_{rest}  = m\ddot{x} + b\dot{x} + kx = 0
+\end{gather}
+\\
+Which has the characteristic equation:
+
+\begin{gather}
+ m\omega^{2}+ b\omega + k = 0\nonumber
+\end{gather}
+\\
+using the quadratic equation we can find solutions for the frequency, $\omega$
+
+\begin{gather}
+\omega = \frac{-b \pm \sqrt{b^{2}-4mk}}{2m}\nonumber
+\end{gather}
+\\
+(notice that when $b = 0$ we get the SHM frequency $w = \sqrt{m/k}$)\\\\ The first term of this equation, $\left(  -\frac{b}{2m}  \right)$ is an exponentially decaying envelope. Therefore, in the presence of drag force the frequency of the oscillation is decreased which means that the period is increased (because $\omega \propto \frac{1}{T}$).
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       9       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 9:}} The problem calls for the use of the Rydberg formula for hydrogen:
+
+\begin{gather}
+\frac{1}{\lambda} = R \left(  \frac{1}{n_{f}^{2}} - \frac{1}{n_{i}^{2}}  \right)
+\end{gather}
+\\
+The \textbf{Lyman} series has $n_{f} = 1$ (given) and $n_{i} = 2  \rightarrow \infty$ (not given)\\
+The \textbf{Balmer} series has $n_{f} = 2$ (given) and $n_{i} = 3  \rightarrow \infty$ (not given)\\
+\\
+The problem is asking about the longest wavelength. The longest wavelength is produced when $n_{i}$ is at its minimum (because then the parenthetical part of the Rydberg formula is at a minimum). The ratio is therefore
+
+\begin{gather}
+\frac{\lambda_{L}}{\lambda_{B}} = \frac{ \left(  \frac{1}{2^{2}} - \frac{1}{3^{2}}  \right)}{ \left(  \frac{1}{1^{2}} - \frac{1}{2^{2}}  \right)}
+= \frac{ \left(  \frac{1}{4} - \frac{1}{9}  \right)}{ \left(  \frac{1}{1} - \frac{1}{4}  \right)} =  \frac{ \left(  \frac{9}{36} - \frac{4}{36}  \right)}{ \left(  \frac{3}{4} \right)} = \frac{\frac{5}{36}}{\frac{3}{4}} =  \frac{20}{108} = \boxed{\frac{5}{27} = \frac{\lambda_{L}}{\lambda_{B}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       10       %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 10:}} Internal conversion is a radioactive decay process where the nucleus interacts with an orbital electron electromagnetically and causes that electron to be emitted. This is different from other processes in which the nucleus emits a particle after a nucleon decays. Since the problem expressly states that this is internal conversion, we can eliminate (C), (D), and (E). \\
+\\
+The emitted electron leaves a hole in the electron shell which is subsequently filled by other electrons. By doing so, the electrons emit X-rays or Auger electrons (an outer-shell electron that is ejected due to the filling of a inner-shell vacancy, see Auger Effect for more). With this information it is clear that (B) is the best choice.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       11      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 11:}} In 1922, German physicists Otto Stern and Walther Gerlach conducted an experiment which showed the quantization of electron spin had two orientations. In this experiment, the Stern-Gerlach experiment, a beam of silver atoms was passed through an inhomogeneous magnetic field and deflected \textbf{vertically into two beams} before hitting a detector screen. Silver atoms have the electron configuration: \\
+
+\begin{center}
+$1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{6} 3d^{10} 4s^{2} 4p^{6} 4d^{10} 5s^{1}$ \hspace{.01in} or \hspace{.01in}  [Kr]  $4d^{10} 5s^1$
+\end{center}
+and neutral Hydrogen has the electron configuration:
+
+\begin{center}
+$1s^{1}$
+\end{center}
+notice that both configurations have only one electron in the outer $s$ orbital and therefore should behave similarly when passed through a non-uniform magnetic field.\\
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       12      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 12:}} The ground state energy of hydrogen is 
+
+\begin{gather}
+E_{0,H} = -\unit[13.6]{[eV]} \propto \mu
+\end{gather}
+\\
+where $\mu$ is the reduced mass of the system given by the equation
+
+\begin{gather}
+\mu = \frac{m_{1} \cdot m_{2}}{m_{1} + m_{2}}
+\end{gather}
+\\
+For a normal hydrogen atom, $\mu \approx m_{e}$ (because $m_{p} \gg m_{e}$). For positronium: 
+
+\begin{gather}
+\mu = \frac{m_{e} \cdot m_{e}}{m_{e} + m_{e}} = \frac{me}{2}\nonumber
+\end{gather}
+\\
+or 1/2 the reduced mass of hydrogen. Therefore the ground state energy of positronium is 
+
+\begin{gather}
+E_{0,p} =\frac{-\unit[13.6]{[eV]}}{2} =\boxed{- \unit[6.8]{[eV]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       13      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 13:}} This problem calls for the use of the specific heat equation
+
+\begin{gather}
+\label{eq:sp heat} Q = c m \Delta T = P t
+\end{gather}
+\\
+where $c$ is the specific heat, $m$ is the mass, $\Delta T$ is the change in temperature, $P$ is the power of the heating element, and $t$ is the time. To find the mass of the water we use the equation density equation, knowing that the density of water is $\rho = \unitfrac[1000]{[kg]}{[m^{3}]}$.
+
+\begin{gather}
+m = \rho V\\
+\nonumber\\
+m = \unitfrac[1000]{[kg]}{[m^{3}]} \cdot \unit[1]{[L]} = \unitfrac[1000]{[kg]}{[m^{3}]} \cdot \unit[0.001]{[m^{3}]} = \unit[1]{[kg]}\nonumber
+\end{gather}
+\\
+Plugging this and the other given values into equation (\ref{eq:sp heat}) and solving for time:
+
+\begin{gather}
+P t = \unitfrac[4200]{[J]}{[kg]} \cdot \unit[1]{[kg]} \cdot \unit[1]{[K]} = \unit[100]{[W]} \cdot t\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} t = \frac{\unit[4200]{[J \cdot K]}}{\unit[100]{[J \cdot s]}} = \unitfrac[42]{[K]}{[s]}\approx \unitfrac[40]{[K]}{[s]} \nonumber
+\end{gather}
+\\
+Therefore is takes approximately $\unit[40]{[s]}$ for the water to cool by $1^{\circ}$C
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       14      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 14:}} The equilibrium temperature is the arithmetic mean of the two blocks, $50^{\circ}$C. The heat energy (equation (\ref{eq:sp heat})) transferred to the cold block from the hot block is therefore
+
+\begin{gather}
+Q = c m \Delta T = \unitfrac[0.1]{[kcal]}{[kg \cdot K]} \cdot \unit[1]{[kg]} \cdot \unit[50]{[K]} = \boxed{\unit[5]{[kcal]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       15      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 15:}} We need to look at each leg of the cycle individually, remembering the first law of thermodynamics
+
+\begin{gather}
+\Delta U = Q - W
+\end{gather}
+\\
+and that ideal gasses follow the equations:
+
+\begin{gather}
+PV = nRT\\
+\Delta U = C_{v} \Delta T\\
+W = P dV
+\end{gather}
+\\
+
+\begin{description}
+\item[$A \rightarrow B$:] 
+\begin{gather}
+\Delta U = C_{v} \Delta T = 0\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{AB} = W = PdV =  nRT \int_{V_{1}}^{V_{2}} {\frac{d V}{V}} =  nRT \ln{\frac{V_{2}}{V_{1}}}\nonumber
+\end{gather}
+\\
+\item[$B \rightarrow C$:] 
+\begin{gather}
+\Delta U = C_{v} (T_{c} - T_{h})\nonumber\\
+\nonumber\\
+W = P (V_{1} - V_{2}) = P V_{1} - P V_{2} = \frac{nRT_{c} V_{1}}{V_{1}} - \frac{nRT_{h} V_{2}}{V_{2}} = R (T_{c} - T_{h})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{BC} = \Delta U + W = C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h})\nonumber
+\end{gather}
+\\
+\item[$C \rightarrow A$:] 
+\begin{gather}
+W = PdV = 0\nonumber\\
+\nonumber\\
+\Delta U = C_{v} (T_{h} - T_{c})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{CA} =  C_{v} (T_{h} - T_{c})\nonumber
+\end{gather}
+\\
+\end{description}
+Therefore, the summation of all of the added heat energy is
+
+\begin{align}
+Q_{AB} + Q_{BC} + Q_{CA} &= nRT \ln{\frac{V_{2}}{V_{1}}} + C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h}) + C_{v} (T_{h} - T_{c})\nonumber\\
+\nonumber\\
+&= nRT \ln{\frac{V_{2}}{V_{1}}} + C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h}) - C_{v} (T_{c} - T_{h}) \nonumber\\
+\nonumber\\
+&=nRT \ln{\frac{V_{2}}{V_{1}}} + R (T_{c} - T_{h}) = \boxed{nRT \ln{\frac{V_{2}}{V_{1}}} - R (T_{h} - T_{c})} \nonumber
+\end{align}
+\\\\
+This is a reversible, cycle process so $\Delta U_{ABCA} = 0$. Therefore, just adding up the work done during each leg would produce the same answer.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       16      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 16:}} This problem is actually just a simple exercise in common sense. Knowing that the radius of an atom is about $\unit[10^{-10}]{[m]}$ eliminates choices (C), (D), and (E) since they are all less than or equal to this radius. Choice (A) is close to the width of human hair and thus is much larger than the expected mean free path at standard temperature and pressure, leaving us with (B).\\
+\\
+The problem can also be solved through rigorous calculations: The number density, $\eta$, is the number of atoms per volume. We can calculate this value using the ideal gas law
+
+\begin{gather}
+\eta = \frac{N}{V} = \frac{P}{kT}
+\end{gather}
+\\
+and using standard temperature and pressure values $T = \unit[300]{[K]}$ and $P = \unit[10^{5}]{[Pa]}$ (Boltzmann's constant should be given to you on your equation sheet, $k = \unitfrac[1.38\e{-23}]{[m^{2} \cdot kg]}{[s^{2} \cdot K]}$)
+
+\begin{gather}
+\eta = \frac{N}{V} = \frac{P}{kT} = \frac{\unitfrac[10^{5}]{[kg]} { [m\cdot s^{2} ]}}{\unitfrac[1.38\e{-23}]{[m^{2} \cdot kg]}{[s^{2} \cdot K]} \cdot \unit[300]{[K]}} = \unit[2.415\e{25}]{[m^{-3}]}\nonumber
+\end{gather}
+\\
+Now, the collision cross section is 
+
+\begin{gather}
+\sigma = \pi r^{2}
+\end{gather}
+\\
+where $r$ is the radius of an atom, $\sim \unit[10^{-10}]{[m]}$. 
+
+\begin{gather}
+\sigma = \pi r^{2} = 3.141 \cdot \unit[10^{-20}]{[m^{2}]} = \unit[3.141\e{-20}]{{m^{2}}}\nonumber
+\end{gather}
+\\
+Therefore the mean free path is
+
+\begin{gather}
+\frac{1}{\eta \sigma } = \frac{1}{\unit[2.415\e{25}]{[m^{-3}]} \cdot \unit[3.141\e{-20}]{{m^{2}}} } = \frac{1}{\unit[758839][{m^{-1}}]} \approx \boxed{\unit[10^{-7}]{[m]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       17      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 17:}} The probability that the particle in the range $0 < x < 5$ is
+
+\begin{gather}
+{\psi * \psi}\biggr\rvert_{0}^{5} = { | \psi |^{2}}\biggr\rvert_{0}^{5} = 1^{2} + 1^{2} + 2^{2} + 3^{2} + 1^{2} = 1+1 +4 + 9 + 1 = 16\nonumber
+\end{gather}
+\\
+Notice that this is not the same as adding up the squares and squaring it. The probability that the particle in the range $2 < x < 4$ is
+
+\begin{gather}
+{ | \psi |^{2}}\biggr\rvert_{2}^{4} =  2^{2} + 3^{2} 4 + 9 = 13\nonumber
+\end{gather}
+\\
+Therefore the probability is $\boxed{\frac{13}{16}}$
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       18      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 18:}} Lets look at each of these answers individually
+
+\begin{description} 
+
+\item[(A)] The wave function of a particle oscillates in free space. This diagram is ground state particle in an infinite square well. This is \textbf{incorrect}.
+
+\item[(B)] As expected, the amplitude of the wave function is decreased inside the potential. However, since $E < V_{0}$ the transmitted particle's wave function should have a lower amplitude than the incident wave function. This diagram is correct for the case where $E > V_{0}$ but is an \textbf{incorrect} solution to this problem.
+
+\item[(C)] This is the only diagram in which the wave function is oscillating before incidence, decaying while inside the potential, and have a transmitted wave function which oscillates with a smaller amplitude. This is \textbf{correct} because it carries the asymmetry expected for the case where $E < V_{0}$.
+
+\item[(D)] This picture states that the particle is most likely to be found inside the potential which is  \textbf{incorrect} for a typical particle.
+
+\item[(E)] The potential barrier is not changing the wave function of the particle in anyway and so must be \textbf{incorrect}.
+\\
+\end{description}
+
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       19      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 19:}} The best way to get the correct answer is to eliminate incorrect solutions. For instance, Since the backscatter is such a large angle we know that the coulomb repulsion much be very large which means that the distance of closest approach is going to very small, probably around the same order as a nucleus ($\sim \unit[10^{-15}]{[m]}$). Therefore, we can eliminate solutions (C), (D), and (E). \\\\Now, (A) could probably be eliminated because it is so strange but lets actually figure out the value: $50^{1/3}$ is between 3 and 4 (closer to 4: $3^{3} = 27, 4^{3} = 64$) so it is somewhere around $1.22 \cdot 4 \approx 5$. Therefore (A) is about $\unit[5]{[fm]} = \unit[5\e{-15}]{[m]}$ which is less than the size of a large nucleus like silver. Therefore, (B) is the best choice.\\
+\\
+Another, tougher, solution to the problem: Coulomb's law states that the potential electric potential energy is 
+
+\begin{gather}
+V = \frac{(Z_{1}q_{1}) (Z_{2}q_{2})} {4 \pi \epsilon_{0} r}
+\end{gather}
+\\
+Because the alpha particle is scattered at an angle of $180^{\circ}$ we know that energy is conserved so that 
+
+\begin{gather}
+E = \unit[5]{[MeV]}  = \unit[5\e{6}]{[eV]} = \frac{(Z_{1}q_{1}) (Z_{2}q_{2})} {4 \pi \epsilon_{0} r} = \frac{Z_{\alpha}Z_{Ag} q^{2}} {4 \pi \epsilon_{0} r} =  \frac{2 \cdot 50 \cdot q^{2}} {4 \pi \epsilon_{0} r} = \frac{100 \cdot q^{2}} {4 \pi \epsilon_{0} r}\nonumber
+\end{gather}
+\\
+Now, an electron volt is exactly what it should like: the electron charge multiplied by one volt. So, because $q = |e|$ we can rewrite this equation as
+
+\begin{gather}
+\unit[5\e{6}]{[V]} = \frac{100 \cdot q} {4 \pi \epsilon_{0} r}\nonumber
+\end{gather}
+\\
+Now, the term $(4 \pi \epsilon_{0})^{-1}$ is sometimes written as the constant $k$ which is equal to $\unitfrac[9\e{9}]{[s^{4} A^{2}]}{[m^{3} kg]}$ (NOT the Boltzmann constant). Lastly, the charge of an proton is $q =\unit[1.6\e{-19}]{[C]}$. Now we can solve for $r$:
+
+\begin{gather}
+r = \frac{100\cdot k \cdot q}{\unit[5\e{6}]{[V]}} =  \frac{100\cdot \unitfrac[9\e{9}]{[s^{4} A^{2}]}{[m^{3} kg]} \cdot \unit[1.6\e{-19}]{[C]}}{\unit[5\e{6}]{[V]}} = \unit[2.88\e{-14}]{[m]} \approx \unit[2.9\e{-14}]{[m]} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       20      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 20:}} This is an elastic collision and so the kinetic energy beforehand is the same as the kinetic energy afterwards.
+
+\begin{gather}
+T_{H,i} + T_{A, i} = T_{H,f} + T_{A, f}\nonumber\\
+\nonumber\\
+\frac{1}{2}m_{H} v^{2} + 0 = \frac{1}{2}m_{H} (0.6 v)^{2} + \frac{1}{2}m_{A} v'^{2}\nonumber\\
+\nonumber\\
+(1-0.6^{2})m_{H}v^{2} = (1-0.36)m_{H}v^{2} = 0.64 m_{H}v^{2} = m_{A} v'^{2}\nonumber
+\end{gather}
+\\
+No matter what type of collision, the momentum of the system is conserved. We can use this fact to determine $v'$:
+
+\begin{gather}
+m_{H}v = m_{A}v' - 0.6m_{H}v \hspace{.1in} \rightarrow \hspace{.1in} m_{A}v' = 0.6m_{H}v+ m_{H}v\nonumber\\
+\nonumber\\
+v' = \frac{1.6m_{H}v}{m_{A}}\nonumber
+\end{gather}
+\\
+Therefore,
+
+\begin{gather}
+0.64 m_{H}v^{2} = m_{A} v'^{2} = m_{A} \left(\frac{1.6m_{H}v}{m_{A}}\right)^{2} = \frac{\left(1.6m_{H}v\right)^{2}} {m_{A}} \hspace{.1in} \rightarrow \hspace{.1in} 0.64m_{A} = 1.6^{2} m_{H}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} m_{A} = \frac{1.6^{2} m_{H}}{0.64} = \frac{1.6^{2} m_{H}}{0.8^{2}} = 4m_{H}\nonumber
+\end{gather}
+\\
+The problem states that $m_{H} = 4u$. Therefore, $m_{A} = 4(4u) = \boxed{16u}$
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       21      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 21:}} Recall the parallel axis theorem:
+
+\begin{gather}
+\label{eq: parax} I = I_{CM} + mr^{2}
+\end{gather}
+\\
+Where $r$ is the distance from the from the point to the center of mass. In this problem, the circular hoop is hanging form a nail so that $r = d = \unit[20]{[cm]}$. The moment of inertia for a hoop (thin hollow cylinder) is $I_{hoop} = mr^{2}$.Therefore, the moment of inertia for the set up is
+
+\begin{gather}
+I = I_{hoop} + mr^{2} = md^{2} + md^{2} = 2md^{2}\nonumber
+\end{gather}
+\\
+Plugging this into the given equation for the period we get
+
+\begin{gather}
+T = 2 \pi \sqrt{\frac{I}{mgd}} = 2 \pi \sqrt{\frac{2md^{2}}{mgd}} = 2 \pi \sqrt{\frac{2d}{g}} \nonumber
+\end{gather}
+\\
+Unfortunately, we now need to plug in numbers. Using $\pi \approx 3$ and $g \approx 10$ we can approximate the solution
+
+\begin{gather}
+T = 2 \cdot 3 \sqrt{\frac{2 \cdot \unit[0.2]{[m]}}{\unitfrac[10]{[m]}{[s^{2}]}}}  = 6 \sqrt{\unit[0.04]{[s^{2}]}} = \unit[1.2]{[s]} \approx \boxed{\unit[1.3]{[s]}} \nonumber
+\end{gather} 
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       22      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 22:}} We need to start by calculating the radius of Mars. We are told that for ever $\unit[3600]{[m]}$ the surface drops $\unit[2]{[m]}$. We can picture this as a right triangle with legs $\unit[3600]{[m]}$, $R - \unit[2]{[m]}$ and a hypotenuse $R$ (which is the radius of the planet). Using the pythagorean theorem to solve for $R$:
+
+\begin{gather}
+R^{2} = (\unit[3600]{[m]})^{2} + (R - \unit[2]{[m]})^{2} = \unit[3600^{2}]{[m^{2}]} + R^{2} - \unit[4]{[m]} \cdot R +\unit[4]{[m^{2}]}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} \unit[4]{[m]}\cdot R = \unit[3600^{2}]{[m^{2}]} + \unit[4]{[m^{2}]}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} R = \frac{\unit[3600^{2}]{[m^{2}]}}{\unit[4]{[m]}} + \unit[1]{[m^{2}]} \approx \frac{\unit[3600^{2}]{[m]}}{4}\nonumber
+\end{gather}
+\\
+In order to get a golf ball to to orbit Mars the force of gravity and the centripetal force must be equal.
+
+\begin{gather}
+F_{cent} = F_{grav, M} \hspace{.1in} \rightarrow \hspace{.1in} m \frac{v^{2}}{R} = mg_{M}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} v = \sqrt{g_{M}R} = \sqrt{0.4gR} = \sqrt{4R} = \sqrt{\unitfrac[4]{[m]}{[s^{2}]} \cdot \frac{\unit[3600^{2}]{[m]}}{4}} = \unitfrac[3600]{[m]}{[s]} = \boxed{\unitfrac[3.6]{[km]}{[s]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       23      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 23:}} Process of elimination:
+
+\begin{description}
+
+\item[(A)] The new gravitational force law does not introduce any damping or frictional forces so the total mechanical energy should still be conserved. This is \textbf{not necessarily false}.
+
+\item[(B)] Angular momentum is always conserved in planetary orbits. The problem's proposed gravitational force law does not change that. This is \textbf{not necessarily false}.
+
+\item[(C)] Kepler's Third Law states that the square of planet's period, $T$, is proportional to the the cube of the orbit's semi-major axis. 
+
+\begin{gather}
+T^{2} \propto a^{3} \hspace{.1in} \rightarrow \hspace{.1in} T \propto a^{3/2}
+\end{gather}
+\\
+For a circular orbit, $a = r$. Therefore, tith the addition of the small positive number, $\epsilon$, Kepler's Third Law reads as
+
+\begin{gather}
+T^{2} \propto r^{3 + \epsilon} \hspace{.1in} \rightarrow \hspace{.1in} T \propto r^{(3 + \epsilon)/2}\nonumber
+\end{gather}
+\\
+This is \textbf{not false}.
+
+\item[(D)] There are only two types of central force potentials what allow \textbf{all} stable non-circular orbits. These are inverse square central force potentials where
+
+\begin{gather}
+V \propto \frac{1}{r}\nonumber
+\end{gather}
+\\
+or radial harmonic oscillator potentials where
+
+\begin{gather}
+V = \frac{1}{2} k r^{2}\nonumber
+\end{gather}
+\\
+This is a statement of Bertrand's theorem. \\
+\\
+The problem's given central force equation is not an inverse-square potential or a radial harmonic oscillator so it can not have a stable non-circular orbit about the sun. This is \textbf{false}.
+
+\item[(E)] A stable circular orbit can exist in a potential,$V$, if the following conditions are satisfied:
+
+\begin{gather}
+V_{eff}' = 0\\
+V_{eff}'' > 0
+\end{gather}
+\\
+where 
+
+\begin{gather}
+V_{eff} = \frac{L^{2}}{2Mr^{2}} + V(r) = \frac{L^{2}}{2Mr^{2}} - \int{F}dx
+\end{gather} 
+\\
+From here, one could derive the $V_{eff}$ and see that both of the above conditions are met. This, however, would be a huge waste of time on the test. Since we already know that (D) is the correct answer and that circular orbits can exist for basically any potential we should not do more work than is needed. 
+\\
+\end{description}
+
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       24      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 24:}} The equation for the coulomb force is 
+
+\begin{gather}
+F = \frac{q_{1}q_{2}}{4 \pi \epsilon_{0} r^{2}} = k \frac{q^{2}}{r^{2}}\nonumber
+\end{gather}
+\\
+When sphere $C$ comes in contact with $A$, it is imbued with half of $q$ so that $q_{C,1} = q_{A} = \frac{q}{2}$\\
+\\
+When $C$ is then touched to $B$ both spheres come away with half of the total charge on each sphere is
+
+\begin{gather}
+q_{B} = q_{C,2} =  \frac{1}{2} (q + q_{C,1}) = \frac{1}{2} \left(\frac{2q}{2} + \frac{q}{2}\right) = \frac{3q}{4}\nonumber
+\end{gather}
+\\
+Therefore, the force between $A$ and $B$ is now
+
+\begin{gather}
+F = k \frac{q_{A} \cdot q_{B}}{r^{2}} = k \frac{3q^{2}}{8r^{2}} =\boxed{\frac{3F}{8}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       25      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 25:}} Lets look at each answer individually:
+
+\begin{description}
+
+\item[(A)] The voltage across two capacitors in parallel is equivalent. When the switch is open $C_{1}$ carries the charge $Q_{0}$ and $C_{2}$ is uncharged. Therefore, conservation of charge tells us that this must be \textbf{correct}
+
+\item[(B)] $V$ is equivalent across both capacitors and $C_{1} = C_{2}$ so the equation 
+
+\begin{gather}
+Q = CV
+\end{gather}
+\\
+Tells us that this must be \textbf{correct}.
+
+\item[(C)] Once again, the voltage across two capacitors in parallel is equivalent. This is therefore \textbf{correct}.
+
+\item[(D)] The equation for energy stored in a capacitor is 
+
+\begin{gather}
+\label{eq: capen} U = \frac{1}{2}CV^{2} =  \frac{1}{2}QV =  \frac{1}{2}\frac{Q^{2}}{C}
+\end{gather}
+\\
+From (A), (B), and (C) we know that this must be \textbf{correct} which leaves
+
+\item[(E)] From equation (\ref{eq: capen}) we know that $U_{0} =  \frac{1}{2}CV^{2}$. When the switch is closed, each capacitor has energy $U = \frac{1}{2}CV^{2}$ so that
+
+\begin{gather}
+U_{tot} = U_{1} + U_{2} = \frac{1}{2}CV^{2} + \frac{1}{2}CV^{2} = 2U_{0} \neq U_{0}\nonumber
+\end{gather}
+\\
+So this is the only \textbf{incorrect} statement.
+\\
+\end{description}
+
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       26      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 26:}} The hardest part of this problem is the fact that you must do all the calculations without a calculator. The resonance frequency of an LRC circuit is
+
+\begin{gather}
+\label{eq: angfreq}\omega^{2} = \frac{1}{LC}
+\end{gather}
+\\
+The problem tells us that the frequency of broadcast is $f = \unit[103.7]{[MHz]}$ which means that the resonance frequency is 
+
+\begin{gather}
+\omega = 2 \pi f = 2 \pi \cdot \unit[103.7]{[MHz]} \approx 6.2 \cdot \unit[103.7\e{6}]{[Hz]} \approx \unit[650\e{6}]{[Hz]}\nonumber
+\end{gather}
+\\
+solving equation (\ref{eq: angfreq}) for $C$ and plugging in $\omega$ we get
+
+\begin{gather}
+C =  \frac{1}{L \omega^{2}} = \frac{1}{\unit[2.0\e{-6}]{[H]} \cdot (\unit[650\e{6}]{[Hz]})^{2}} = \frac{1}{\unitfrac[8.45\e{11}]{[m^{2} \cdot kg]}{[s^{4} \cdot A^{2}]}} = \unit[1.18\e{-12}]{[F]} \approx \boxed{\unit[1]{[pf]}}\nonumber
+\end{gather}
+\\
+Notice that we don't care about the resistance because a radio circuit has all of its components in parallel.
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       27      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 27:}} Any physical phenomenon that can be described using an exponential is best expressed using a Log or semi-log diagram. Therefore, we can eliminate (A), (C), and (E). \\
+\\
+Choice (B) can be rewritten into the form 
+
+\begin{gather}
+f = \frac{e}{h} V_{s} + \frac{W}{h} \nonumber
+\end{gather}
+\\
+which is in the form $f{x} = mx + b$, a linear function. Therefore (D) is the only graph that is not appropriate for the mathematical relation.
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       28      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 28:}} The simple way to solve this problem is to find the beat frequency, the difference between the two interfering waves' frequencies. From the graph, we see that the wavelength is $\lambda \approx \unit[1]{[cm]}$. Since we are given the velocity, $v$, of the spot we can use the equation $v = \lambda f$ to find the beat frequency:
+
+\begin{gather}
+f = \frac{v}{\lambda} = \frac{\unitfrac[0.5]{[cm]}{[ms]}}{\unit[1]{[cm]}} = \unit[0.5]{[ms^{-1}]} = \unit[500]{[Hz]} \nonumber
+\end{gather}
+\\
+Which is closest to the difference in frequencies of (D). \\
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       29      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 29:}} The plank length is 
+
+\begin{gather}
+l_{p} = \sqrt{\frac{\hbar G}{c^{3}}}
+\end{gather}
+\\
+For students that have not learned this in their undergraduate career: dimensional analysis will also give you the correct answer, (E). \\
+
+\begin{gather}
+[G] = \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right]\\
+[\hbar] = \left[   \frac{m^{2} \cdot kg}{s}   \right]\\
+[c] = \left[  \frac{m}{s} \right]
+\end{gather}
+\\
+But don't waste your time looking at the dimensions of each solution! Knowing that $l_{p}$ must have units of meters tells us that the kilograms in both $G$ and $\hbar$ must cancel out. This eliminates (B),(C), and (E). Dimensional analysis of (A) gives us:
+
+\begin{gather}
+[G \hbar c] = \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right] \cdot \left[   \frac{m^{2} \cdot kg}{s}   \right] \cdot \left[  \frac{m}{s} \right] = \left[   \frac{m^{5}}{s^{4}}   \right] \nonumber
+\end{gather} Which is incorrect. Therefore, that (E) is the correct answer. For the sake of completeness:
+
+\begin{gather}
+\left[   \frac{G \hbar} {c^{3}}  \right]^{\frac{1}{2}}  =  \left(  \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right] \cdot \left[   \frac{m^{2} \cdot kg}{s}   \right] \cdot \left[  \frac{s^{3}}{m^{3}} \right] \right)^{\frac{1}{2}}=\left[   m^{2}   \right]^\frac{1}{2} = [m] \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       30      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 30:}} The pressure due to a fluid follows the equation
+
+\begin{gather}
+P = \rho g h
+\end{gather}
+\\
+Let us say that $x$ is the distance that the water is displaced after the dark fluid is introduced to the system. $h_{1}$ can be defined as:
+
+\begin{gather}
+h_{1} = h_{d} + (h_{1,i} - x) = \unit[5]{[cm]} + (\unit[20]{[cm]} - x)\nonumber
+\end{gather}
+\\
+Then $h_{2}$ is
+
+\begin{gather}
+h_{2} = h_{2,i} + x = \unit[20]{[cm]} + x \nonumber
+\end{gather}
+\\
+We then combine these two equations to get
+
+\begin{gather}
+h_{1} + h_{2} =  [\unit[5]{[cm]} + (\unit[20]{[cm]} - x)] + [  \unit[20]{[cm]} + x ] = \unit[45]{[cm]}\nonumber\\
+\nonumber\\
+h_{1} - h_{2} =  [\unit[5]{[cm]} + (\unit[20]{[cm]} - x)] - [  \unit[20]{[cm]} + x ] = \unit[5]{[cm]} - 2x\nonumber
+\end{gather}
+\\
+Therefore:
+
+\begin{gather}
+2 \cdot h_{1} = \unit[50]{[cm]} -2x \hspace{.1in} \rightarrow \hspace{.1in}  h_{1} = \unit[25]{[cm]} -x\nonumber\\
+\nonumber\\
+2 \cdot h_{2} = 40 +2x \hspace{.1in} \rightarrow \hspace{.1in} h_{2}  = \unit[20]{[cm]} + x \nonumber
+\end{gather}
+\\
+Then assign any number to $x$ (I'll use $x = \unit[10]{[cm]}$) and solve $h_{2}/h_{1}$:
+
+\begin{gather}
+\frac{h_{2}}{h_{1}} =  \frac{\unit[20]{[cm]} + \unit[10]{[cm]}}{\unit[25]{[cm]} - \unit[10]{[cm]}} = \frac{\unit[30]{[cm]}}{\unit[15]{[cm]}} = \boxed{\frac{2}{1}} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       31      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 31:}} Process of elimination:
+
+\begin{description}
+
+\item[(A)] As the sphere falls under the force of gravity, it is velocity is increased due to the acceleration of gravity. As the velocity increases the kinetic energy increases. So this is \textbf{incorrect}.
+
+\item[(B)] The retarding force keeps the sphere from exceeding the terminal velocity but does not stop it. Therefore, the kinetic energy is not decreased to zero due to the retarding force. This is \textbf{incorrect}.
+
+\item[(C)] The terminal velocity is the maximum velocity the sphere can achieve in the presence of a retarding force. Therefore, this solution makes no physical sense and is \textbf{incorrect}.
+
+\item[(D)] The force equation is 
+
+\begin{gather}
+F_{net} = m a = b v_{t} - m g \hspace{.1in} \rightarrow \hspace{.1in} v_{t} = \frac{m a + m g}{b}\nonumber
+\end{gather}
+\\
+Obviously, the terminal speed, $v_{t}$, does depend on both $b$ and $m$. So this is \textbf{incorrect}.
+
+\item[(E)] This is the \textbf{correct} answer. See argument in (D)
+
+\end{description}
+
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       32      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 32:}} The rotational kinetic energy follows the equation:
+
+\begin{gather}
+T = \frac{1}{2} I \omega^{2}
+\end{gather}
+\\
+For this problem we must  compare the kinetic energy at $A$ and $B$:
+
+\begin{gather}
+\frac{T_{B}}{T_{A}} = \frac{I_{B}}{I_{A}}
+\end{gather}
+\\
+Therefore, we must find $I_{A}$ and $I_{B}$. For $I_{A}$, simply use the summation: 
+
+\begin{gather}
+I_{A} = \sum_{i}{m_{i}r_{i}} = 3mr\nonumber
+\end{gather}
+\\
+where $r$ is the distance from the center of the triangle to the corner: $l \cos{\left(  \frac{\pi}{3}  \right)} = \frac{l}{3}$. To find $I_{B}$ we must use the parallel axis theorem:
+
+\begin{gather}
+I_{B} = I_{cm} +  \sum_{i}{m_{i}r_{i}} = I_{A} + 3mr = 2I_{A} \nonumber
+\end{gather}
+\\
+Therefore, 
+
+\begin{gather}
+\frac{T_{B}}{T_{A}} = \frac{I_{B}}{I_{A}} =  \frac{2I_{A} }{I_{A}} = \boxed{2}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       33      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 33:}} Quantum mechanical probability is always found using the equation
+
+\begin{gather}
+P = \int{\left| \braket{\psi | \psi} \right|}^{2} dx
+\end{gather}
+\\
+The question asks for the probability of obtaining the result $l = 5$ which has the wavefunction
+
+\begin{gather}
+\bra{\psi} = \frac{(3 Y^{1}_{5} + 2Y^{-1}_{5})}{\sqrt{38}}\nonumber
+\end{gather}
+\\
+which then gives us the probability
+
+\begin{gather}
+P_{l=5} = \frac{3^{2} + 2^{2}}{38} = \frac{9 + 4}{38} = \boxed{\frac{13}{38}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       34      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 34:}} We can and should immediately eliminate choices (A) and (B) since gauge and and time invariance stem from the conservation of energy and charge, respectively. The violation of either of these is therefore physically impossible. \\
+\\
+Translational and rotational invariance deal with conservation of momentum and angular momentum. Therefore, the answer must be (D) since it is the only solution that does not break any conservation laws.
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       35      %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 35:}} You should go into the test knowing that the Pauli-Exclusion principle states that no two fermions can occupy the same quantum state. This comes from the fact that the total wave function of two identical fermions is antisymmetric under particle exchange. 
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       36     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 36:}} This calls for the use of the relativistic energy equation:
+
+\begin{gather}
+E = mc^{2} =  \gamma m_{0}c^{2}
+\end{gather}
+\\
+where $\gamma$ is the Lorentz factor:
+
+\begin{gather}
+\gamma = \frac{1}{\sqrt{1- \left(   \frac{v}{c}    \right)^{2}}}
+\end{gather}
+\\
+Since the lumps of clay are traveling at $v = \frac{3c}{5}$, they both have
+
+\begin{gather}
+\gamma = \left(  1- \frac{9}{25} \right)^{-1} = \left( \frac{16}{25} \right)^{-1} = \frac{5}{4}\nonumber
+\end{gather}
+\\
+when the masses collide and are at rest they have total mass $M$ and energy $Mc^{2}$. Setting this equal to the summation of each lump's energy we get
+
+\begin{gather}
+2 \gamma m_{0}c^{2} = Mc^{2} \hspace{.1in} \rightarrow \hspace{.1in} 2 \gamma m_{0} = M = 2 \cdot  \frac{5}{4} \cdot \unit[4]{[kg]} = \boxed{\unit[10]{[kg]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       37     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 37:}} This is a simple application of the relativistic velocity addition formula:
+
+\begin{gather}
+u' = \frac{u+v}{1+\frac{uv}{c^{2}}}
+\end{gather}
+\\
+where $v$ is the speed of the atom, $u$ is the speed of the emitted electron, and $u'$ is the speed of the electron in the lab frame. 
+
+\begin{gather}
+u' = \frac{0.6c+0.3c}{1+0.18 \cdot \frac{c^{2}}{c^{2}}} = \frac{0.9c}{1.18} = \frac{90}{118} c = \boxed{0.76c}\nonumber
+\end{gather}
+\\
+you don't actually need to now that $90/118 = 0.76$, you can just look at the answers. it must be less than (E) but greater than (A), (B), and (C). So it must be (D).
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       38     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 38:}} The total relativistic energy and momentum equations are
+
+
+\begin{gather}
+E = \gamma m c^{2}\\
+p = \gamma m v
+\end{gather}
+\\
+We know that $p = \unitfrac[5]{[MeV]}{c}$ and $E = \unit[10]{[MeV]}$ so that. We can solve for $v$ by dividing these two equations
+
+\begin{gather}
+\frac{p}{E} = \frac{\gamma m v}{\gamma m c^{2}} = \frac{v}{c^{2}} = \frac{\unitfrac[5]{[MeV]}{c}}{\unit[10]{[MeV]}} = \frac{1}{2c} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{v = \frac{c}{2}} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       39     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 39:}} Ionization potential is the amount of energy required to remove an electron from an atom of molecules. Noble gases (He, Ne, Ar, Kr, Xe, and Rn) all have full outer orbital shells which means that they have a high ionization potential. Therefore, since they are neither atom is an ion, we can immediately eliminate (A) and (D). \\
+\\
+O and N have the majority of their outer shell filled and so they have a much higher potential then Cs which only have one electron in its outer shell. Because Cs is an alkali metal, it has a low ionization potential.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       40     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 40:}} $E_{f}$ of this singly ionized Helium atom (Z=2) can be calculated using the formula
+
+\begin{gather}
+\label{eq:bohrE}E = E_{f} - E_{i} = \frac{Z^{2}E_{0}}{n_{f}^{2}} - \frac{Z^{2}E_{0}}{n_{i}^{2}} = Z^{2}E_{0} \left(  \frac{1}{n_{f}^{2}}  - \frac{1}{n_{i}^{2}} \right) = 
+\end{gather}
+\\
+where $E_{0} = \unit[13.6]{[eV]}$ since this is a hydrogen-like atom. The total energy $E$ is defined by the simple equation
+
+\begin{gather}
+\label{eq: Energywave}E = \frac{hc}{\lambda}
+\end{gather}
+\\
+You should memorize the fact that $hc = \unit[1240]{[eV \cdot nm]}$ becuase it is often used in these tests. With this number, and the given wavelength, we can solve for energy released:
+
+\begin{gather}
+E = \frac{\unit[1240]{[eV \cdot nm]}}{\unit[470]{[nm]}} \approx \unit[2.6]{[eV]}\nonumber
+\end{gather}
+\\
+Going back to equation (\ref{eq:bohrE}) we can now solve for $n_{f}$
+
+\begin{gather}
+\frac{E}{Z^{2}E_{0} } = \left(  \frac{1}{n_{f}^{2}}  - \frac{1}{n_{i}^{2}} \right)\hspace{.1in} \rightarrow \hspace{.1in} \frac{E}{Z^{2}E_{0} } + \frac{1}{n_{i}^{2}} = \frac{1}{n_{f}^{2}}\nonumber\\
+\nonumber\\
+\frac{\unit[2.6]{[eV]}}{2^{2} \cdot \unit[13.6]{[eV]} } + \frac{1}{4^{2}} = \frac{\unit[2.6]{[eV]}}{\unit[54.4]{[eV]}} + \frac{1}{16}  \approx 0.047 + 0.063 = 0.11 = \frac{1}{9} = \frac{1}{n_{f}^{2}} \hspace{.1in}\rightarrow \hspace{.1in} \boxed{n_{f} = 3}\nonumber
+\end{gather}
+\\
+The math is tricky to do in your head but making approximations like $1/16 \approx 6\%$ and $26/544 \approx 4\%$ will give you $1/n_{f}^{2} = 1/10$ which is closest to $n_{f} = 3$. To check our work lets plug $n_{f}$ to see what we get for $E_{f}$
+
+\begin{gather}
+E_{f} = \frac{Z^{2}E_{0}}{n_{f}^{2}}= \frac{4 \cdot \unit[13.6]{[eV]}}{9} = \frac{\unit[54.4]{[eV]}}{9} = \boxed{6}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       41     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 41:}} Lets talk about spectroscopic notation: The general form is \textbf{$N^{2s+1}L_{j}$} where $N$ is the principle quantum number (often omitted), $s$ is the total spin quantum number ($m = 2s+1$ is the number of quantum states), L is the orbital angular momentum quantum number (but is written as  $L$ = $S$, $P$, $D$, $F$, ... instead of $l$ = $0$, $1$, $2$, $3$, ...), and $j$ is the total angular momentum quantum number\\
+\\
+Remembering the selection rules
+
+\begin{gather}
+\Delta l = \pm 1\\
+\Delta m = -1 , 0 , 1
+\end{gather}
+\\
+lets look at each of these problems individually:
+\\
+\begin{description}
+
+\item[(A)] This is \textbf{allowed} because $\Delta l = -1$ ($P \rightarrow S$) and $\Delta m = -1$ ($3 \rightarrow 2$)
+
+\item[(B)] While $\Delta m = -1$ works, $\Delta l = 0$ which is \textbf{not allowed}.
+
+\item[(C)] Remember that $L = P$ is just another way of saying  $l = 1$. Therefore this is \textbf{not an allowed solution} since $l=3$ corresponds to the $L = F$
+
+\item[(D)] An electron cannot have $j = l$ or $s= 3/2$ because it has spin value $s = 1/2$. So this is \textbf{not allowed}.
+
+\item[(E)] While this could possibly be true, it would take far too much time to try and prove mathematically and solution (A) is known to be correct. 
+\\
+\end{description}
+
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       42     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 42:}} Einstein's equation for the photoelectric effect is 
+
+\begin{gather}
+E = h \nu + \phi
+\end{gather}
+\\
+where $h \nu$ is the kinetic energy of the of the ejected electrons. We can determine the energy of the incident photons using equation (\ref{eq: Energywave})
+
+\begin{gather}
+E = \frac{\unit[1240]{[eV \cdot nm]}}{\unit[500]{[nm]}} \approx \unit[2.5]{[eV]}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} h \nu = E + \phi = \unit[2.5]{[eV]} - \unit[2.28]{[eV]} \approx \boxed{\unit[0.2]{[eV]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       43     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 43:}} Remember that we can allows use Stokes Theorem to express a closed boundary line integral as an integral over its area:
+
+\begin{gather}
+\oint{\vec{F} \cdot d\vec{r}} = \iint{\left(\nabla \times \vec{F} \right) d\vec{A}}
+\end{gather}
+\\
+So lets solve the right hand side of this equation using $\vec{F} = \vec{u}$:
+
+\begin{gather}
+\iint{\left(\nabla \times \vec{F} \right) d\vec{A}} = \left(\nabla \times \vec{F} \right) \vec{A} = (2) \cdot \pi R^{2} = \boxed{2 \pi R^{2} }\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       44     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 44:}} Acceleration is just the first derivative of the velocity with respect to time. Because $v$ is not directly dependent on t so we must us the chain rule:
+
+\begin{gather}
+a = \dot{v} = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = \frac{dv}{dx} v = -n\beta x^{-n-1} \cdot \beta x^{-n} = \boxed{-n \beta^{2} x^{-2n-1}}
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       45     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 45:}} The problem is asking which set up is a high pass filer. High pass and low pass filters a created using a capacitor and resistor or an inductor and resistor in different configurations. Therefore, immediately eliminate (B) and (C).\\
+\\
+ A high-pass filter is a series combination of a \textbf{Capacitor followed by a Resistor} or a \textbf{Resistor followed by an Inductor} (CR or RL)\\
+ \\
+The inverse is a low-pass filter: a series combination of a\textbf{Resistor followed by a Capacitor} or an \textbf{Inductor followed by a Resistor} (RC or LR)\\
+\\
+Therefore, (E) is the only high pass configuration.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       46     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 46:}} Recall Faraday's law using the magnetic flux $\Phi = B \cdot dA$:
+
+\begin{gather}
+\label{eq:faraday}\mathcal{E} = -  \frac{d \Phi}{dt} = - B\frac{dA}{dt}
+\end{gather}
+\\
+Plugging in the give values gives us
+
+\begin{gather}
+\mathcal{E} = \varepsilon_{0}  \sin{(\omega t)} = -B\frac{d}{dt}\cos{(wt)}\pi R^{2} = B \omega \sin{(\omega t)} \pi R^{2}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} \varepsilon_{0} = B \omega \pi R^{2} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{\omega = \frac{\varepsilon_{0}}{B \pi R^{2}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       47     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 47:}} Yet another application of Faraday's Law, equation (\ref{eq:faraday}). This time, $A = \pi R^{2} n(t)$ where n(t) is the number of turns in the wire. Therefore, the voltage induced by the magnetic field (EMF) is 
+
+\begin{gather}
+\mathcal{E} = - B \pi R^{2} \frac{dn}{dt} = - B \pi R^{2} N
+\end{gather}
+\\
+and so the potential difference between the two open ends in $\boxed{\pi NB R^{2}}$\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       48     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 48:}} Recall the invariance low of general relativity
+
+\begin{gather}
+\label{eq: interval}\Delta x^{2} + \Delta y^{2} + \Delta z^{2} - c^{2} \Delta t^{2} = \Delta x'^{2} +  \Delta y'^{2} + \Delta z'^{2} - c^{2}\Delta t'^{2} 
+\end{gather}
+\\
+Let us say that $S$ is the lab frame and $S'$ is the frame of the $\pi^{+}$ meson.
+
+\begin{gather}
+- c^{2}\Delta t'^{2} = \Delta x^{2} - c^{2} \Delta t^{2} \hspace{.1in} \rightarrow \hspace{.1in} c^{2} \Delta t^{2} = c^{2}\Delta t'^{2} + \Delta x^{2}
+\end{gather}
+\\
+The problem tells us that $t' = \unit[2.5\e{-8}]{[s]}$, $x = \unit[15]{[m]}$, and you should know that $c = \unitfrac[3\e{8}]{[m]}{[s]}$. Plugging in:
+
+\begin{align}
+c^{2} \Delta t^{2} &= \left(\unitfrac[3\e{8}]{[m]}{[s]} \cdot \unit[2.5\e{-8}]{[s]}\right)^{2} +\left( \unit[15]{[m]}\right)^{2} = (\unit[7.5]{[m]})^{2}+ (\unit[15]{[m]})^{2} \nonumber\\
+ \nonumber\\
+&= \left(   \frac{\unit[15]{[m]}}{2}   \right)^{2} + (\unit[15]{[m]})^{2} = (\unit[15]{[m]} )^{2} \left(   \frac{1}{2^{2}} + 1  \right) = (\unit[15]{[m]} )^{2}\left(  \frac{5}{4}  \right)\nonumber
+\end{align}
+
+\begin{gather}
+\therefore \hspace{.1in} \Delta t = \unit[15]{[m]} \left(  \frac{\sqrt{5}}{2c^{2}}  \right)
+\end{gather}
+\\
+But since we are looking for the velocity of the mesons in the lab frame we must divide the distance, $x$, by the time, $t$.
+
+\begin{gather}
+v = \frac{x}{t} = \frac{    \unit[15]{[m]}  }   {    \unit[15]{[m]}  \left(  \frac{\sqrt{5}}{2c^{2}} \right) } = \boxed{\frac{2c}{\sqrt{5}}}
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       49     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 49:}} Recall the equation for electric field of an infinite charged surface:
+
+\begin{gather}
+E = \frac{\sigma}{2 \epsilon_{0}}
+\end{gather}
+\\
+Now, the surface charge density is defined by the equation. 
+
+\begin{gather}
+\sigma = \frac{Q}{A} = \frac{Q}{\hat{x} \times \hat{y}}\nonumber
+\end{gather}
+\\
+Here we are looking at a unit cell to represent the area, $A =1\hat{x} \times 1\hat{y}$. Because second observer is moving in the $x$ direction there is a length contraction in along the $x$-axis:
+
+\begin{gather}
+\hat{x}' = \frac{\hat{x}}{\gamma} = \sqrt{1 - \frac{v^{2}}{c^{2}}}  \hat{x}  \nonumber
+\end{gather}
+\\
+Therefore, the second observer measures an electric field equal to 
+
+\begin{gather}
+E' = \frac{1}{2 \epsilon_{0}} \frac{Q}{\sqrt{1 - \frac{v^{2}}{c^{2}}}  \hat{x} \times \hat{y}} = \boxed{\frac{\sigma}{2 \epsilon_{0} \sqrt{1 - \frac{v^{2}}{c^{2}}}}\hat{z}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       50     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 50:}} Going back to equation (\ref{eq: interval}) we have
+
+\begin{gather}
+\Delta x^{2} = \Delta x'^{2} -c^{2} \Delta t'^{2}\nonumber\\
+\nonumber\\
+(3c)^{2} = (5c)^{2} - c^{2}\Delta t'^{2} \hspace{.1in} \rightarrow \hspace{.1in} \Delta t' = \sqrt{\Delta t'^{2} }= \sqrt{25-9} = \sqrt{16} = \boxed{\unit[4]{[min]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       51     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 51:}} Recall that the probability density is $\left| \psi  \right|^{2}$ and the wave function for an infinite well of size $l$ is
+
+\begin{gather}
+\psi_{n} = \sqrt{\frac{2}{l}} \sin{\left(  \frac{n \pi x}{l}  \right)}
+\end{gather}
+\\
+because we are interested in the probability density in the middle of the well, let us set $x= l/2$ so that 
+
+\begin{gather}
+\psi_{n} = \sqrt{\frac{2}{l}} \sin{\left(  \frac{n \pi}{2}  \right)}\nonumber
+\end{gather}
+\\
+the probability density vanishes when $\psi_{n} = 0$ and only even values for $n$  meet this criteria (because $\sin{(\pi)} = 0$).
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       52     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 52:}} Like many of the physics GRE problems, there is both an easy way and a hard way to solve this problem. The easy way is to commit the first few spherical harmonics ($Y^{m}_{l}$) to memory.
+
+\begin{gather}
+Y^{0}_{0} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{1}{\pi}} = const\\
+Y^{0}_{1} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{3}{\pi}} \cos{\theta} = const \cdot \cos{\theta}\\
+Y^{\pm 1}_{1} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{3}{4\pi}} \sin{\theta} \cdot e^{\pm i \phi} = const \cdot \cos{\theta}\cdot e^{\pm i \phi} 
+\end{gather}
+\\
+Noting the that given equation is equivalent to $Y^{\pm 1}_{1}$ tells us that $m = \pm 1$. We can then find the eigenstates of the z-component of angular momentum using the equation
+
+\begin{gather}
+\label {eq: Lz} L_{z} Y^{m}_{l} = m\hbar Y^{m}_{l}
+\end{gather} 
+\\
+So that $L_{z} = \pm \hbar$. Solution (C).\\
+\\
+The harder way to solve this problem is to start with the equation for the angular momentum operator in the z-direction, $L_{z}$:
+
+\begin{gather}
+L_{z} = - i \hbar \frac{\partial}{\partial \phi}
+\end{gather}
+\\
+combining this with equation (\ref{eq: Lz}) we get
+
+\begin{gather}
+- i \hbar \frac{\partial}{\partial \phi} Y^{m}_{l} = m\hbar Y^{m}_{l} 
+\hspace{.1in} \rightarrow \hspace{.1in} 
+\frac{\partial (Y^{m}_{l})}{\partial \phi}  = \frac{m}{-i} \cdot Y^{m}_{l} = i m Y^{m}_{l} \nonumber\\
+ \nonumber\\
+\therefore \hspace{.1in} Y^{m}_{l} = Ae^{i m \phi} \nonumber
+\end{gather}
+\\
+Where $A$ is some constant. Equating this to the given wave function we get 
+
+\begin{align}
+Y^{m}_{l}(\theta , \phi) &= \psi (\theta , \phi)\nonumber\\
+\nonumber\\
+Ae^{i m \phi} &= \sqrt{3/4 \pi} \sin{\theta} \sin{\phi}\nonumber
+\end{align}
+\\
+Therefore, all the information about $m$ is contained in the $\sin{\phi}$ term. Recalling the identity
+
+\begin{gather}
+\sin{\phi} = \frac{e^{i \phi} - e^{-i \phi}}{2i}
+\end{gather}
+\\
+we can see that $m = \pm 1$. Therefore, from equation (\ref{eq: Lz}), we see that $L_{z} = \pm \hbar$
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       53     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 53:}} Because positronium is unstable the two particles (electron and positron) will quickly annihilate with one another, producing photons. We can therefore eliminate choice (A). Due to conservation of momentum we know that the annihilation cannot produce only one photon, so we are left with choices (C), (D), and (E).\\
+\\
+There are two types of positronium:
+
+\begin{description}\centering
+
+\item[Para-positronium:] Singlet state with antiparallel spins ($S = 0$, $M_{s} = 0$)
+
+\item[Ortho-positronium:] Triplet state with parallel spins ($S = 1$, $M_{s} = -1, 0, 1$)
+
+\end{description}
+The problem is asking about Para-positronium which can only decay an even number of photons (due to C-symmetry rules). Therefore, we can have either 2 or 4 photons produced in this decay. However, the probability for decay into 2 photons is much higher than the probability of decay into 4 photons so the best answer is (C).\\
+\\
+(In case you were wondering: ortho-positronium decays into an odd number of photons with 3 being the most probable number)
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       54     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 54:}} 
+
+
+Lets ignore the phase shift $\pi$ in the $\hat{y}$ term for now. Since $E_{1} = E_{2}$ the slope of the trajectory is 1 and the so, from $y = mx$, the angle is $\theta = 45^{\circ}$ (Quadrant I). With this information we can eliminate (C), (D), and (E).\\
+\\
+Now, because the phase shift does occur, we are dealing with a trajectory the follows the equation $-y = mx$ since the shift moves the line second term from $\hat{y}$ to $-\hat{y}$. Therefore we now have $\theta= - 45^{\circ}$ (Quadrant IV). \\
+\\
+Heres the tricky part: the final angle is $45^{\circ}$ away from the +$x$-axis but in the negative direction and so it is actually $315^{\circ}$ away from the +$x$-axis! This is because of convention, which has the angle increasing in the counter-clockwise direction. Because $315^{\circ}$ is not an option we must continue the line through the origin and into Quadrant II where it is $135^{\circ}$ ($90^{\circ}+ 45^{\circ}$) from the +$x$-axis.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       55     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 55:}} From Malus's Law we know that the transmitted intensity trhough a polarizer is equivalent to 
+
+\begin{gather}
+I = I_{0} \cos^{2}{\theta}
+\end{gather}
+\\
+Where $I_{0}$ is the incident intensity on the polarizer, $I_{0} = E_{0}^{2}$. Since we are dealing with two polarizers with incident energy $E_{1}$ and $E_{2}$, the intensity of the final beam is 
+
+\begin{gather}
+I = I_{1} + I_{2} = E_{1}^{2}\cos^{2}{\theta} + E_{2}^{2}\cos^{2}{\theta} = cos^{2}{\theta} (E_{1}^{2} + E_{2}^{2})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in}  \boxed{I \propto E_{1}^{2} + E_{2}^{2}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       56     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 56:}} Recall Snell's Law:
+
+\begin{gather}
+n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}
+\end{gather}
+\\
+Now, if all of the light is reflected at the surface then there is no transmitted light and $\theta_{2} = 90^{\circ}$. This is the definition of critical angle, $\theta_{C}$.
+
+\begin{gather}
+n_{1}\sin{\theta_{C}} = n_{2}\sin{90^{\circ}} \hspace{.1in} \rightarrow \hspace{.1in} \sin{\theta_{C}} = \frac{n_{2}}{n_{1}}  \hspace{.1in} \rightarrow \hspace{.1in} \theta_{C} = \arcsin{\frac{n_{2}}{n_{1}}}\\
+\nonumber
+\end{gather}
+\\
+Plugging in our numbers: 
+
+\begin{gather}
+\theta_{C} = \arcsin{\left(\frac{1}{1.33}\right)} = \arcsin{\left(\frac{3}{4}\right)} = \arcsin{\left(\frac{1.5}{2}\right)} \approx  \arcsin{\left(\frac{1.4}{2}\right)} = \arcsin{\left(\frac{\sqrt{2}}{2}\right)} = 45^{\circ}\nonumber
+\end{gather}
+\\
+Which is closest to $50^{\circ}$.
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       57     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 57:}} The formula for single slit diffraction is 
+
+\begin{gather}
+d \sin{\theta} = m \lambda
+\end{gather}
+\\
+For this problem $m = 1$ (first minimum), $\sin{\theta} = \theta = \unit[4\e{-3}]{[rads]}$ (small angle in radians), and $\lambda = \unit[400]{[nm]}$. Solving for $d$ and plugging in our values we get
+
+\begin{gather}
+d = \frac{m \lambda}{\theta} = \frac{\unit[400]{[nm]}}{\unit[4\e{-3}]{[rads]}} = \unit[100,000]{[nm]} = \boxed{\unit[1\e{-4}]{[m]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       58     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 58:}} This is a beam expander which 1) has the focal length of both lenses located at the same point between them so that 
+
+\begin{gather}
+\label {eq:beam expander} f_{1} + f_{2} = d
+\end{gather}
+\\
+and 2) has magnifying power based upon the focal length of the objective lens ($f_{2}$) and image lens ($f_{1}$).
+
+\begin{gather}
+M = \frac{f_{2}}{f_{1}}
+\end{gather}
+\\
+Since the beam is expanded from $\unit[1]{[mm]}$ to $\unit[10]{[mm]}$ the magnifying power is $M = 10$.
+
+\begin{gather}
+M = 10 = \frac{f_{2}}{\unit[1.5]{[cm]}} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{f_{2} = \unit[15]{[cm]}}\nonumber
+\end{gather}
+\\
+and from equation (\ref {eq:beam expander}) we get 
+
+\begin{gather}
+d = f_{1} + f_{2} = \unit[1.5]{[cm]} + \unit[15]{[cm]} = \boxed{\unit[16.5]{[cm]}}
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       59     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 59:}} The energy of beam, $E_{b}$, is equivilent to the number of photons, $n$, in the beam times the energy of each photon, $E_{\gamma}$ (equation \ref{eq: Energywave}).
+
+\begin{gather}
+E_{b} = nE_{\gamma} = n \frac{hc}{\lambda}
+\end{gather}
+\\
+The power of a beam of light is the energy divided by the time. This is easy to remember since the unit for power, Watts, is the unit for energy, Joules, divided but seconds ($[W] = \left[  \frac{J}{s} \right]$).
+
+\begin{gather}
+P = \frac{E_{b}}{t} = n \frac{hc}{\lambda t}\nonumber
+\end{gather}
+\\
+Solving for $n$ and plugging in gives us
+
+\begin{align}
+%
+n &= P \frac{\lambda t}{hc} 
+%
+= \unit[10^{4}]{[W]} \cdot  \frac{ \unit[6\e{-7}]{[m]} \cdot \unit[10^{-15}]{[s]} }{\unit[6.6\e{-34}]{[J \cdot s]} \cdot \unitfrac[3\e8]{[m]}{[s]}} \nonumber\\
+%
+\nonumber\\
+%
+&=  \frac{\unit[10^{-11}]{[J]} \cdot \unit[6\e{-7}]{[m]}}{\unit[6.6\e{-34}]{[J \cdot s]} \cdot \unitfrac[3\e8]{[m]}{[s]}} 
+%
+= \frac{\unit[6\e{-18}]{[J\cdot m]}}{\unit[(6.6\cdot 3)\e{-26}]{[J \cdot m]}} 
+%
+= \frac{2}{6.6} \cdot 10^{8} \nonumber
+%
+\end{align}
+\\
+Which is closest to $\boxed{\unit[10^{7}]{photons}}$
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       60     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 60:}} The two source are moving towards earth ($\lambda_{t}$) and away from earth ($\lambda_{a}$) at the same time so the doppler shift is
+
+\begin{gather}
+%
+\lambda_{t} - \lambda_{a} = \Delta \lambda 
+%
+= \lambda \left(   \sqrt{   \frac  {1+\beta}   {1- \beta}   }   -    \sqrt{ \frac   {1-\beta}    {1+\beta}  }  \right)   %
+= \lambda \left(  \sqrt{   \frac    {(1+\beta)^{2} - (1-\beta)^{2}}    {(1-\beta)(1+\beta)}    }    \right)
+%
+= \lambda \left(   \frac{2\beta}{\sqrt{1- \beta^{2}}}  \right)\nonumber
+\end{gather}
+\\
+Because the sun is moving at non-relativistic speeds we can approximate $1-\beta^{2} \approx 1$ leaving us with
+
+\begin{gather}
+\frac{\Delta \lambda } {\lambda} = 2 \beta = \frac{2v}{c} \nonumber
+\end{gather}
+
+\begin{align}
+\therefore \hspace{.1in}  v  &= \frac{\Delta \lambda } {\lambda} \frac{c}{2} = \frac{\unit[1.8\e{-12}]{[m]}} {\unit[122\e{-9}]{[m]}} \frac{\unitfrac[3\e{8}]{[m]}{[s]}}{2}  = \frac{\unit[180\e{-14}]{[m]}} {\unit[244\e{-9}]{[m]}}\cdot \unitfrac[3\e{8}]{[m]}{[s]}\nonumber\\ 
+\nonumber\\ 
+&\approx 7.5\e{-6} \cdot \unitfrac[3\e{8}]{[m]}{[s]} = \unitfrac[22\e{2}]{[m]}{[s]} = \boxed{\unitfrac[2.2]{[km]}{[s]}}\nonumber
+\end{align}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       61     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 61:}} This is a simple application of Gauss's Law:
+
+\begin{gather}
+\vec{E} \cdot d\vec{A}= \frac{Q}{\epsilon_{0}}
+\end{gather}
+\\
+Let us first solve for $Q$:
+
+\begin{align}
+Q &= \int^{2\pi}_{0} \int^{\pi}_{0} \int^{R/2}_{0}{\rho r^{2} \sin{(\theta)} dr d\theta d\phi} 
+%
+=  \int^{2\pi}_{0}{d\phi}      \int^{\pi}_{0}{\sin{(\theta)}d\theta}      \int^{R/2}_{0}{\rho r^{2} dr} \nonumber\\
+%
+\nonumber\\
+%
+&= 4\pi \int^{R/2}_{0}{A r^{4}dr} = 4 \pi A  \frac{r^{5}}{5} \biggr\rvert^{R/2}_{0} = A \pi \frac{R^{5}}{2^{3} \cdot 5} = A \pi \frac{R^{5}}{40}\nonumber
+\end{align}
+\\
+Now solve for $E$ (Remembering that $A = 4 \pi (R/2)^{2}$ \textbf{NOT} $A = 4 \pi R^{2}$):
+
+\begin{gather}
+E = \frac{Q}{ \pi R^{2}\epsilon_{0}} =  \frac{A \pi R^{5}}{40 \pi R^{2}\epsilon_{0}} = \boxed{\frac{A R^{3}}{40 \epsilon_{0}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       62     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 62:}} Each capacitor is is initially charged using a $\unit[5]{[V]}$ battery so that $C_{1}$ and $C_{2}$ have charges:
+
+\begin{gather}
+Q_{1} = C_{1} V = \unit[1.0]{[\mu F]} \cdot \unit[5]{[V]} = \unit[5]{[\mu C]}\nonumber\\
+Q_{2} = C_{2} V = \unit[2.0]{[\mu F]} \cdot \unit[5]{[V]} = \unit[10]{[\mu C]}\nonumber
+\end{gather}
+\\
+When the capacitors are connected with plates of opposite charge connected together they will both have the same voltage so that 
+
+\begin{gather}
+V_{f} = \frac{q_{1}}{C_{1}} = \frac{q_{2}}{C_{2}}\nonumber
+\end{gather}
+\\
+From conservation of charge we know that 
+
+\begin{gather}
+Q_{1} - Q_{2} = \unit[-5]{[\mu C]} =  q_{1} + q_{2}\nonumber
+\end{gather}
+\\
+(The LHS uses subtraction because they are connected with opposite charges together). Therefore, putting the last two equations together
+
+\begin{gather}
+\unit[-5]{[\mu C]} =  q_{1} + q_{2} = q_{2} \frac{C_{1}} {C_{2}}   + q_{2} \hspace{.1in} 
+\rightarrow \hspace{.1in} q_{2} (1.5) = \unit[-5]{[\mu C]} \hspace{.1in} \rightarrow \hspace{.1in} q_{2} = \unit[-3.33]{[\mu C]}\nonumber
+\end{gather}
+\\
+And now we can find the voltage across $C_{2}$:
+
+\begin{gather}
+V = \frac{q_{2}}{C_{2}} = \frac{\unit[3.33]{[\mu C]}}{\unit[2.0]{[\mu F]}} = \unit[10/6] {[V]} \approx \boxed{\unit[1.7] {[V]}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       63     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 63:}} A composite object is a particle that is made up of at least two fundamental particles. There are fundamental fermions (quarks, leptons, antiquarks, and antileptons) and fundamental bosons (gauge bosons and the Higgs boson). This problem was written during or before 1996 so don't worry about the bosons ("fundamental particles" usually means fundamental fermions anyway). Lets find the best answer:
+
+\begin{description}
+
+\item[(A)] A muon ($\mu^{-}$) is a larger electron and is therefore a Lepton and \textbf{NOT a composite object}. This the answer. I'll go over the other answers anyway.
+
+\item[(B)] The pi-meson, or pion, is a combination of a quark and an anti-quark. There are three types of pions: $\pi^{0}$ ($u \bar{u}$ or $d \bar{d}$), $\pi^{+}$ ($u \bar{d}$), and $\pi^{+}$ ($d \bar{u}$). \textbf{All of which are composite objects}.
+
+\item[(C)] A neutron is a nucleon with no net electric charge and is composed of 1 up quark, 2 down quarks ($udd$). \textbf{This is a composite object}.
+
+\item[(D)] A deuteron is a Hydrogen atom that has an added neutron in the nucleus. It therefore has two nucleons, proton ($uud$) and neutron, and one orbiting electron. \textbf{This is a composite object}.
+
+\item[(E)] An alpha particle is identical to a Helium nucleus. It consists of 2 protons and 2 neutrons. \textbf{This is a composite object}.
+\\
+
+\end{description}
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       64     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 64:}} "Symmetric fission" is fission process where the end products are symmetric about some point and have the same atomic mass as one another. In this kind of process change in kinetic energy is the same as the the change in binding energy. Therefore the total kinetic energy released in this reaction is
+
+\begin{gather}
+KE = \text{ (number of nucleons) }\cdot (\text{ change in binding energy per nucleon }) = N \cdot \Delta E_{B}\nonumber
+\end{gather}
+\\
+We know that $\Delta E_{B} =  \unitfrac[8]{[MeV]}{[nucleon]} -  \unitfrac[7]{[MeV]}{[nucleon]} = \unitfrac[1]{[MeV]}{[nucleon]} $ but we do not know the number of nucleons in the parent nucleus. However, there are no elements with $N = 938$ or $N = 1876$ so eliminate (A) and (B). (D) and (E) are both too small to be considered a heavy nucleus and so we can discard those solutions as well. We are therefore left with (C) which is the correct answer.
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       65     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 65:}} Work done on an object is equal to the change in kinetic energy. In this situation we have two changes in kinetic energy: 1) a man of mass $m$ leaping to the left with speed $v_{m}$ and 2) the boat of mass $M$ moving to the right at speed $v$.
+
+\begin{gather}
+W = \Delta KE = \frac{1}{2} m v_{m}^{2} + \frac{1}{2} Mv^{2}
+\end{gather}
+\\
+Since none of the answers are in terms of the mans velocity we must express $v_{m}$ in terms of $v$. Since both objects are initially at rest conservation law tell us that they must have the same momentum after the leap.
+
+\begin{gather}
+p_{m} = p_{b}\hspace{.1in} \rightarrow \hspace{.1in} 
+mv_{m} = Mv \hspace{.1in} \rightarrow \hspace{.1in} v_{m} = \frac{M}{m}\nonumber v
+\end{gather}
+\\
+Therefore,
+
+\begin{gather}
+W = \frac{1}{2} m \left(  \frac{M}{m}\nonumber v  \right)^{2} + \frac{1}{2} Mv^{2} 
+= \boxed{\frac{1}{2} \left( \frac{M^{2}}{m} + M  \right)v^{2}}
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       66     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 66:}} The spacecraft is said to be on a "mission to the outer planets" which tells us immediately that the orbit is not bound. This eliminates solutions (A), (B), and (C).\\
+\\
+A parabolic orbit, (D), is a very special case while a hyperbolic orbit, (E), is more likely. Therefore (E) is the best answer.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       67     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 67:}} The escape velocity from a body of mass $M$ can be calculated be setting the translational kinetic energy equal to the gravitational potential energy:
+
+\begin{gather}
+\frac{1}{2} m v^{2} = G \frac{Mm}{r} \hspace{.1in} \rightarrow \hspace{.1in} v = \sqrt{\frac{2GM}{r}}
+\end{gather}
+\\
+Setting $v = c$ and solving for $r$:
+
+\begin{align}
+r &=  \frac{2GM}{c^{2}} = \frac{   2 \cdot \unitfrac[6.67\e{-11}]{[m^{3}]}{[kg \cdot s^{-2}]} \cdot \unit[5.98\e{24}]{[kg]} }{  \unitfrac[9\e{16}]{[m^{2}]}{[s^{2}]}   } \nonumber\\
+\nonumber\\
+&\approx \unit[  \frac{2 \cdot 6.67 \cdot 6 \cdot 10^{13}} {9\e{16}} ]  {[m]} = \unit[ \frac{80}{9\e{3}}   ]{[m]} \approx \boxed{\unit[  0.01  ]{[m]}}\nonumber
+\end{align}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       68     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 68:}} The The Lagrangian is the equal to the kinetic energy, $T$, of the bead minus the potential energy, $U$, of the bead. 
+
+\begin{gather}
+\label {eq: Lagrangian}L = T-U
+\end{gather}
+\\
+The total kinetic energy is the summation of the translational and the rotational kinetic energy:
+
+\begin{gather}
+T = \frac{1}{2}mv^{2} + \frac{1}{2}I \omega^{2} = \frac{1}{2}m \dot{s}^{2} + \frac{1}{2} \left[  m s^{2} \sin^{2}{(\theta)}  \right] \omega^{2} =  \frac{1}{2}m \dot{s}^{2} + \frac{1}{2} m  \left[\omega s \sin{(\theta)}   \right]^{2}\nonumber
+\end{gather}
+\\
+This eliminates choices (A), (B), and (D). We can then use equation (\ref{eq: Lagrangian}) to eliminate choice (C) 
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       69     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 69:}} The right hand rule for wires will tell you that the current is in the $+\hat{y}$ direction, eliminating (C), (D), and (E). We can use Ampere's Law to find the magnetic field created by a current-carrying wire.
+
+\begin{gather}
+\label{eq: ampslaw} B \cdot dl = \mu_{0} I_{enc} = \mu_{0} J A\\
+\nonumber\\
+\rightarrow \hspace{.1in} B (2 \pi R) = \mu_{0} J (\pi R^{2})  \hspace{.1in}  \rightarrow \hspace{.1in} B  = \frac{\mu_{0} J (\pi R^{2})}{2 \pi R}\nonumber
+\end{gather}
+\\
+The distance from each wire to point $A$ is $R = d/2$. Plugging in:
+
+\begin{gather}
+B  = \frac{\mu_{0} J (\pi \frac{d^{2}}{4})}{2 \pi \frac{d}{2}} = \frac{\mu_{0} J \pi d}{4 \pi} \nonumber
+\end{gather}
+\\
+And since we are dealing with two wires equidistant from point $A$ we multiply this answer by $2$ to get choice (A).
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       70     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 70:}} The Lamar formula is used to calculate the total power radiated by a non-relativistic moving charge.
+
+\begin{gather}
+P = \frac{ q^{2}  a^{2}  } {  6 \pi \epsilon_{0} c^{3} } \propto q^{2} a^{2}\\
+\nonumber\\
+\frac{P_{B}}{P_{A}} = \frac{(2 q)^{2} (4a)^{2}}{q^{2} a^{2}} = 4 \cdot 16 = \boxed{64}
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       71     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 71:}} We can find the deflection angle using the equation $\tan{(\theta)} = v_{y}/v_{x}$. The potential between plates accelerates the charge in the $\hat{y}$ direction and so $v_{x} = const$. We can calculate $v_{y}$ by first finding the acceleration in the potential
+
+\begin{gather}
+F = ma = qE \hspace{.1in} \rightarrow \hspace{.1in} a = \frac{q}{m} E =  \frac{q}{m} \frac{V}{d}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} v_{y} = a t =  \frac{q}{m} \frac{V}{d} t  \nonumber
+\end{gather}
+\\
+(Here we used the equation and $V = Ed$) Because $v_{x} = const$ we know that the time, $t$, is the distance, $L$, divided by the velocity, $v_{x}$, so that  
+
+\begin{gather}
+v_{y} =  \frac{q}{m} \frac{V}{d} \frac{L}{v_{x}} = \left(\frac{L}{d}\right) \left(\frac{V q}{m v_{x}}\right) \nonumber\\
+\nonumber\\
+\theta = \arctan{\left(  \frac{v_{y}}{v_{x}}  \right)} = \boxed{\arctan{\left[ \left(\frac{L}{d}\right) \left(\frac{V q}{m v_{x}^{2}}\right) \right]} } \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       72     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 72:}} There are two types of feedback: positive and negative. It is easiest to think about positive feedback as what happens when a microphone is brought close to a speaker. Sound from the speaker is picked up by the microphone, amplified, and then sent right back into the microphone resulting in a much louder squeal. Negative feedback, however, is used in noise cancelling. Therefore, (A) is the best answer.
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       73     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 73:}} Recall the equation for work done by a system:
+
+\begin{gather}
+W = \int{PdV}
+\end{gather}
+\\
+We can rewrite this as 
+
+\begin{align}
+W &= \int_{V_{i}}^{V_{f}}{\left(  \frac{C}{V^{\gamma}}  \right) dV} = -\frac{C}{(\gamma -1 ) V^{(\gamma -1)}} \biggr\rvert_{V_{i}}^{V_{f}}  = -\frac{1}{(\gamma -1 )} \frac{C}{V_{f}^{(\gamma -1)}} + \frac{1}{(\gamma -1 )} \frac{C}{V_{i}^{(\gamma -1)}}\nonumber\\
+\nonumber\\
+&= \frac{1}{\gamma -1} \left(   \frac{P_{i} V_{i}^{\gamma}} { V_{i}^{(\gamma -1)} }  - \frac{P_{f} V_{f}^{\gamma}} { V_{f}^{(\gamma -1)} }   \right) =  \frac{1}{\gamma -1} \left(   P_{i} V_{i}^{\gamma} - P_{f} V_{f}^{\gamma}  \right) = \boxed{\frac{P_{f} V_{f}^{\gamma} - P_{i} V_{i}^{\gamma} } {1 - \gamma}}\nonumber
+\end{align}
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       74     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 74:}} Because the two system is insulated from its surroundings we can find the equilibrium temperature, $T_{f}$, by averaging the two initial temperatures, $T_{1}$ and $T_{2}$.
+
+\begin{gather}
+T_{f} = \frac{T_{1} + T_{2}}{2} = \frac{\unit[500]{[K]} + \unit[100]{[K]}}{2} = \unit[300]{[K]}\nonumber
+\end{gather}
+\\
+Entropy is calculated using the equation 
+
+\begin{gather}
+ds = \frac{dQ}{T} = mc \frac{dT}{T}
+\end{gather}
+\\
+(here we used $dQ = mcdT$). Since both blocks go from their initial temperature to the equilibrium temperature, the total change in entropy is equal to the sum of each of the block's change in entropy:
+
+\begin{align}
+\Delta S = \Delta S_{1} + \Delta S_{2} = mc \int_{T_{1}}^{T_{f}}{\frac{dT}{T}} + mc \int_{T_{2}}^{T_{f}}{\frac{dT}{T}} = mc \left(  \ln{T} \biggr\rvert_{\unit[500]{[K]}}^{\unit[300]{[K]}} + \ln{T} \biggr\rvert_{\unit[100]{[K]}}^{\unit[300]{[K]}}  \right)  = mc \left(  \ln{3/5} +\ln{3}    \right) = \boxed{mc \ln{9/5} }\nonumber
+\end{align}
+\\
+Remember that the addition of two logarithms results in multiplication of their arguments.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       75     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 75:}} Fourier's Law tells us the rate of heat flowing through a unit area. For simple applications, Fourier's law is used in its one-dimensional form:
+
+\begin{gather}
+q_{x} = -k \frac{\Delta T}{\Delta x}
+\end{gather}
+\\
+Where $k$ is the heat resistance, $ T$ is the temperature, and $x$ is the length of the material. Assuming that the indoor and outdoor temperatures are the same for both windows, the ratio of heat flow is
+
+\begin{gather}
+\frac{q_{A}}{q_{B}} = \frac{\Delta k_{A} \Delta x_{B}}{\Delta k_{B} \Delta x_{A}} = \frac  { \unitfrac[0.8]{[W]} {[m \cdot ^{\circ}C]}  \cdot \unit[0.002]{[m]}}   { \unitfrac[0.025]{[W]} {[m \cdot ^{\circ}C]}  \cdot \unit[0.004]{[m]}} = \frac{ \unit[0.0016]{[W]}} {\unit[0.0001]{[W]}} = \boxed{16} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       76     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 76:}} Lets look at each solution:
+
+\begin{description}
+
+\item[I:] The uncertainty principle tells us that $\Delta p \Delta x = \hbar / 2$. Therefore, the average momentum is related to the average position via this relation. If the average momentum is zero then the wave packet would violate uncertainty. This is \textbf{incorrect}. Eliminate choices (A), (C), and (D).
+
+\item[II:] The width of a Gaussian wave packet has the interesting quantity where the width grows linearly in time. This is based on the fact that the uncertainty in momentum is very large and can therefore be thought of as many waves all propagating with different momenta. You can learn more about this in Section 3.5 of Griffith's \textit{Introduction to Quantum Mechanics} (2nd Edition).This is \textbf{correct}.
+
+\item[III:] Again, thinking of the packet as a superposition of many waves. At $t=0$ the waves are spaced very closely and have an amplitude that adds according to superposition, spiking at a certain amplitude. As the packet experiences "wave-packet spreading" ($t \rightarrow \infty$) their individual amplitudes are well spaced out and don't add up to the same amplitude as before. This is \textbf{incorrect}. Eliminate (D).
+
+\item[IV:] This is a statement of the simple relation $\Delta p \Delta x = \hbar / 2$ and is therefore \textbf{correct}. 
+\\
+
+\end{description}
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       77     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 77:}} Dot products always follow the arithmetic trick:
+
+\begin{gather}
+a \cdot b = \frac{1}{2} \left[   (a + b)^{2} - a^{2} - b^{2}  \right]
+\end{gather}
+\\
+Therefore we can rewrite the Hamiltonian as 
+
+\begin{gather}
+H = - J S_{1} \cdot S_{2} = -\frac{J}{2} \left[   (S_{1} + S_{2})^{2} - S_{1}^{2} - S_{2}^{2}  \right]\nonumber
+\end{gather}
+\\
+Already, it looks like we can eliminate choices (A), (B), and (C). There is no reason for division to come into play in this problem so we can logically eliminate choice (E) as well. Therefore, (D) is the correct answer.\\
+\\
+The problem tells us the eigenvalues of the system:
+
+\begin{gather}
+S_{i}^{2} \psi = S_{i}(S_{i} + 1) \psi \nonumber
+\end{gather}
+\\
+So that 
+
+\begin{gather}
+\braket{H} = \bra{\psi} H \ket{\psi} =  \boxed{-\frac{J}{2} \left[   (S_{1} + S_{2}) (S_{1} + S_{2} + 1)  - S_{1}(S_{1} + 1) - S_{2}(S_{2} + 1) \right]}\nonumber
+\end{gather}
+\\
+(We used the eigenvalue generalization, $(a + b)^{2} \psi  = (a + b) (a + b + 1) \psi$ to get the final solution)
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       78     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 78:}} The "type" of a semi conductor is determined by the charge carriers of the material. For instance, and $n$-type semiconductor has a majority of negative charge carriers (electrons) while a $p$-type semiconductor is has a majority of positive charge carriers (holes or positrons). \\
+\\
+In band theory, n-type semiconductor impurities are electron donors, while p-type semiconductor impurities are electron acceptors. With this information we can eliminate choices (A), (B), and (C).\\
+\\
+The choose between (D) and (E), we must know that the electrons from the $n$-type semiconductors are always donated to the conduction band of the $p$-type semiconductors. Just remember that semi\textbf{conductors} always donate to the \textbf{conduction} band. 
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       79     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 79:}} A good equation to remember is the energy of a ideal gas is a constant volume:
+
+\begin{gather}
+U = \frac{f}{2} n R T = n C_{v} T
+\end{gather}
+\\
+This works for any gas whose particles can be represented as points. A diatomic gas at low temperatures ($<\unit[50]{[K]}$) has three translational degrees of freedom ($f=3$).
+
+\begin{gather}
+U = \frac{3}{2} n R T = n C_{v,L} T \hspace{.1in} \rightarrow \hspace{.1in} C_{v,L} = \frac{3}{2} R\nonumber
+\end{gather}
+\\
+At around $\unit[50]{[K]}$, and appreciable amount of rotational motion begins to occur. this oppens up 2 more degrees of freedom ($f=5$). And at around $\unit[600]{[K]}$ Appreciable vibrational motion begins to occur which opens up two more degrees of freedom ($f=7$). Therefore, 
+
+\begin{gather}
+U = \frac{7}{2} n R T = n C_{v,H} T \hspace{.1in} \rightarrow \hspace{.1in} C_{v,H} = \frac{7}{2} R\nonumber
+\end{gather}
+\\
+The ratio is therefore:
+
+\begin{gather}
+\boxed{\frac  { C_{v,H}  }  {  C_{v,L} }  =  \frac{7}{3} }  \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       80     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 80:}} Limiting cases is the best why to solve this problem at this problem. \\\\
+Lets look at the case where $\mu_{r} = \mu_{l}$: This would mean that the "rope" just becomes an extension of the string and so all of the energy is transmitted while none is reflected. So any solution where $T = 1$ is plausible for this situation. This eliminates (D) and (C). We can also eliminate (A) because the solution must be dependent on $\mu_{r}$ and $\mu_{l}$. \\
+\\
+Now lets look at the case where $\mu_{r} \rightarrow \infty$: Here, the rope acts as a wall that reflects all of the strings energy and allows none to transfer. So any solution where $T = 0$ is plausible for this situation. This eliminates choice (B) and confirms the elimination of every other solution. 
+\\\\
+Answer: \textbf{\textcolor{cyan}C}\\
+
+%%%%%%%%%%%%%%%%%%%%       81     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 81:}} The equation for beat frequency (beats per second) is 
+
+\begin{gather}
+\label {eq: beatfreq} f_{beat} = f_{1} - f_{2}
+\end{gather}
+\\
+If $D_{2}$ ($f_{0} \approx \unit[73]{[Hz]}$) is correspondingly tuned with $A_{4}$ ($f_{A_{4}}= \unit[440]{[Hz]}$) then the harmonic of $D_{2}$ is 
+
+\begin{gather}
+f_{A_{4}}/f_{0} = \unit[440]{[Hz]}/  \unit[73]{[Hz]} \approx 6\nonumber
+\end{gather}
+\\
+Note that, if you have no idea how to start this problem, it is usually a good GRE test taking strategy to look for problems that are similar and eliminate the others. In this case, both (A) and (B) have harmonics of 6 so the correct answer is \textbf{probably} one of these.\\
+\\
+Now lets find the number of beats using equation (\ref{eq: beatfreq}):
+
+\begin{gather}
+\label {eq: beatfreq} f_{beat} = f_{A_{4}} - f_{D_{2}} = \unit[440]{[Hz]} - 6 \cdot  \unit[73]{[Hz]} = \unit[440]{[Hz]} - \unit[438]{[Hz]} = 2\nonumber
+\end{gather}
+\\
+Now, since we approximated $f_{0}$ as $\unit[73]{[Hz]}$ to make calculations easier, we know that the correct answer must actually be less than our calculated value, 2. 
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       82     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 82:}} Since the light has to travel $2t$, where $t$ is the thickness of the film, to get back to the original incidence interface, the constructive interference condition is $2t = m\lambda$. Because the glass ($n_{g} \sim 1.50 $) has a higher index of refraction than air ($n_{air} \sim 1$), the light experiences a phase change at the interface between the air and glass. Therefore the equation for constructive interference is $2t = m\lambda/2$. Now lets look at the thickness needed for $m = 1, 2,$ and $3$:
+
+\begin{align}
+m = 1 \hspace{.1in} &\rightarrow \hspace{.1in} t = \frac {\lambda}{4} = \frac {\unit[448]{[nm]}}{4} = \unit[122]{[nm]}\nonumber\\
+\nonumber\\
+%
+m = 2 \hspace{.1in} &\rightarrow \hspace{.1in} t = \frac {\lambda}{2} = \frac {\unit[448]{[nm]}}{2} = \unit[244]{[nm]}\nonumber\\
+\nonumber\\
+%
+m = 3 \hspace{.1in} &\rightarrow \hspace{.1in} t = \frac {3 \lambda}{4} = \frac {3 \cdot \unit[448]{[nm]}}{4} = \unit[366]{[nm]}\nonumber
+\end{align}
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       83     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 83:}} The condition for the object to stay at the surface at all times is
+
+\begin{gather}
+F_{grav} = F_{surf} \hspace{.1in} \rightarrow \hspace{.1in} -mg = m\ddot{h}(x)\nonumber
+\end{gather}
+\\
+So lets start by solving for $\ddot{h}(x)$:
+
+\begin{align}
+\dot{h}(x) &= \frac{\partial}{ \partial t} d \cos{(kx)} =  \frac{ \partial x}{ \partial t} \frac{\partial }{\partial x} d \cos{(kx)} = - \dot{x} k d  \sin{(kx)} \nonumber\\
+\nonumber\\
+%
+\ddot{h}(x) &= - \frac{\partial}{ \partial t} \dot{x} k d  \sin{(kx)} = - \frac{ \partial x}{ \partial t} \frac{\partial }{\partial x} \dot{x} k d  \sin{(kx)}  = -\dot{x}^{2} k^{2} d \cos{(kx)}\nonumber
+\end{align}
+\\
+Therefore,
+
+\begin{gather}
+g = \dot{x}^{2} k^{2} d  \cos{(kx)} \hspace{.1in} \rightarrow \hspace{.1in} \dot{x} = \sqrt{ \frac{ g }{  k^{2} d \cos{(kx)} } } \nonumber
+\end{gather}
+\\
+The problem asks for the speed $v$ and $x = 0 $ which gives us
+
+\begin{gather}
+\boxed{v = \sqrt{ \frac{ g }{  k^{2} d } }} \nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       84     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 84:}} Lets forget about the spring for a second look at this problem as a single pendulum of length $l$. The frequency of this system is known as the lowest mode frequency and follows the equation
+
+\begin{gather}
+\label{eq:lowestmodef}f = \sqrt{\frac{g}{l}}
+\end{gather}
+\\
+Now, ignoring the spring is the same as setting the spring constant equal to infinity.  Therefore, the correct answer is that one that is equal to lowest mode frequency (\ref{eq:lowestmodef}) when $K \rightarrow \infty$, solution (D).
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       85     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 85:}} Lets apply the limiting cases given in the problem: when $M \rightarrow \infty$ we have nodes on both sides of the length $L$ so that $\lambda = 2L/n$ where $n$ is any integer (it is just a standing wave). When $M = 0$, the mass is at the crest (or trough) of the wavelength, which means that it is only $L = 1/4$ of the wavelength, therefore $\lambda = 4L/(2n+1)$. Both of these limiting cases can be seen easily by drawing a few diagrams with the ring at the crest or trough ($M = 0$) and nodes ($M \rightarrow \infty$) to see all possible wave connections. We can eliminate solutions (D) and (E) since neither answer incorporates both wavelengths.\\\\
+For the limiting case where $M \rightarrow \infty$, $\mu / M = 0$. Each of the trigonometric functions in (A), (B), and (C) must therefore be zero when $\lambda = 4L/(2n+1)$:
+
+\begin{gather}
+\frac{2\pi L}{\lambda_{M \rightarrow \infty}} = \frac{2\pi L (2n+1)}{4L} = \frac{3\pi}{2}, \frac{5\pi}{2}, \frac{7\pi}{2}, ... \nonumber
+\end{gather}
+\\
+(A) and (B) are the only solutions that work. For the limiting case where $M = 0$, $\mu / M = undef$. Each of the remaining trigonometric functions in must be undefined when $\lambda = 2l/n$:
+
+\begin{gather}
+\frac{2 \pi L}{\lambda_{M=0}} = \frac{2 \pi L n}{2L} = \pi, 2\pi, 3\pi, ... \nonumber
+\end{gather}
+\\
+Solution (B) has a tangent function which is undefined at integer values of $\pi$.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       86     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 86:}} Suppose the particle enters the region moving in the $\hat{y}$ direction. The magnetic force on the particle pushes it in the $\hat{x}$ direction and into a counterclockwise rotation (from $F_{M} \propto \vec{v} \times \vec{B}$ and the right hand rule). This eliminates (A), (C), (D), and (E). The addition of an electric field makes the particle to travel in a cycloid trajectory, confirming that solution (B) is correct.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       87     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 87:}} Since the system is at rest, we know that the centripetal force is equal to the Lorentz magnetic force, or
+
+\begin{gather}
+F_{C} = F_{M} \hspace{.1in} \rightarrow \hspace{.1in} m\frac{v^{2}}{R} = qvB\nonumber
+\end{gather}
+\\
+With this equation we can solve for the \textbf{linear} momentum, $p$, of the rod:
+
+\begin{gather}
+p = mv = qBR\nonumber
+\end{gather}
+\\
+\textbf{Angular} momentum can be found from the linear momentum via the equation
+
+\begin{gather}
+L = R \times p = Rmv\\
+\nonumber\\
+\therefore \hspace{.1in} \boxed{L = qBR^{2}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       88     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 88:}}The field must be zero at the center ($r = 0$) due to the face that an infinitely small Amperian loop has no enclosed current (see equation \ref{eq: ampslaw}). This eliminates choices (D) and (E).\\
+\\
+On the surface of the cable ($r = c$) the enclosed charge is zero: $I_{enc} = I_{in} - I_{out} = 0$. Therefore, the magnetic field must be zero. This eliminates (A) and (C).
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       89     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 89:}} Let us once again equate the centripetal force of the particle to the Lorentz magnetic force to get the momentum of the particle (see problem 87):
+
+\begin{gather}
+p = mv = qBR\nonumber
+\end{gather}
+\\
+Lets get an approximate value for the radius of curvature, $R$, using the pythagorean theorem where $R$ is the hypotenuse and $l$ and $R-s$ are the legs.
+
+\begin{gather}
+R^{2} = l^{2} + (R-s)^{2} = l^{2} + R^{2} + s^{2} - 2Rs\nonumber
+\end{gather}
+\\
+The problem states that $s \ll l$ which means that the $s^{2}$ term is negligible so that
+
+\begin{gather}
+R^{2} = l^{2} + R^{2} - 2Rs \hspace{.1in} \rightarrow \hspace{.1in} l^{2} = 2Rs \hspace{.1in} \rightarrow \hspace{.1in} R = \frac{l^{2}}{2s} \nonumber
+\end{gather}
+\\
+Plugging this value into our momentum equation gives us the solution
+
+\begin{gather}
+\boxed{p = \frac{qB l^{2}}{2s}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       90     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 90:}}
+ \textit{\enquote{This Item Was Not Scored}}
+\\\\
+Answer: \textbf{\textcolor{cyan}*\textcolor{cyan}*}\\
+
+%%%%%%%%%%%%%%%%%%%%       91     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 91:}} The second law of thermodynamics states that entropy can never decrease in the universe. Because of this, temperature can only flow from hot to cold objects and not the other way around. Therefore the oven can only heat the sample to $\unit[600]{[K]}$ when the oven and sample are in equilibrium.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       92     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 92:}} Let us start by finding the minima of the one-dimentional potential. We find inflection points, such as the minima and maxima, but using the equation:
+
+\begin{gather}
+\frac{ dV(x) }{dx}\biggr\rvert_{x_{0}} = 0
+\end{gather}
+\\
+Where $x_{0}$ is the minima (it is assumed that there is only one inflection point). 
+
+\begin{gather}
+\frac{ dV(x) }{dx}\biggr\rvert_{x_{0}} = -2ax_{0} + 4bx_{0}^{3} = 0 
+\hspace{.1in} \rightarrow \hspace{.1in}
+x_{0} = \sqrt{\frac{a}{2b}}\nonumber
+\end{gather}
+\\
+Hooke's law tells us that
+
+\begin{gather}
+\label{eq: hookes pot} V(x) = \frac{1}{2} kx^{2} =   \frac{1}{2} m \omega^{2} x^{2}
+\end{gather}
+\\
+Where $k = m \omega^{2}$ is taken from equating the tension force ($F_{t} = kx$) to the centripetal force ($F_{c} = m\omega^{2}x$). We can solve for $\omega$ by taking the second derivative of Hooke's potential energy law (\ref{eq: hookes pot}):
+
+\begin{align}
+V'(x) &= kx =  m \omega^{2} x\nonumber\\
+\nonumber\\
+V''(x) &= k =  m \omega^{2} \hspace{.1in} \rightarrow \hspace{.1in} \omega = \sqrt{ \frac{V''(x)} {m} } \nonumber
+\end{align}
+\\
+Solving for $V''(x)$ and setting $x=x_{0}$ we get:
+
+\begin{gather}
+\omega = \sqrt{ \frac{-2a + 12bx_{0}^{2}} {m} } =  \sqrt{ \frac{-2a + 6a } {m} } = \sqrt{ \frac{ 4a } {m} } = \boxed{2\sqrt{\frac{a}{m}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       93     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 93:}} 
+
+In this graph we have the potential of a simple harmonic oscillator turning into gravitational potential at the origin. Let us start by finding the particle's period of motion on the LHS of the origin ($x<0$).\\
+\\
+The formula for the period of an oscillator is 
+
+\begin{gather}
+T_{SHM} = 2 \pi \sqrt{\frac{m}{k}}
+\end{gather}
+\\
+But since this graph is only \textbf{half} of the typical potential we know that the period is \textbf{half} of the typical period, $T_{SHM_{1/2}} = \pi \sqrt{m/k}$.\\
+\\
+We could stop here since (D) is the only solution that has this term. \\
+\\
+But, for the sake of learning, the period for the gravitation all potential can be found using the equation for total energy ($E = K + V$) and setting the kinetic energy, $K$, equal to $0$:
+
+\begin{gather}
+E = mgx = mg \left(\frac{1}{2} g t^{2} \right) \hspace{.1in} \rightarrow \hspace{.1in} t = \sqrt{\frac{ 2E }{ mg^{2} }}\nonumber
+\end{gather}
+\\
+The calculated time is for the particle to get from the origin to its highest point. We want the time it takes to get there and back, so we must double it: $T_{grav} = 2\sqrt{2E / mg^{2} }$
+
+\begin{gather}
+\therefore \hspace{.1in} T_{tot} = T_{SHM_{1/2}} + T_{grav} =  \boxed{\pi \sqrt{m/k} + 2\sqrt{2E / mg^{2} }}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       94     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 94:}} 
+Lets look at limiting cases: For high values of $T$ each energy state is equally likely which means that 
+
+\begin{gather}
+U_{T \rightarrow \infty} = N \left(\frac{\epsilon}{2}\right) + N \left(\frac{0}{2}\right) = N \left(\frac{\epsilon}{2}\right)\nonumber
+\end{gather}
+\\
+This eliminates (A), (B), and (C). And at low values for $T$ we should expect the internal energy to be zero ($U_{T \rightarrow 0} = 0 $). Only solution (D) works with both of these limiting cases.\\
+\\
+Another way to solve the problem is to use the equation for internal energy 
+
+\begin{gather}
+U = -N \frac{ \partial  }{ \partial \beta  } \ln{Z}
+\end{gather}
+\\
+Where $Z$ is the partition function, $Z=\sum {e^{-\epsilon_{i}\beta}}$, and $\beta = 1/kT$:
+
+\begin{gather}
+Z = e^{0\cdot \beta} + e^{-\epsilon\cdot \beta}  = 1 + e^{-\epsilon\beta}\nonumber\\
+\nonumber\\
+U = -N \frac{\partial \ln{Z}} {\partial \beta} = -N \cdot \frac{-\epsilon e^{-\epsilon\beta}}{1 + e^{-\epsilon\beta}} = \boxed{\frac{N \epsilon }{1 + e^{\epsilon\beta}}}\nonumber
+\end{gather}
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+%%%%%%%%%%%%%%%%%%%%       95     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 95:}} The specific heat of a typical metal increases exponentially with increasing temperatures. The specific heat of a superconductor increases linearly with respect to increasing temperatures. Therefore, (E) is the only correct graph. In is also good to know that the switchover from normal to superconducting state is a phase transition  characterized by a discontinuous jump in the heat capacity.
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+%%%%%%%%%%%%%%%%%%%%       96     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 96:}} 
+The creation of an elementary particle and its antiparticle is known as pair production.  In order for pair production to occur the incoming energy of the interaction must be greater than or equal to the total rest mass energy of the two particles and both energy and momentum must be conserved. The reaction $\gamma \rightarrow e^{+} + e^{-}$ is therefore possible when a high energy photon interacts with matter. However, without a nucleus to absorb momentum, it is impossible for a photon decaying into particle and its antiparticle to conserve both momentum and energy.
+\\\\
+Answer: \textbf{\textcolor{cyan}A}\\
+
+%%%%%%%%%%%%%%%%%%%%       97     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 97:}} The current density is defined by the equation:
+
+\begin{gather}
+\label {eq:current density} J = \frac{\hbar}{2m i} \left( \Psi^{*} \nabla \Psi -  \Psi \nabla \Psi^{*} \right)
+\end{gather}
+\\
+With this, we can eliminate solutions (B), (C), and (D). If you are short on time, you should guess either (A) or (E) since you have a 50\% chance of being correct. Preferably you would choose (E). \\
+\\
+If you have time, however, you could solve (\ref {eq:current density}) by first finding each of the wavefunction's conjugate and/or derivative:
+
+\begin{align}
+%
+\psi &= e^{i\omega t} \left[  \alpha \cos{(kx)} + \beta \sin{(kx)}  \right]\nonumber\\
+\nonumber\\
+%
+\psi^{*} &= e^{-i\omega t} \left[  \alpha^{*} \cos{(kx)} + \beta^{*} \sin{(kx)}  \right]\nonumber\\
+\nonumber\\
+%
+\nabla \psi &= \frac{\partial \psi}{\partial x} =  e^{i\omega t} k \left[  -\alpha \sin{(kx)} + \beta \cos{(kx)}  \right]\nonumber\\
+\nonumber\\
+%
+\nabla \psi^{*} &= \frac{\partial \psi^{*}}{\partial x} =  e^{-i\omega t} k \left[  -\alpha^{*} \sin{(kx)} + \beta^{*} \cos{(kx)}  \right]\nonumber
+%
+\end{align}
+\\
+solving for each term in the quantity:
+
+\begin{align}
+\psi^{*} \nabla \psi &=  k \left[  \alpha^{*} \cos{(kx)} + \beta^{*} \sin{(kx)}  \right] \cdot  \left[  -\alpha \sin{(kx)} + \beta \cos{(kx)}  \right]
+%
+\nonumber\\\nonumber\\
+%
+&=  k \left[
+-\alpha^{*} \alpha \cos{(kx)} \sin{(kx)} 
++ \beta^{*} \beta \sin{(kx)} \cos{(kx)} 
+- \alpha \beta^{*} \sin^{2}{(kx)} 
++ \alpha^{*} \beta \cos^{2}{(kx)}
+\right] 
+%
+\nonumber\\\nonumber\\\nonumber\\
+%
+ \psi \nabla \psi^{*} &= k \left[  \alpha \cos{(kx)} + \beta \sin{(kx)}  \right] \cdot \left[  -\alpha^{*} \sin{(kx)} + \beta^{*} \cos{(kx)}  \right] 
+ %
+ \nonumber\\\nonumber\\
+ %
+ &=  k \left[
+-\alpha^{*} \alpha \cos{(kx)} \sin{(kx)} 
++ \beta^{*} \beta \sin{(kx)} \cos{(kx)} 
+- \alpha^{*} \beta \sin^{2}{(kx)} 
++ \alpha \beta^{*} \cos^{2}{(kx)}
+\right] \nonumber
+\end{align}
+\\
+subtracting the two:
+
+\begin{align}
+\psi^{*} \nabla \psi - \psi \nabla \psi^{*} =  k &\left[
+-\cancel{\alpha^{*} \alpha \cos{(kx)} \sin{(kx)} }
++ \cancel{\beta^{*} \beta \sin{(kx)} \cos{(kx)} }
+- \alpha \beta^{*} \sin^{2}{(kx)} 
++ \alpha^{*} \beta \cos^{2}{(kx)}\right] +
+\nonumber\\
+%wont let me skip to next line while in \left[   \right]
+%MATCH THEM UP
+ k &\left[
++ \cancel{\alpha^{*} \alpha \cos{(kx)} \sin{(kx)} }
+- \cancel{\beta^{*} \beta \sin{(kx)} \cos{(kx)} }
++ \alpha^{*} \beta \sin^{2}{(kx)} 
+- \alpha \beta^{*} \cos^{2}{(kx)}
+\right]\nonumber\\\nonumber\\
+= k &\left[ \alpha^{*} \beta (\sin^{2}{(kx) + \cos^{2}{(kx)}}) -  \alpha \beta^{*} (\sin^{2}(kx) + \cos^{2}{(kx))}\right]\nonumber\\\nonumber\\
+= k &\left[   \alpha^{*} \beta  -  \alpha \beta^{*}  \right]\nonumber
+\end{align}
+\\
+and plugging it back into (\ref {eq:current density}):
+
+\begin{gather}
+J = \boxed{\frac{\hbar k}{2m i} \left(   \alpha^{*} \beta  -  \alpha \beta^{*}  \right)}\nonumber
+\end{gather}
+\\
+(Don't get fooled into thinking its zero!)
+\\\\
+Answer: \textbf{\textcolor{cyan}E}\\
+
+
+
+%\begin{gather}
+%\cos{x} = \frac{1}{2} \left( e^{ix} + e^{-ix}\right) \hspace{.1in} \text{,} \hspace{.1in} \sin{x} = \frac{1}{2 i} %\left(e^{ix} - e^{-ix}\right)\\
+%\nonumber\\
+%\rightarrow \hspace{.1in}
+%\psi (x,t) = e^{i\omega t}
+%\left[
+%\frac{\alpha}{2} \left( e^{ikx} + e^{-ikx}\right) 
+%+
+%\frac{\beta}{2i} \left( e^{ikx} - e^{-ikx}\right) 
+%\right]
+%=
+%\frac{1}{2} \left[
+%\left( \alpha + \beta/ i \right) e^{ikx}
+%+
+%\left( \alpha - \beta/ i \right) e^{-ikx}
+%\right]
+%\nonumber
+%\end{gather}
+
+
+%%%%%%%%%%%%%%%%%%%%       98     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 98:}} The energy levels of simple harmonic oscillator are found using the equation
+
+\begin{gather}
+E_{n} = \hbar \omega \left(   n + \frac{1}{2}    \right)
+\end{gather}
+\\
+Where $n = 0 , 1 , 2 , 3 , ...$ \\
+\\
+Don't fall into the trap answers (B) or (C)! Simple harmonic oscillators are symmetric. Even energy functions are symmetric across the $y$-axis and odd energy level wave functions are symmetric across the origin. \\
+\\
+In our problem there is a potential barrier at $x=0$ which means that the function must go to zero before crossing the vertical axis. The only wave functions that exhibit this behavior are odd energy level wave functions. Therefore, $n = 1,3,5,...$ and $E_{1} = \frac{3}{2}\hbar \omega$ , $E_{3} = \frac{7}{2}\hbar \omega$ , $E_{5} = \frac{11}{2}\hbar \omega$ , ...
+\\\\
+Answer: \textbf{\textcolor{cyan}D}\\
+
+
+%%%%%%%%%%%%%%%%%%%%       99     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 99:}} All that you need to know for this question is that a laser consists of two states and a metastable state in between. The question states that the bottom state is $n =1$ with a top state $n=3$; the metastable state must be $n=2$.
+\\\\
+Answer: \textbf{\textcolor{cyan}B}\\
+
+%%%%%%%%%%%%%%%%%%%%       100     %%%%%%%%%%%%%%%%%%%%
+
+\section{\textsc{Problem 100:}} 
+
+
+
+
+
+
+
+
+
+\end{document} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
