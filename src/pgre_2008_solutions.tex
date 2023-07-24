@@ -12,7 +12,7 @@
     \setcounter{section}{#1}
     \addtocounter{section}{-1}
     \section{}
-    #3\\\\
+    #3\par\par
     \Answer{#2}
 }
 
@@ -414,7 +414,7 @@ for $r \gg l$:
 }
 
 \Problem{38}{E}{%
-Using the right hand rule (point thumb in direction of current, curled figures point in direction on B-Field) it is easy to see that at point P the magnetic fields are equal and opposite resulting in destructive interference and a magnetic field of zero.
+Using the right hand rule (thumb in direction of current, curled figures point in direction on B-Field) it is easy to see that at point P the magnetic fields are equal and opposite resulting in destructive interference and a magnetic field of zero.
 }
 
 \Problem{39}{C}{%
@@ -447,6 +447,105 @@ M^{2}c^{4} - 2p M c^{2} + p^{2} &=  p^2+m^2c^4\nonumber\\
 \nonumber\\
 \rightarrow \hspace{.1in} p &=  \frac{c^{4}(M^{2}-m^{2})}{2Mc^{2}} = \boxed{\frac{c^{2}(M^{2}-m^{2})}{2M}}\nonumber
 \end{align}
+}
+
+
+\Problem{41}{B}{%
+The photoelectric effect is summarized by the eqaution
+\begin{align}
+h \nu &= \phi + K_{\max}= \phi + e V\\
+\nonumber\\
+\rightarrow \hspace{.1in} eV &= h \nu - \phi \nonumber\\
+V &=  \frac{h}{e} \nu - \frac{\phi}{e} \nonumber
+\end{align}
+\\
+The last equation is in the form $y = mx + b$ where the slope, $m$, is equal to $\frac{h}{e}$ (with a V intercept at $b = -\frac{\phi}{e}$)
+}
+
+\Problem{42}{E}{%
+The horizontal distance from crest to crest for either waveforms is $\sim 6\Units{cm}$. The phase between two points of equal voltages for the two waveforms is $\sim 2\Units{cm}$ so that the phase difference can be read as:
+\begin{align}
+2\Units{cm} \frac{2 \pi}{6\Units{cm}} = \frac{2 \pi}{3} = \boxed{\Degrees{120}}\nonumber
+\end{align}
+}
+
+\Problem{43}{D}{%
+This question is pure fact recall from. The diamond structure of elemental carbon is a covalent network in the shape of a tetrahedron.
+}
+
+\Problem{44}{D}{%
+The BCS theory describes superconductivity as a microscopic effect caused by Cooper pairs condensing into a boson-like state. The two fermions in a Cooper pair are both attracted to a positive ion between them. With this information, (A), (B), and (D) can easily be discarded and (E) is also incorrect because the Casimir effect is a tiny attractive force that acts between two close parallel uncharged conducting plates.
+}
+
+\Problem{45}{C}{%
+This question is a lesson in sign convention. The equation for nonrelativistic doppler shift is
+\begin{align}
+f = \left(\frac{c \mp v_{o}}{c \pm v_{s}}\right) f_{o}
+\end{align}
+\textbf{Relative to the medium}, the velocity of the source, $v_{s}$, is positive if the source is moving \textit{away} from the observer and the velocity of the observer, $v_{o}$, is is positive if the observer is moving \textit{toward} the source. In this problem the siren is moving away from the observer and the observer is moving towards the siren \textbf{relative to the velocity of sound in the medium}. Therefore,
+\begin{align}
+f = \left(\frac{c + 55}{c + 55}\right) f_{o} = f_{o} = \boxed{1200\Units{Hz}}\nonumber
+\end{align}
+}
+
+\Problem{46}{D}{%
+This is a single slit wave problem. The minimum of a single slit diffraction pattern is
+\begin{align}
+a \sin(\theta) = m \lambda = m \left(\frac{c}{\nu}\right)
+\end{align}
+since we are looking for the first minimum, $m = 1$. Solving for $\nu$ (knowing that $\sin{(45^{\circ})} = \frac{1}{\sqrt{2}}$ and $\sqrt{2} \approx 1.14$):
+\begin{align}
+\nu = \frac{c}{a \sin{\theta} } = \frac{350\Units{m/s}}{0.14\Units{m} \cdot \sin{(45^{\circ})}} = \frac{\sqrt{2} \cdot 350\Units{m/s}}{0.14\Units{m} } =\boxed{3500{Hz}}\nonumber
+\end{align}
+}
+
+
+\Problem{47}{D}{%
+ For a "closed" pipe (closed at one end, open at the other) of length $L$  the resonant frequencies are given by the equation
+\begin{align}
+f_{n} = \frac{v}{\lambda} = \frac{n v}{4L} \text{\hspace{.1 in} where n = 1,3,5,\ldots}
+\end{align}
+\\
+The fundamental frequency ($n = 1$) is given as $f_{1} = 131\Units{Hz}$ so the next higher harmonic ($n = 3$) is
+\begin{align}
+f_{3} = \frac{3 v}{4L} = 3 \cdot  131\Units{Hz} = \boxed{393\Units{Hz}}
+\end{align}
+}
+
+
+\Problem{48}{C}{%
+ The logic gate equations are as follows:
+
+\begin{align}
+\text{AND: \hspace{.1 in}} A \cdot B \text{\hspace{.3 in} NAND: \hspace{.1 in}} \overline{A \cdot B} \\
+\text{OR: \hspace{.1 in}} A + B \text{ \hspace{.3 in} NOR: \hspace{.1 in}} \overline{A + B}
+\end{align}
+\\
+Each equation can have a solution equal to $1$ or $0$. The overbar reverses the solution ($\overline{0} = 1$). This reversal is represented by a circle at the junction of the logic gate. Therefore $A$ and $B$ are reversed before passing through a NOR gate while $C$ and $D$ are not changed before passing through a NAND gate. Finally, each of the outputs is filtered through an AND gate to produce $E$. Therefore $E$ is ($\overline{A}$ NOR $\overline{B}$) AND ($C$ NAND $D$):
+
+\begin{align}
+E = \boxed{\overline{\overline{A} + \overline{B}} \cdot \overline{C \cdot D}}\nonumber
+\end{align}
+}
+
+\Problem{49}{D}{%
+We need to know a little bit about lasers to solve this problem:
+\begin{description}
+\item[\textbullet] A solid state laser and a diode laser both use transitions from the conduction band to the valence band of a semiconductor (eliminates (A) and (E))
+\item[\textbullet] Free-electron lasers use the fact that free electrons (not in atoms) radiate when accelerated or decelerated (eliminates (C))
+\item[\textbullet] A dye-laser works via transitions between different molecular states, \textit{not} atomic states (eliminates (E))
+\item[\textbullet] Gas laser is the is the only choice which involves free atoms.
+\end{description}
+}
+
+\Problem{50}{C}{%
+The formula for Bohr energies is
+\begin{align}
+E_{n} = \frac{mZ^{2}{\left(e^{2}\right)}^{2}}{2 \hbar^{2} {\left(4 \pi \epsilon_{0}\right)}^{2} n^{2}}
+\text{\hspace{.2in} or just remember \hspace{.2in}}
+E_{n} \propto \frac{mZ^{2}{\left(e^{2}\right)}^{2}}{n^2}
+\end{align}
+Dimensional analysis also can be used to show that (C) is the only answer with the correct units.
 }
 
 \end{document}
