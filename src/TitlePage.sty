@@ -1,0 +1,27 @@
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\TitlePage}[3]{%
+\begin{titlepage}%
+    \centering%
+    {\Huge Solutions to #1 Physics GRE \par}
+    {\LARGE Detailed solutions to #2 \par}\vfill
+    {\LARGE Version #3 \par}
+    {\large \today \par}\vfill
+    This solution manual is not officially endorsed by ETS.\\
+    All solutions are the work of J. F. Dooley and distributed for free.\\
+    The solutions, sans ETS questions, are \textcopyright\,2015 by J. F. Dooley.\\
+    %Special thanks to \textit{grephysics.net} by Y. Chang and \textit{Conquering the Physics GRE} by Y. Kahn and A. Anderson.
+    Educational Testing Service (ETS) and Graduate Record Examinations (GRE) are registered trademarks of Educational Testing Service.\\%\, \textregistered.\\
+    The examination questions are \textcopyright\, #1
+\end{titlepage}%
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{#2 Solutions v#3}
+}
+
+
+
+

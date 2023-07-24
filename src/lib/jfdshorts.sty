@@ -1,0 +1,52 @@
+\usepackage{amsmath, amssymb, braket, mathtools, bm, braket, xspace}
+
+% trig/math commands w/ automatically adjusting parens
+\providecommand{\SIN}[1]{\ensuremath{\sin{\left(#1\right)}}}
+\providecommand{\COS}[1]{\ensuremath{\cos{\left(#1\right)}}}
+\providecommand{\TAN}[1]{\ensuremath{\tan{\left(#1\right)}}}
+\providecommand{\CSC}[1]{\ensuremath{\csc{\left(#1\right)}}}
+\providecommand{\COT}[1]{\ensuremath{\cot{\left(#1\right)}}}
+\providecommand{\SEC}[1]{\ensuremath{\sec{\left(#1\right)}}}
+\providecommand{\SINH}[1]{\ensuremath{\sinh{\left(#1\right)}}}
+\providecommand{\COSH}[1]{\ensuremath{\cosh{\left(#1\right)}}}
+\providecommand{\TANH}[1]{\ensuremath{\tan{\left(#1\right)}}}
+\providecommand{\ARCSIN}[1]{\ensuremath{\arcsin{\left(#1\right)}}}
+\providecommand{\ARCCOS}[1]{\ensuremath{\arccos{\left(#1\right)}}}
+\providecommand{\ARCTAN}[1]{\ensuremath{\arctan{\left(#1\right)}}}
+\providecommand{\LN}[1]{\ensuremath{\ln{\left(#1\right)}}}
+\providecommand{\EXP}[1]{\ensuremath{\text{exp}\left[ #1\right]}}
+\providecommand{\SINC}[1]{\ensuremath{\sinc{\left(#1\right)}}}
+\providecommand{\SI}[1]{\ensuremath{\si{\left(#1\right)}}}
+
+% scientific notation
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\providecommand{\E}[1]{\ensuremath{\text{{\scriptsize\,E\,}{#1}}}}
+
+% integral limits (vertical bar)
+\newcommand{\LIMS}{\biggr\rvert}
+
+% partial deriviative symbol
+\newcommand{\PT}{\partial}
+
+\newcommand{\eps}{\epsilon_{0}} % permitivity of free space
+\newcommand{\emf}{\mathcal{E}}  % EMF Symbol
+
+\newcommand{\micro}{\ensuremath{\mu}}
+
+\newcommand{\Methane}{\text{CH\textsubscript{4}}\xspace}
+\newcommand{\Ethane}{\text{C\textsubscript{2}H\textsubscript{6}}\xspace}
+\newcommand{\CarbonDioxide}{\text{CO\textsubscript{2}}\xspace}
+
+\providecommand{\Units}[1]{\,\text{#1}\xspace}
+\providecommand{\Degrees}[1]{\ensuremath{{#1}^{\circ}}\xspace}
+
+% up arrow under value. used as marker for value in sequence
+\newcommand*{\UUA}[1]{\underset{\uparrow}{#1}}
+
+% begin centered table with ease
+\newcommand{\BT}{\begin{center}\begin{tabular}}
+\newcommand{\ET}{\end{tabular}\end{center}}
+
+% create matrix with less keystrokes (math env)
+\newcommand{\BM}{\begin{bmatrix}}
+\newcommand{\EM}{\end{bmatrix}}

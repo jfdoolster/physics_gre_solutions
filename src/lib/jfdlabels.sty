@@ -1,0 +1,12 @@
+\usepackage{color}
+\usepackage{efbox}
+\usepackage{transparent}
+\usepackage[inline]{showlabels}
+\renewcommand{\showlabelfont}{\small\tt}
+\renewcommand{\showlabelrefline}{%
+    {\color{lightgray}\hrule height 4ex width 0pt depth 0pt}%
+}
+\renewcommand{\showlabelsetlabel}[1]{%
+    {\transparent{0.12}\efbox[hidealllines, backgroundcolor=lightgray]%
+        {\transparent{1.0}\showlabelfont #1}}%
+}

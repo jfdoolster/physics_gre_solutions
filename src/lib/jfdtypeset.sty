@@ -1,0 +1,18 @@
+% commands to help with flow in math environment
+\newcommand{\GOTO}[1]{\hspace{#1}\rightarrow\hspace{#1}}
+\newcommand{\COMMA}[1]{,\,\hspace{#1}}
+
+\newcommand{\etal}{\text{et\,al.} }
+
+% single and double quotes with ease
+\newcommand{\quotes}[1]{``#1''}  %%% \quotes{}
+\newcommand{\str}[1]{`#1'}  %%% \str{}
+
+\newcommand{\Sim}{\text{\raisebox{0.5ex}{\texttildelow}}}
+
+% create problem text boxes with less keystrokes
+\newcommand{\probbox}[1]{\begin{center}%
+    \begin{tcolorbox}[standard jigsaw,opacityback=0,width=0.8\textwidth]%
+        \scriptsize #1 %
+    \end{tcolorbox}%
+\end{center}}

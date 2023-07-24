@@ -1,0 +1,453 @@
+\documentclass[12pt]{article}
+\title{Solutions to 2008 Physics GRE}
+\author{Jonathan F. Dooley}
+
+\input{lib/preamble}
+\usepackage{TitlePage}
+\newcommand{\Answer}[1]{Answer: \textbf{#1}}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}{Problem~\thesection}{1em}{}
+\newcommand{\Problem}[3]{
+    \setcounter{section}{#1}
+    \addtocounter{section}{-1}
+    \section{}
+    #3\\\\
+    \Answer{#2}
+}
+
+
+\begin{document}
+\TitlePage{2008}{GR0877}{2.0}
+
+
+\Problem{1}{B}{
+Let us say that the car is traveling in the $\hat{x}$ direction with velocity $u$ and the ball is thrown in the $\hat{y}$ direction with velocity $v$.
+Since $u$, $v \ll c$ (not relativistic), the velocities are additive and $v_f = v \hat{x} + u \hat{y}$.
+}
+
+\Problem{2}{D}{
+Because the object was thrown in the horizontal ($\hat{x}$) direction, the initial velocity in the vertical ($\hat{y}$) direction is zero. Therefore, we use the equation
+%
+\begin{align}
+y &=  y_{0} + v_{y,0} t + \frac{1}{2} a t^2\\
+y_{0} &= \frac{1}{2} g t^2 = \frac{1}{2} (9.81) {(2.0)}^2 = \boxed{19.6\Units{m}}\nonumber
+\end{align}
+%
+In this problem it is easier to approximate the acceleration due to gravity, $g$, as 10 to get an approximate solution ($y_{0} = 20\Units{m}$).
+}
+
+\Problem{3}{E}{
+The power dissipated by a resistor is
+%
+\begin{align}
+P  = \frac{V^2}{R} = IV
+\end{align}
+%
+Therefore, doubling the voltage across the resistor would give
+%
+\begin{align}
+P' = \frac{{(2V)}^2}{R} = \boxed{4 P}\nonumber
+\end{align}
+}
+
+
+\Problem{4}{E}{
+The Force on a moving charged particle is determined from the Lorentz force law:
+\begin{align}
+\textbf{$\vec{F}$} = q (\textbf{$\vec{v}$}\times\textbf{$\vec{B}$})
+\end{align}
+\\
+The magnetic field created by the current $I_{1}$ in the straight wire is in the same direction as the velocity of the charged particles in the loop, ${v}$. Therefore, $\vec{B} \times \vec{v}=0$ and the magnetic force on the loop is zero.
+}
+
+\Problem{5}{A}{
+The de Broglie wavelength is
+\begin{align}
+\lambda = \frac{h}{p}
+\end{align}
+where h is Planck's Constant, $6.62\e{-34}\Units{m$^2$ kg s$^{-1}$}$
+}
+
+\Problem{6}{E}{
+\textit{n = 1} and \textit{n = 2} levels correspond to the K and L shells of the atom. The L shell has one subshell denoted as \textit{1s}; The K shell has two subshells denoted as \textit{2s} and \textit{2p}.~\textit{s} subshells can hold a maximum of 2 electrons and \textit{p} subshells can hold 6.\\\\Therefore, an atom with \textit{n = 1} and \textit{n = 2} levels filled is denoted as \textit{1s$^2$2s$^2$2p$^6$} and has 10 electrons.\\\\
+There is also a nifty trick to solve this problem, since all the shells are full: $\sum2n^{2} = 2(1^{2}+2^{2}) = 10$. \\\\This equation can be used for any atom where all the levels are filled.
+}
+
+\Problem{7}{C}{
+The average kinetic energy of an ideal gas molecule is $\langle{KE}\rangle$ = $\frac{3}{2} k_B T$. Equating this to the translational kinetic energy equation (using the average instead of the instantaneous velocity) we get
+\begin{align}
+\langle{KE}\rangle &= \frac{1}{2}m \langle{v^2}\rangle= \frac{3}{2} k_B T\\
+\sqrt{\langle{v^2}\rangle} &= v_{rms} = \boxed{\sqrt{\frac{3 k_B T}{m}}}
+\end{align}
+}
+
+\Problem{8}{D}{
+The best way to approach this problem is to consider the cavity to be a blackbody. The rate at which a blackbody emits radiation is described by the Stefan-Boltzmann Law:
+\begin{gather}
+\frac{\Delta Q}{\Delta t} = \epsilon \sigma A T^4
+\end{gather}
+Doubling the temperature, \textit{$T' \rightarrow 2T$}, would result in $\left(\frac{\Delta Q}{\Delta t}\right)' = 16\left(\frac{\Delta Q}{\Delta t}\right)$
+}
+
+\Problem{9}{E}{
+Kepler's Three laws of planetary motion are:
+\begin{enumerate}
+\item The orbit of a planet is an ellipse with the Sun at one of the two foci.
+\item A line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+\item The square of the period \textit{T} of any planet is proportional to the cube of the semimajor axis \textit{a} of its orbit.
+\begin{align}
+T^2 &= \frac{4\pi^2}{GM}a^3\\
+T^2 &\propto a^3
+\end{align}
+\end{enumerate}
+Statements I, II and III correspond to Kepler's 2nd, 1st, and 3rd Law, respectively.
+}
+
+\Problem{10}{B}{The energy stored in a spring is determined using the equation $U = \frac{1}{2} k x^2$. Using energy conservation laws, we can equate this to the kinetic energy and solve for the displacement, $x$.
+\begin{align}
+\frac{1}{2} k x^2 =   \frac{1}{2} m v^2 \hspace{.1in} \rightarrow \hspace{.1in}
+\boxed{x=v{\sqrt\frac{m}{k}}}
+\end{align}
+}
+
+\Problem{11}{C}{
+The energy levels of a harmonic oscillator are
+\begin{align}
+E_n &= \left(n+\frac{1}{2}\right)\hbar\omega\\
+\therefore \hspace{.1in} E_0 &= \boxed{\frac{\hbar\omega}{2}}\nonumber
+\end{align}
+}
+
+\Problem{12}{C}{
+The angular momentum of the Bohr atom is $L = n\hbar$. Equating this value to the classical equation for angular momentum we get:
+\begin{align}
+L = m(r \times v) = mrv = n\hbar \hspace{.1in}  \rightarrow \hspace{.1in}  mv = p = \boxed{\frac{n\hbar}{r}}
+\end{align}
+here we have assumed $v$ to be tangential so that $m(r \times v) = m r v \sin{(90^{\circ})} = mrv$
+}
+
+\Problem{13}{A}{
+A straight line on a log-log plot has the functional form: \textbf{$y = ax^{m}$} where $m$ is the slope and $a$ is a constant. The line clearly passes through points $(x_{1}, y_{1} ) = (3,10)$ and $(x_{2}, y_{2} ) = (300,100)$. Therefore, we can find $m$ using the equation:
+\begin{align}
+m =\frac{\Delta y}{ \Delta x} = \frac{\log_{10} y_{2} - \log_{10} y_{1}}{\log_{10} x_{2} - \log_{10} x_{1}} = \frac{\log_{10}\left(\frac{y_{2}}{y_{1}}\right)}{\log_{10}\left(\frac{x_{2}}{x_{1}}\right)} = \frac{\log_{10}\left(\frac{100}{10}\right)}{\log_{10}\left(\frac{300}{3}\right)} = \frac{\log_{10}10}{\log_{10}100} = \frac{1}{2}\nonumber
+\end{align}
+We can then find $a$ by using $x$ = 1 so that $y = a = 6$ (extrapolating from $(x_{1}, y_{1})$). Therefore, $y = 6\sqrt{x}$ must be the solution.
+}
+
+\Problem{14}{B}{The weighted average of $N$ separate measurements  of $x$ $(x_1\pm\sigma_1, x_2\pm\sigma_2, \ldots, x_N\pm\sigma_N)$ is $x_{wavg} = \frac{\sum_{i=1}^{N}\omega_i x_i}{\sum_{i=1}^{N}\omega_i}$, where $\omega_i = \frac{1}{\sigma_i^2}$. The uncertainty for the weighted average is $\sigma_{wavg} = {\left(\sum_{i=1}^{N}\omega_i\right)}^{-\frac{1}{2}}$. Therefore, the uncertainty of the weighted average is equal to
+\begin{align}
+{\left(\frac{1}{1^2}+\frac{1}{2^2}\right)}^{-\frac{1}{2}}= \sqrt{\frac{4}{5}} = \boxed{\frac{2}{\sqrt{5}}}\nonumber
+\end{align}
+}
+
+\Problem{15}{E}{
+Diverging lenses have negative focal lengths. Converging lenses have positive focal lengths. Because lens (E) has the largest curvature, it has the shortest focal length. This can be seen directly from the equation
+\begin{align}
+\frac{1}{f} = (n-1)\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)
+\end{align}
+}
+
+\Problem{16}{D}{
+Malus law, $I = I_0 \cos^2(\theta)$, tells us the transmitted intensity light through a linear polarizer. Since $\cos(45^{\circ}) = \frac{1}{\sqrt{2}}$ we calculate the final intensity after both polarizers to be:
+\begin{align}
+I_1 &= \frac{I_0}{2} \hspace{.1in} \text{(Definition of intensity through a single linear polarizer)}\\
+I_f &= I_1 \cos^2(45^{\circ}) = \left(\frac{I_0}{2}\right) \cdot \left( \frac{1}{2}\right) = \frac{I_{0}}{4} = \boxed{0.25\% \hspace{.05in} I_{0} }\nonumber
+\end{align}
+}
+
+\Problem{17}{A}{
+Using Gauss' Law, $\int E \cdot dA = \frac{Q}{\epsilon_0}$ and imagining a cylindrical Gaussian surface with radius r:
+\begin{align}
+E \cdot 2 \pi r l &= \frac{Q}{\epsilon_0} = \frac{\lambda l}{\epsilon_0}\nonumber\\
+E &= \boxed{\frac{\lambda}{2 \pi \epsilon_0 r}}\nonumber
+\end{align}
+It is also worth noting that (A) is the only solution with the correct dimensions.
+}
+
+\Problem{18}{E}{
+As the magnet enters the loop, the flux through
+the loop increases. According to Lenz's law, $\mathcal{E} = -\frac{\partial \Phi_B}{\partial t}$, the induced current generates a magnetic field that is opposing the bar magnet's field. This current is counter-clockwise (b to a).
+\\\\
+As the magnet leaves the loop, the flux decreases and the current flows clockwise (a to b).
+}
+
+\Problem{19}{A}{
+Wein's Law stats the the maximum wavelength of the blackbody is inversely proportional to the temperature:
+\begin{align}
+\lambda_{\max}  &= \frac{2.897\e-3}{T}\\
+\nonumber\\
+\therefore \hspace{.1in} \frac{\lambda_{1}}{\lambda_{2}} &= \frac{T_2}{T_1}\nonumber \\
+\rightarrow \hspace{.1in} \lambda_2 &= \frac{\lambda_1T_1}{T_2} =  \frac{500\Units{nm}\cdot 6000\Units{K}}{300\Units{K}} = \boxed{10\Units{\micro m}}\nonumber
+\end{align}
+}
+
+\Problem{20}{A}{%
+The wavelength of a CMB photon is proportional to Freidmann-Robertson-Walker scale factor a. From Wein's Law:
+\begin{gather}
+\lambda_{\max} \propto a \propto \frac{1}{T} \\
+\nonumber\\
+\frac{a_{now}}{a_{then}} = \frac{12 [K]}{3 [K]} = 4\hspace{.1in} \rightarrow \hspace{.1in} a_{then} = \boxed{\frac{1}{4}}\nonumber
+\end{gather}
+}
+
+
+\Problem{21}{C}{%
+For an adiabatic process $P V^\gamma = const$ and plugging in $P \propto \frac{T}{V}$ (from the ideal gas law) yields $\left(\frac{T}{V}\right) V^\gamma = T V^{\gamma-1}= const$
+}
+
+\Problem{22}{C}{%
+The rest energy of an electron is $m_e c^2$ and so the total energy of this electron is $4 m_e c^2$. From the relativistic energy-momentum equation:
+\begin{gather}
+E^2 = p^2c^2 + m_e^2 c^4\\
+\nonumber\\
+p^2 = 16 m_e^2 c^4 - m_e^2 c^4 = 15 m_e^2 c^4\hspace{.1in} \rightarrow \hspace{.1in} p = \boxed{\sqrt{15}m_e c^2}\nonumber
+\end{gather}
+}
+
+\Problem{23}{B}{%
+This requires the relativistic velocity addition formula:
+\begin{align}
+w = \frac{v + u}{1+\frac{v \cdot u}{c^{2}}}
+\end{align}
+where $w$ is the speed of the ship in Earth's reference frame, $v$ is the speed of ship 1, and $u$ is the speed of ship 2. From the description we know that $u = v$ so that the equation can be written as
+\begin{align}
+w = \frac{2v}{1+\frac{v^2}{c^{2}}}\nonumber
+\end{align}
+To find $v$ we will use the length contraction formula $L = \frac{L_{0}}{\gamma}$:
+\begin{align}
+\gamma = \frac{L_{0}}{L} = \frac{1\Units{m}}{0.6\Units{m}} = \frac{5}{3}\nonumber
+\end{align}
+Using the $w$ as the velocity in the Lorentz Factor, $\gamma$, we can solve for $v$ (set $c$ = 1 to make calculations simpler):
+\begin{align}
+\frac{5}{3} &= \frac{1}{\sqrt{1- \frac{w^2}{c^{2}}}} = \frac{1}{\sqrt{1- \frac{4v^{2}}{{(1+v^{2})}^{2}}}}\nonumber\\
+&= \frac{1+v^{2}}{\sqrt{{(1+v^{2})}^2 - 4v^{2}}}\nonumber\\
+&= \frac{1+v^{2}}{\sqrt{1-2v^2+v^4}} = \frac{1+v^{2}}{1-v^2}\nonumber
+\end{align}
+\begin{align}
+5(1-v^2) = 3(1+v^2) \rightarrow v = 0.5 \text{ or } \boxed{v = 0.5 c}\nonumber
+\end{align}
+}
+
+\Problem{24}{B}{%
+In order to find the time it takes to pass the observer, we must first find the Lorentz Factor, $\gamma (v = 0.8c)$:
+\begin{align}
+\gamma = \frac{1}{\sqrt{1- {\left(\frac{4}{5}\right)}^2}}= \frac{5}{3}\
+\end{align}
+(I strongly suggest that you memorize this solution)
+\\\\
+Since $L = \frac{L_{0}}{\gamma}$ and $\Delta t = \frac{\Delta x}{v}$ we can solve for $\Delta t$ by plugging in $\Delta x = L$:
+\begin{align}
+\Delta t = \frac{L_{0}}{\gamma v} = \frac{1\Units{m} \cdot 3}{5 \cdot 0.8 \cdot 3\e{8}} = \boxed{2.5\Units{ns}}\nonumber
+\end{align}
+}
+
+
+\Problem{25}{E}{%
+For a wavefunction to be  \textbf{normalized} it must satisfy the equation
+\begin{align}
+\int_{\infty}^{-\infty} |\Psi (x)| ^{2} dx = 1
+\end{align}
+For a wavefunction to be \textbf{orthogonal} when $i \neq j$ it must satisfy the equation
+\begin{align}
+\int_{\infty}^{-\infty} \psi_{i} (x) \psi_{j} (x)  dx = 0
+\end{align}
+\\
+(E) is the only choice which satisfies both of the eqautions
+}
+
+\Problem{26}{D}{%
+The probability that the electron would be found between $r$ and $r+dr$ is $P = |\psi |^{2} dV = |\Psi (x) |^{2} 4 \pi r^{2} dr = p(r)dr$. The most probable value for $P$ is when $p(r)$ is at a maximum and the maximum can be found by setting the first derivative equal to zero.
+\begin{align}
+\frac{dP}{dr} = \frac{d|\psi |^{2}}{dr} \cdot 4 \pi r^2 + |\psi |^{2} \cdot 8 \pi r = 0
+\end{align}
+because $\psi_{100}$ has no complex terms $|\psi |^{2} = \frac{1}{\pi a_{0}^3} e^{-\frac{2 r}{a_{0}}}$. Plugging  this in:
+\begin{gather}
+\frac{dP}{dr} = -\frac{4 r^2}{a_{0}^3} \frac{2}{a_{0}} e^{-\frac{2 r}{a_{0}}} + \frac{8 r^2}{a_{0}^3} e^{-\frac{2 r}{a_{0}}} = 0\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} \frac{4 r^2}{a_{0}^3} \frac{2}{a_{0}} e^{-\frac{2 r}{a_{0}}} = \frac{8 r}{a_{0}^3} e^{-\frac{2 r}{a_{0}}} \hspace{.1in} \rightarrow \hspace{.1in} \boxed {r = a_{0}}\nonumber
+\end{gather}
+}
+
+
+\Problem{27}{C}{%
+The order of magnitude estimate  of the time-energy uncertainty principle, $\Delta E \Delta t \geq h$, and planck's equation, $E = h \nu$, can be used together:
+\begin{gather}
+\Delta E \Delta t = h \nu \Delta t \geq h\nonumber\\
+\nu \geq \frac{1}{\Delta t} = \frac{1}{1.6\e{-9}\Units{s}} \sim \boxed{600\Units{MHz}}\nonumber
+\end{gather}
+Since this is a gross approximation calculation the order of magnitude, [MHz], is all that we need
+}
+
+\Problem{28}{D}{%
+Work is equal to the change in kinetic energy of a system. Since this is a spring, we use Hooke's energy equation:
+\begin{align}
+W_{1} &= \frac{1}{2}k_{1}x_{1}^{2}\nonumber\\
+W_{2} &= \frac{1}{2}k_{2}x_{2}^{2} = \frac{1}{2}k_2 {\left(\frac{x_1}{2}\right)}^{2}\nonumber\\
+W_{2} &= 2W_{1}\nonumber\\
+\nonumber\\
+k_{1}x_{1}^{2} &= \frac{1}{8}k_{2} x_{1}^{2} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{k_{2} = 8k_{1}}\nonumber
+\end{align}
+}
+
+\Problem{29}{C}{%
+In an elastic collision kinetic energy is conserved.
+
+\begin{gather}
+T_{0} = T_{1} +T_{2}\nonumber\\
+\nonumber\\
+\frac{1}{2}Mv^2 = \frac{1}{2}M{\left(\frac{v}{2}\right)}^{2} + \frac{1}{2}Mu^{2}\nonumber\\\nonumber\\
+\rightarrow \hspace{.1in} u^2 = v^2\left(1-\frac{1}{4}\right)\nonumber\\
+u = \boxed{\frac{\sqrt{3}}{2}v}\nonumber
+\end{gather}
+}
+
+
+\Problem{30}{D}{%
+Hamilton's canonical equations of motion are
+\begin{align}
+\dot{p_{i}} = -\frac{\partial H}{\partial q_{i}} \hspace{.1in} \text{and} \hspace{.1in} \dot{q_{i}} = \frac{\partial H}{\partial p_{i}}
+\end{align}
+Be careful! Answer (C) is a perfect example of a typical GRE trap since it is very similar to (D).
+}
+
+\Problem{31}{C}{%
+Archimedes' principle states that $F_{bouyant} = \rho\, V g$. Since the block is in equilibrium with part of its volume in the water and the other part in oil, we know that $F_{net}= 0$ and can therefore use the equation
+\begin{align}
+\rho_{block} V g &= \rho_{water} \left(\frac{3V}{4}\right) g + \rho_{oil} \left(\frac{V}{4}\right) g\nonumber\\
+\rho_{block} &=  \frac{3}{4}\rho_{water} +\frac{1}{4}  \rho_{oil} \nonumber\\
+&= \frac{3}{4} 1000\Units{kg\,m$^{-3}$}+ \frac{1}{4}\Units{kg\,m$^{-3}$}\nonumber\\
+&= 750\Units{kg m$^{-3}$}+200\Units{kg\,m$^{-3}$} = \boxed{950\Units{kg\,m$^{-3}$}}\nonumber
+\end{align}
+}
+
+\Problem{32}{A}{%
+According to Bernoulli's principle:
+\begin{align}
+\frac{v_{0}^{2}}{2} + g z_{0}+ \frac{P_{0}}{\rho_{0}} = \frac{v_{f}^{2}}{2} + g z_{f} + \frac{P_{f}}{\rho_{f}}
+\end{align}
+Since both sections are centered at the same height, $z_{0} = z_{f}$, the middle term is cancelled out. In addition, The fluid is incompressible so that $\rho_{0} = \rho_{f} = \rho$ leaving us with:
+\begin{align}
+P_{f} = P_{0} + \frac{\rho v_{0}^{2}}{2}  - \frac{\rho v_{f}^{2}}{2}\nonumber
+\end{align}
+Conservation of mass tells us that $\rho v A \Delta t = const$ where A is the cross-sectional area of the pipe. We can now find the velocity of the fluid at the constriction, $v_{f}$:
+\begin{align}
+\rho v_{0} A_{0} \Delta t &= \rho v_{f} A_{f} \Delta t \nonumber\\
+\rightarrow \hspace{.1in} v_{f} &= \frac{v_{0}A_{0}}{A_{f}} = v_{0} \frac{\pi r^2}{\pi {(r/2)}^2}= 4v_{0}\nonumber
+\end{align}
+Plugging this in to Bernoulli's equation:
+\begin{align}
+P_{f} &= P_{0} + \frac{\rho v_{0}^{2}}{2}  - \frac{\rho {(4v_{0})}^{2}}{2}\nonumber\\
+&= P_{0} +\frac{\rho v_{0}^{2}}{2}\left(1-16\right)= \boxed{P_{0} -\frac{15}{2}\rho v_{0}^{2}}\nonumber
+\end{align}
+}
+
+\Problem{33}{E}{%
+We can calculate the change in entropy using the equation
+\begin{align}
+\Delta S \geq \int \frac{d Q}{T}
+\end{align}
+where $\Delta Q = mc \Delta T$ so that
+\begin{align}
+\Delta S \geq \int_{T_{1}}^{T_{2}} mc\frac{dT}{T} = \boxed{mc \ln{\frac{T_{2}}{T_{1}}}}\nonumber
+\end{align}
+}
+
+\Problem{34}{C}{%
+From the first law of thermodynamics, we know that $\Delta U = \Delta Q - \Delta W = \Delta Q - P\Delta V$. Using this equation, we can calculate the specific heat at constant volume and pressure, $C_{V}$ and $C_{P}$:
+\begin{align}
+C_{V} &= {\left(\frac{d Q}{d T}\right)}_{V} = \left(\frac{d U + dW}{d T}\right) = \left(\frac{d U}{d T}\right)\\
+C_{P} &= {\left(\frac{d Q}{d T}\right)}_{P} = \left(\frac{d U + dW}{d T}\right) = \left(\frac{d U}{d T}\right) + P\left(\frac{d V}{d T}\right)
+\end{align}
+For an nonatomic ideal gas $U = \frac{3}{2}NkT$ and $V= \frac{NkT}{P}$ so that $C_{V}$ and $C_{P}$ can be written as
+\begin{align}
+C_{V} &= \left(\frac{d U}{d T}\right) = \frac{3}{2}Nk\nonumber\\
+C_{P} &= \left(\frac{d U}{d T}\right) + P\left(\frac{d V}{d T}\right) =  \frac{3}{2}Nk + Nk = \frac{5}{2}Nk\nonumber
+\end{align}
+Let us say that $Q_{V}$ is the heat required to to change the temperature at constant volume and $Q_{P}$ the the heat required for constant pressure. Rewriting the specific heat equations to fit our needs, we have
+\begin{align}
+\frac{\Delta Q_{P}}{C_{P}} &= \Delta T = \frac{\Delta Q_{V}}{C_{V}}\nonumber\\
+\Delta Q_{P} &= \Delta Q_{V}\frac{C_{P}}{C_{V}} = \boxed{\frac{5}{3} \Delta Q}
+\end{align}
+}
+
+\Problem{35}{B}{%
+An idealized heat pump has the efficiency of a Carnot engine:
+\begin{align}
+e &= \left| \frac{W}{Q_{H}}\right| = 1- \left|\frac{T_{C}}{T_{H}}\right|\\
+\nonumber \\
+W &= Q_{H} \left(1- \left|\frac{T_{C}}{T_{H}}\right|\right)= 15000\Units{J} \left(1- \frac{280\Units{K}}{300\Units{C}}\right)\nonumber \\
+ &= \frac{15000\Units{J}}{15} = \boxed{1000\Units{J}}\nonumber
+\end{align}
+\\
+This calculation made use of the fact that $T([K]) = T([C]) + 273$
+}
+
+\Problem{36}{A}{%
+From Kirchhoff's second law we can write the equation for an LC circuit:
+\begin{align}
+\sum V = V_{L} + V_{C} =  L \frac{d^{2} Q}{dt^{2}} + \frac{Q}{C} = 0
+\end{align}
+$V_{L}$ comes from the induced EMF of an inductor ($V = |\varepsilon| = \left|-\frac{d \Phi_{B}}{dt}\right|$ where $\Phi_{B} = LI = L \frac{dQ}{dt}$) and $V_{C}$ comes from $Q = CV$ for a capacitor.\\\\
+Solving the second order differential equation we get
+\begin{gather}
+Q = Q_{0} \cos{\left(\frac{t}{\sqrt{LC}}\right)}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} I = \frac{dQ}{dt} = -\frac{Q_{0}}{\sqrt{LC}}\sin{\left(\frac{t}{\sqrt{LC}}\right)}\nonumber
+\end{gather}
+The energy stored in an inductor can be found using the equation
+\begin{align}
+U = \frac{1}{2}LI^2 = \boxed{\frac{Q_{0}^{2}}{2C}\sin^2{\left(\frac{t}{\sqrt{LC}}\right)}}\nonumber
+\end{align}
+}
+
+\Problem{37}{E}{%
+From geometry we can easily see that the electric field is in the $-\hat{x}$ direction (basic vector addition) which leaves us with choices (C) and (E). The electric field at P is $E =2E_{q}\cos{(\theta)}$.
+\begin{align}
+\cos{(\theta)} = \frac{adj}{hyp} = \frac{l/2}{\sqrt{{(l/2)}^{2} +r^{2}}} = \frac{l}{\sqrt{{(l)}^{2} +{(2r)}^{2}}}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in}\vec{E} = 2 \cdot \frac{1}{4 \pi \epsilon_{0}} \frac{4q}{l^{2} +4r^{2}} \frac{l}{\sqrt{{(l)}^{2} +4r^{2}}}(-\hat{x})\nonumber
+\end{align}
+for $r \gg l$:
+\begin{align}
+\vec{E} = 2 \cdot \frac{1}{4 \pi \epsilon_{0}} \frac{4q}{4r^{2}} \frac{l}{{2r}}(-\hat{x}) = \boxed {\frac{ql}{4 \pi \epsilon_{0} r^3}(-\hat{x})}\nonumber
+\end{align}
+}
+
+\Problem{38}{E}{%
+Using the right hand rule (point thumb in direction of current, curled figures point in direction on B-Field) it is easy to see that at point P the magnetic fields are equal and opposite resulting in destructive interference and a magnetic field of zero.
+}
+
+\Problem{39}{C}{%
+The lifetime of a muon in the lab frame can be calculated using the Lorentz factor for particles moving at $0.8c$
+\begin{gather}
+\gamma = {\left(1- \frac{16}{25} \right)}^{-\frac{1}{2}} = {\left(\frac{9}{25}\right)}^{-\frac{1}{2}} = \frac{5}{3}\nonumber\\
+\nonumber\\
+t_{lab} = \gamma \tau = \left(\frac{5}{3}\right) 2.2\e{-6}\Units{s} \nonumber\\
+\nonumber\\
+\Delta x_{lab} = v \cdot t_{lab} = \frac{4 c}{5}\cdot \frac{5}{3}\cdot 2.2\e{-6}\Units{s} = \frac{4}{3}\cdot 2.2\e{-6}\Units{s} \cdot 3\e{8}\Units{m/s} = \boxed{880\Units{m}} \nonumber
+\end{gather}
+}
+
+\Problem{40}{B}{%
+The relativistic energy-momentum equation states that
+\begin{align}
+E^{2} = p^{2}c^{2} + m^{2}c^{4}
+\end{align}
+The four momentum of the massless particle is $\vec{P}_{1} = (\frac{E}{c},p,0,0,) = (\sqrt{p^2+m^2c^2},p,0,0)$. The four momentum of the first particle is $\vec{P}_{0}=(Mc^{2},0,0,0)$. Equate the momentums:
+\begin{align}
+P_{0} &= P_{1}\nonumber\\
+M^{}c^{2} &=  \sqrt{p^2+m^2c^4} + p^{}\nonumber\\
+M^{}c^{2} -p^{} &=  \sqrt{p^2+m^2c^4}\nonumber
+\end{align}
+and square both sides:
+\begin{align}
+M^{2}c^{4} - 2p M c^{2} + p^{2} &=  p^2+m^2c^4\nonumber\\
+\nonumber\\
+2pMc^{2} &= c^{4}(M^{2}-m^{2}) \nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} p &=  \frac{c^{4}(M^{2}-m^{2})}{2Mc^{2}} = \boxed{\frac{c^{2}(M^{2}-m^{2})}{2M}}\nonumber
+\end{align}
+}
+
+\end{document}
