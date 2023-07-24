@@ -673,4 +673,199 @@ B_{tot} = B_{1} + B_{2} + B_{3} = \boxed{\frac{\mu_{0} I}{2 \pi x} (1 + 2\sqrt{2
 (we know that the direction of the field is out of the page ($\hat{y}$) from the right hand rule)
 }
 
+
+
+\Problem{61}{E}{%
+Equating the Lorentz force to the centripetal force of the particle (using $r = \frac{d}{2}$) we get the equation for distance
+\begin{gather}
+m\frac{v^{2}}{r} = m\frac{2v^{2}}{d} = qvB \hspace{.1in} \rightarrow \hspace{.1in} d = \frac{m}{q}\frac{2 v}{B}\nonumber
+\end{gather}
+\\
+Therefore, doubling the charge-to-mass ratio reduces the distance by a factor of 2 ($d' = \frac{d}{2}$)
+}
+
+
+\Problem{62}{E}{%
+This is a simple application of Gauss's Law:
+\begin{gather}
+\oint \vec{E} \cdot d\vec{A} = \Phi_{E, tot} =  \Phi_{E, A}  + \Phi_{E, other} = \frac{Q}{\epsilon_{0}}\\
+\nonumber\\
+\rightarrow \hspace{.1in} \Phi_{E, other} = \frac{Q}{\epsilon_{0}} -  \Phi_{E, A}  = \frac{1\e{-9}\Units{C}}
+{8.85\e{-12}\Units{F/m}} + 100\Units{N m$^{2}$ C$^{-1}$} \approx \boxed{200\Units{N m$^{2}$ C$^{-1}$}}\nonumber
+\end{gather}
+}
+
+
+\Problem{63}{D}{%
+The fact that a positron ($e^{+}$) and electron neutrino ${\nu_{e}}$ are produced in this reaction tells us that this is a $\beta^{+}$ decay. $\beta$ decays are mediated by interactions with the weak force.
+}
+
+\Problem{64}{D}{%
+The eigenvalue equations for $L^{2}$ and $L_{z}$ are
+\begin{align}
+L^{2} Y^{m}_{l}(\theta, \phi) &= l (l + 1) \hbar^{2} Y^{m}_{l}(\theta, \phi)\\
+L_{z} Y^{m}_{l}(\theta, \phi) &= -i \hbar \frac{\partial}{\partial \phi} Y^{m}_{l}(\theta, \phi) = m \hbar Y^{m}_{l}(\theta, \phi)
+\end{align}
+therefore, with $L = \sqrt{2} \hbar$ we can solve for $l$:
+\begin{align}
+L^{2} = 2 \hbar^{2} = l (l +1) \hbar^{2} \rightarrow l = 1\nonumber
+\end{align}
+For any given $l$, there are $2 l +1$ possible values for $m$ (from $m = - l, - l + 1, ... , l - 1, l$). We can therefore eliminate (A), (B) and (C) since there are a total of 3 values for $m$ ($m = -1, 0, 1$). Plugging the values for $m$ into the $L_{z}$ eigenvalue equation we get
+\begin{align}
+\boxed{L_{z} = -\hbar, 0, \hbar}\nonumber
+\end{align}
+}
+
+
+\Problem{65}{C}{%
+Process of elimination:
+\begin{description}
+\item[I.] \textbf{Correct}. The energy levels of a harmonic oscillator are $E_{n} = \left( n +\frac{1}{2}\right)\hbar \omega$. Therefore they are evenly spaced with a step length of $\hbar \omega$.
+\item[II.] \textbf{Incorrect}. The potential energy is $U = \frac{1}{2} m \omega^{2} x^{2}$ which is quadratic, not linear.
+\item[III.] \textbf{Incorrect}. The virial theorem tells us that the expectation value for both the potential and kinetic energy is half of the total energy. At $n =1$:\\
+\begin{align}
+\langle T \rangle = \langle V \rangle = \frac{E}{2} = \frac{\hbar \omega}{4} \neq 0\nonumber
+\end{align}
+\item[IV.] \textbf{Correct}. There is a nonzero probability for the oscillator to be found at any $x$.\\
+\end{description}
+}
+
+
+\Problem{66}{D}{%
+The energy levels for H are
+\begin{align}
+E_{n} = - \frac{\left| E_{0} \right|}{n^2} \propto \frac{\mu}{n^{2}}
+\end{align}
+where the reduced mass, $\mu$, is  $\frac{m_{e} m_{p}}{m_{e} + m_{p}}$. Replacing the electron with the muon we get
+\begin{gather}
+E'_{n} \propto \frac{\mu'}{n^{2}}\hspace{.15 in} \text{where} \hspace{.15 in}  \mu' = \frac{m_{\mu} m_{p}}{m_{\mu} + m_{p}}\nonumber
+\end{gather}
+Therefore,
+\begin{align}
+\frac{1}{n^{2}} &= \frac{E_{n}}{\mu} = \frac{E'_{n}}{\mu'}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} E'_{n} = \frac{E_{n}}{\mu} \cdot \mu' &= E_{n} \frac{m_{e} + m_{p}} {m_{e} m_{p}}   \frac{m_{\mu} m_{p}} {m_{\mu} + m_{p}}\nonumber\\
+&= E_{n} \frac{m_{\mu} (m_{e} + m_{p})}{m_{e} (m_{\mu} + m_{p})} = \boxed{-\frac{|E_{0}|}{n^{2}} \frac{m_{\mu} (m_{e} + m_{p})}{m_{e} (m_{\mu} + m_{p})}}\nonumber
+\end{align}
+}
+
+
+\Problem{67}{D}{%
+The electric field inside a parallel-plate capacitor is
+\begin{align}
+E = \frac{\sigma}{\epsilon_{0}} = \frac{Q}{A \epsilon_{0}} \hspace{.2 in} (\text{using} \hspace{.1 in} Q = \sigma A)\nonumber
+\end{align}
+Since we are looking for the change in electric field over time we will differentiate both sides with respect to time:
+\begin{align}
+\frac{d E}{d t} = \frac{1}{A \epsilon_{0}} \frac{d Q}{d t} = \frac{I}{A \epsilon_{0}} =
+\frac{9\Units{A}}{8.85\e{-12}\Units{F/m} \cdot {(0.5\Units{m})}^{2}} \sim \frac{10^{12}}{0.25}\Units{V m$^{-1}$ s$^{-1}$} =
+\boxed{4\e{12}\Units{V m$^{-1}$ s$^{-1}$}}\nonumber
+\end{align}
+}
+
+\Problem{68}{D}{%
+Using symmetry (and assuming an ideal circuit), we can see that the  horizontal nodes have the same voltage and, therefore, there is no current through either of the two middle resistors (Ohm's law). The problem is now greatly simplified since the circuit is equal to three sets of two resistors in series.
+\begin{gather}
+R_{left} = R_{right} = R_{middle} = R + R = 2R\nonumber\\
+\nonumber\\
+R_{tot} = \left( \frac{1}{R_{left}} + \frac{1}{R_{right}} + \frac{1}{R_{middle}} \right)^{-1} = \frac{2R}{3}\nonumber
+\end{gather}
+Now we can find the current using Ohm's Law:
+\begin{align}
+I = \frac{V}{R_{tot}} = \boxed{\frac{3V}{2R}}\nonumber
+\end{align}
+}
+
+
+\Problem{69}{D}{%
+The impedance for a resistor and a capacitor is
+\begin{gather}
+Z_{R} = R \hspace{.1 in}, \hspace{.1 in} Z_{C} = \frac{1}{i \omega C}\\
+Z = R + \frac{1}{i \omega C}\nonumber
+\end{gather}
+The current through the circuit can be found using Ohm's law using the input voltage, $V_{i}$.
+\begin{align}
+I = \frac{V_i}{Z} = \frac{V_i}{R + \frac{1}{i \omega C}}\nonumber
+\end{align}
+We can then use this current to find the output voltage, $V_{0}$ (voltage after capacitor)
+\begin{align}
+V_{0} = I Z_{C} &= \frac{V_i}{R + \frac{1}{i \omega C}} \cdot \frac{1}{i \omega C} = \frac{V_i}{i \omega C R + 1}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} G = \frac{V_{0}}{V_{i}} &= \boxed{\frac{1}{i \omega C R + 1}}\nonumber
+\end{align}
+Looking at limiting cases, when $\omega \rightarrow \infty$, $G \rightarrow 0$ and when $\omega \rightarrow 0$, $G \rightarrow 1$.
+}
+
+\Problem{70}{A}{%
+Faraday's law of induction states that
+\begin{align}
+\mathcal{E} =
+-\frac{\Delta \Phi_{B}}{\Delta t} &=
+IR =
+\frac{\Delta q}{\Delta t} R
+\end{align}
+Then we can use the equation for magnetic flux $\Phi_{B}$ to solve for $\Delta q$:
+\begin{gather}
+\Delta \Phi_{B} = B \cdot \Delta A\\
+\nonumber\\
+\therefore \hspace{.1in} \Delta q =
+-\frac{B \cdot \Delta A}{R} =
+-\frac{0.5\Units{T} \cdot 10\e{-4}\Units{m$^{2}$}}{\, 5\Units{$\Omega$}} =
+\boxed{10\e{-4}\Units{C}}\nonumber
+\end{gather}
+}
+
+\Problem{71}{B}{%
+Equating the Centripetal force to the Lorentz Force, we can see that
+\begin{gather}
+m \frac{v^{2}}{R} = qvB \hspace{.1in} \rightarrow \hspace{.1in} v \propto R\\
+\therefore \hspace{.1in} \frac{v_{1}}{v_{2}} = \frac{R_{1}}{R_{2}} = \boxed{\frac{1}{3}}\nonumber
+\end{gather}
+}
+
+\Problem{72}{D}{%
+The Pauli Exclusion Principle only applies to fermions (electrons, muons, neutrinos, etc). Bosons (Protons, Neutrons, etc) can occupy the same state so they do not obey the exclusion principle. Its is also important to know that
+\begin{description}
+\item[] Bosons have \textbf{symmetric} wavefunctions
+\item[] Fermions have \textbf{antisymmetric} wavefunctions
+\end{description}
+}
+
+\Problem{73}{D}{%
+I \textbf{strongly recommend} reading the first 3-4 chapters of David Griffiths' \textit{Introduction to Elementary Particles} while preparing for this test. The following is an excerpt from Chapter 1 of this book (Page 44 of the 2008 Second, Revised Edition):\\\\
+"For good reason, the events precipitated by the discovery of the $J / \psi$ came to be known as the November Revolution. In the months that followed, the true nature of the $J / \psi$ meson was the subject of lively debate, but the explanation that won was provided by the quark model: the $J / \psi$ is a bound state of a new (fourth) quark, the $c$ (for charm) and its antiquark, $J / \psi = (c \overline{c})$."
+}
+
+
+\Problem{74}{E}{%
+The focal length of a mirror is given by the equation:
+\begin{align}
+f = \frac{R}{2}
+\end{align}
+Where $R$ is the radius of curvature and f is the focal length. sign convention dictates that the focal length is \textit{negative} since the mirror is convex. Using the thin lens formula, where $s$ is the object's location and $s'$ is the image location:
+\begin{gather}
+-\frac{1}{f} = \frac{1}{s} + \frac{1}{s'} \\
+\nonumber\\
+-\frac{2}{R} = \frac{1}{R} + \frac{1}{s'} \hspace{.1in} \rightarrow  \hspace{.1in} \frac{1}{s'} =  -\frac{2}{R} - \frac{1}{R} = -\frac{3}{R} \nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} s' = \boxed{-\frac{R}{3}}\nonumber
+\end{gather}
+where the negative sign indicates that the image is virtual and therefore located on the right side of the mirror.
+}
+
+\Problem{75}{E}{%
+Because the light is reflecting from a higher-$n$ medium the shift for the wave off the top of the film is $\delta_{top} = \lambda/2 = \lambda_{0}/2n$ and the shift for the wave reflected off the bottom of the film is $\delta_{bottom} =2t$ where $t$ is the thickness of the film. The "bright" reflections tell us that we are looking for constructive interference, so the equation for thickness is:
+\begin{align}
+\delta_{bottom} - \delta_{top} &= 2t - \frac{\lambda_{0}}{2n}  = \frac{m\lambda_{0}}{n}\nonumber\\
+\rightarrow \hspace{.1in} 4t &= \frac{\lambda}{n} (2m +1)\nonumber
+\end{align}
+The first bright spot is found at $m=0$ and so the second spot will be found at $m = 1$. Imputing these values into the equation above, we get
+\begin{align}
+4 t =  \frac{\lambda}{n} = \frac{3 \lambda '}{n}  \hspace{.1in} \rightarrow  \hspace{.1in} \lambda ' = \frac{\lambda}{3} = \frac{\unit[540]{[nm]}}{3} =\boxed{\unit[180]{[nm]}}\nonumber
+\end{align}
+}
+
+
+
+
 \end{document}
