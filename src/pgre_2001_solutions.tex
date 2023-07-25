@@ -607,6 +607,192 @@ This kind of problem begs for the process of elimination. Radial wave functions 
 }
 
 
+\Problem{31}{A}{%
+The ground state energy of hydrogen is
+
+\begin{gather}
+E_{0,H} = 13.6\Units{eV} \propto \mu
+\end{gather}
+\\
+where $\mu$ is the reduced mass of the system given by the equation
+
+\begin{gather}
+\mu = \frac{m_{1} \cdot m_{2}}{m_{1} + m_{2}}
+\end{gather}
+\\
+For a normal hydrogen atom, $\mu \approx m_{e}$ (because $m_{p} \gg m_{e}$). For positronium:
+
+\begin{gather}
+\mu = \frac{m_{e} \cdot m_{e}}{m_{e} + m_{e}} = \frac{me}{2}\nonumber
+\end{gather}
+\\
+or 1/2 the reduced mass of hydrogen. Therefore the ground state energy of positronium is
+
+\begin{gather}
+E_{0,p} = \frac{13.6\Units{eV}}{2} = 6.8\Units{eV}\nonumber
+\end{gather}
+\\
+Now, we are looking for the energy of the photon emitted when the positronium makes the transition from $n = 3$ to $n = 1$:
+
+\begin{gather}
+E_{\gamma} = 6.8\Units{eV} \cdot \left(  \frac{1}{n^{2}_{f}} - \frac{1}{n^{2}_{i}} \right) =
+6.8\Units{eV}  \cdot \left(  \frac{9}{9} - \frac{1}{9} \right) =
+6.8\Units{eV}  \cdot \left(  \frac{8}{9}   \right) =
+\frac{54\Units{eV} }{9} =
+\boxed{6\Units{eV}} \nonumber
+\end{gather}
+}
+
+
+\Problem{32}{D}{%
+ The relativistic energy-momentum relation is
+
+\begin{gather}
+\label{eq:rel-energy} E^{2} = (pc)^{2} + (m_{0} c^{2})^{2}
+\end{gather}
+\\
+The given particle has $m_{0} = m$ and $E = 2mc^{2}$. Solving for $p$ in the above equation
+
+\begin{gather}
+p^{2} = \frac{E^{2}}{c^{2}} -  m_{0}^{2}c^{2}  =  \frac{(2mc^{2})^{2}}{c^{2}} -  m^{2}c^{2}  = \frac{4m^{2}c^{4}}{c^{2}} -  m^{2}c^{2} = 3m^{2}c^{2}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} p = \sqrt{3m^{2}c^{2}} = \boxed{\sqrt{3} m c}\nonumber
+\end{gather}
+}
+
+\Problem{33}{D}{%
+Let us say that the particle's rest frame is $S'$ and the lab frame is $S$. The Lorentz Invariance Formula is:
+
+\begin{gather}
+\left(  \Delta x  \right)^{2}  - \left(  c \Delta t  \right)^{2}  = \left(  \Delta x'  \right)^{2}  - \left(  c \Delta t'  \right)^{2}
+\end{gather}
+\\
+We are given that $\Delta t' = 10^{-8}\Units{s}$, $\Delta x = 30\Units{m}$, and $\Delta x' = 0\Units{m}$ (since $S'$ is the particle's rest frame). So let us solve for $\Delta t$:
+
+\begin{gather}
+\Delta t = \sqrt{\frac{\Delta x^{2}}{c^{2}} + \Delta t'^{2}}\nonumber
+\end{gather}
+\\
+we are solving for the speed of the pion which can be found using the equation
+
+\begin{align}
+v &= \frac{\Delta x}{\Delta t}\\
+&= \Delta x \left(   \frac{\Delta x^{2}}{c^{2}} + \Delta t'^{2}   \right)^{-\frac{1}{2}} = c \Delta x \left(   \Delta x^{2} + c^{2}\Delta t'^{2}   \right)^{-\frac{1}{2}}\nonumber\\
+\nonumber\\
+&= \frac{c \cdot 30\Units{m}}{\sqrt{900\Units{m$^{2}$} + (3\e{8}\Units{m/s})^{2} \cdot (10^{-16}\Units{s$^{2}$})}} =
+c \cdot\sqrt{    \frac{900\Units{m$^{2}$}}{900\Units{m$^{2}$} + 9\Units{m$^{2}$} }     }\nonumber\\
+\nonumber\\
+ &= c \cdot \sqrt{\frac{100}{101}} \approx \boxed{2.98\Units{m/s}}\nonumber
+\end{align}
+}
+
+
+\Problem{34}{B}{%
+In special relativity there are three different classifications of invariant intervals:
+
+\begin{description}
+\item[I.] \textbf{Space-like}: $\Delta s^{2} > 0$.  These events can occur simultaneously for some observers but are separated in space.
+
+\item[II.] \textbf{Time-like}: $\Delta s^{2} < 0$. These events can occur at the same location but are separated by time.
+
+\item[III.] \textbf{Light-like}: $\Delta s^{2} = 0$. Only something traveling at the speed of light could be present at both events.
+\end{description}
+In this problem we are being asked about when the interval is \textbf{Space-like}.
+
+\begin{align}
+ 0 < \Delta s^{2}   =  \Delta x^{2} - c^{2} \Delta t^{2} \hspace{.1in} \rightarrow \hspace{.1in}
+ \Delta x^{2} <  c^{2} \Delta t^{2} \hspace{.1in} \rightarrow \hspace{.1in}
+ \boxed{\left|   \frac{\Delta x}{\Delta t} \right| < c}\nonumber
+\end{align}
+}
+
+\Problem{35}{E}{%
+\section{\textsc{Problem 35:}} The Stefan-Boltzmann Law is
+
+\begin{gather}
+dP = \epsilon \sigma T^{4} dA \hspace{.1in} \rightarrow \hspace{.1in} \frac{dP}{dA} \propto T^{4}
+\end{gather}
+\\
+Therefore, if the temperature increases by a factor of 3, the energy radiated per second per unit area is
+
+\begin{gather}
+\frac{dP}{dA} \propto \boxed{3^{4} = 81}\nonumber
+\end{gather}
+}
+
+
+\Problem{36}{E}{%
+Process of elimination:
+\begin{description}
+\item[(A)] True. This is the definition of an adiabatic process.
+\item[(B)] True. There is no change in entropy in a quasi-static expansion.
+\item[(C)] True.  $\Delta U = \Delta Q - \Delta W$ while $\Delta Q=0$ for an adiabatic process and $\Delta W = \int P dV$. Therefore, $\Delta U =  -\int P dV$
+\item[(D)] True. See above.
+\item[(E)] False. $\Delta W = P \Delta V = N k  \Delta T$. Do not confuse adiabatic ($\Delta Q = 0$) and isothermal  ($\Delta T = 0$) processes. \\
+\end{description}
+}
+
+
+\Problem{37}{D}{%
+The area inside a closed loop on a PV diagram is the work done by the process. The direction of the cycle determines the sign of the work (convention: clockwise is positive, counterclockwise is negative). From this information we can eliminate (A), (B), and (C).\\
+\\
+we can determine the volume at $B$, $V_{B}$, using the ideal gas law $P V = n R T$. Because $BC$ is an isothermal (constant temperature) process
+
+\begin{gather}
+P_{B} V_{B} = const =
+P_{C} V_{C} \hspace{.1in} \rightarrow \hspace{.1in} V_{B} =
+\frac{P_{C} V_{C}}{P_{B}} =
+\frac{500\Units{kPa} \cdot 2\Units{m$^{3}$}}{200\Units{kPa}} =
+5\Units{m$^{3}$}\nonumber
+\end{gather}
+\\
+Now, let us approximate the cycle as a right triangle with height $P = 500\Units{kPa}-200\Units{kPa} = 500\Units{kPa}$ and base $V = 5\Units{m$^{3}$} - 2\Units{m$^{3}$} = 3\Units{m$^{3}$}$. The area of this triangle (read: magnitude of work done) would be
+
+\begin{gather}
+A = |W| = \frac{1}{2} (3\Units{m$^{3}$}) (500\Units{kPa}) = 450\Units{kJ}
+\end{gather}
+\\
+Because the area of the actual process is less than the area of our approximated triangle we can eliminate (E).
+}
+
+
+\Problem{38}{D}{%
+The current is maximized when the resonant frequency is reached. The resonant frequency is reached when the complex impedance is 0:
+
+\begin{gather}
+X_{C} - X_{L} = \frac{1}{\omega C} - \omega L = 0 \hspace{.1in} \rightarrow \hspace{.1in} \frac{1}{\omega C} = \omega L \hspace{.1in} \rightarrow \hspace{.1in} \omega = \frac{1}{\sqrt{LC}}
+\end{gather}
+\\
+Solving for $C$ and plugging in the given values for $\omega$ and $L$ we get
+
+\begin{gather}
+C = \frac{1}{L \omega^{2}} =  \frac{1}{25\Units{mH} (1000\Units{rads/s})^{2}}  = 4\e{-5}\Units{F} = \boxed{40\Units{\micro F}} \nonumber
+\end{gather}
+}
+
+\Problem{39}{D}{%
+A high-pass filter is a series combination of a \textbf{Capacitor followed by a Resistor} or a \textbf{Resistor followed by an Inductor} (CR or RL)\\
+\\
+The inverse is a low-pass filter: a  series combination of a \textbf{Resistor followed by a Capacitor} or an \textbf{Inductor followed by a Resistor} (RC or LR)
+}
+
+\Problem{40}{D}{%
+We can eliminate (B), (C) and (E) based on the fact that the time constant of the ciruit is
+
+\begin{gather}
+\tau = \frac{L}{R} = \frac{10\e{-3}\Units{H}}{2\Units{$\Omega$}} = 5\e{-3}\Units{s} = 5\Units{ms}
+\end{gather}
+\\
+The voltage with with respect to time can be calculated using the equation
+
+\begin{gather}
+V(t) = V_{0} e^{-t/\tau}
+\end{gather}
+\\
+So that at $t=0$ the voltage is $10\Units{V}$
+}
+
+
 
 \end{document}
 
