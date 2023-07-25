@@ -10,6 +10,10 @@ info:
 
 build:
 	latexmk pgre_2008_solutions
+	latexmk pgre_2001_solutions
+	latexmk pgre_1996_solutions
+	latexmk pgre_1992_solutions
+	latexmk pgre_1986_solutions
 
 clean:
 	latexmk -C
