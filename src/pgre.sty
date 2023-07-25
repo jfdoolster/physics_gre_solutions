@@ -1,4 +1,11 @@
 
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+
 \newcommand{\TitlePage}[3]{%
 \begin{titlepage}%
     \centering%
@@ -27,20 +34,4 @@
     #3\par\par
     \Answer{#2}
 }
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
-\newcommand{\SetHeader}{2}{
-    \fancyhead{}
-    \renewcommand{\headrulewidth}{0pt}
-    \fancyhead[#1]{#2}
-}
-
-\newcommand{\SetFooter}{2}{
-    \fancyfoot{}
-    \renewcommand{\footrulewidth}{0pt}
-    \fancyfoot[#1]{#2}
-}
-
 
