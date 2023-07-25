@@ -520,6 +520,91 @@ I &= \frac{1}{2} m r^{2} + 6 \left(  \frac{1}{2}mr^2 + m (2r)^{2}  \right) = \fr
 \end{align}
 }
 
+\Problem{26}{C}{%
+The moment of inertia for a rod is
+
+\begin{gather}
+I = \frac{1}{12} M L^{2}
+\end{gather}
+\\
+We must use the parallel axis theorem (equation \ref{eq:par_ax}) again to to find the moment of inertia about the pivot:
+
+\begin{gather}
+I = \frac{1}{12} M L^{2} + M \left(   \frac{L}{2}  \right)^{2} = ML^{2} \left(  \frac{1}{12}  + \frac{3}{12}  \right) = \frac{1}{3}M L^{2}\nonumber
+\end{gather}
+\\
+Now we need to find the speed of the pendulum once the free end hits the ground. The best and easiest way to do this is through use of conservation laws. The free end is $\frac{L}{2}$ above the rod's center of mass and $\omega = \frac{v}{L}$
+
+\begin{align}
+m g h &= \frac{1}{2} I \omega^{2}  \nonumber\\
+M g \frac{L}{2} &= \frac{1}{2} \left(  \frac{1}{3} M L^{2}  \right) \frac{v^{2}}{L^{2}}   \nonumber\\
+gL &= \frac{1}{3}v^{2} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{v = \sqrt{3gL}}  \nonumber
+\end{align}
+}
+
+
+\Problem{27}{A}{%
+The eigenvalues of a Hermitian operator are always real.\\
+\\
+Proof: The eigenvalue equation is
+
+\begin{align}
+A \ket{\psi} &= \lambda \ket{\psi}\nonumber\\
+\therefore \hspace{.1in} A^{\dag} \ket{\psi} &= \lambda^{*} \ket{\psi}\nonumber
+\end{align}
+\\
+Subtracting the second equation from the first we get
+
+\begin{gather}
+( A - A^{\dag} )\ket{\psi} = ( \lambda - \lambda^{*} ) \ket{\psi}\nonumber
+\end{gather}
+The left hand side of the above equation is equal to zero since $A = A^{\dag}$. Therefore, $\lambda = \lambda^{*}$ which means that $\lambda$ is real-valued.
+\\\\
+}
+
+
+\Problem{28}{E}{%
+Lets say that states n and m are orthonormal: $\braket{ n  | m } = 0$ and $\braket{ n  | n } = \braket{ m  | m } = 1$. Therefore:
+
+\begin{align}
+\braket{\psi_{1} | \psi_{2}} &= 0\nonumber\\
+&= 5 \braket{ 1 | 1 }  + 15 \braket{ 2 | 2 }  + 2x \braket{ 3 | 3 } \nonumber\\
+0 &= 20 + 2x \hspace{.1in} \rightarrow \hspace{.1in} \boxed{x = - 10}\nonumber
+\end{align}
+\\\\
+}
+
+\Problem{29}{C}{%
+Recall the Dirac notation identity:
+
+\begin{gather}
+\bra{\psi} \hat{A} \ket{\psi} =  \lambda \braket {\psi  | \psi} = \lambda
+\end{gather}
+\\
+Where $\lambda$ is an eigenvalue of $\hat{A}$. From this we can see that, using our given eigenvalues, we get
+
+\begin{align}
+\bra{\psi_{-1}} \hat{0} \ket{\psi_{-1}} &= -1 \braket {\psi_{-1}  | \psi_{-1}} = -1\nonumber\\
+\bra{\psi_{1}} \hat{0} \ket{\psi_{1}} &= 1 \braket {\psi_{1}  | \psi_{1}} = 1\nonumber\\
+\bra{\psi_{2}} \hat{0} \ket{\psi_{2}} &= 2 \braket {\psi_{2}  | \psi_{2}} = 2\nonumber
+\end{align}
+\\
+Therefore,
+
+\begin{gather}
+\bra{\psi} \hat{O} \ket{\psi} = \frac{1}{6} \braket {\psi_{-1}  | \psi_{-1}} + \frac{1}{2} \braket {\psi_{1}  | \psi_{1}} + \frac{1}{3} \braket {\psi_{2}  | \psi_{2}} = -\frac{1}{6} + \frac{1}{2} + \frac{2}{3} = \boxed{1}\nonumber
+\end{gather}
+}
+
+
+\Problem{30}{A}{%
+This kind of problem begs for the process of elimination. Radial wave functions must be normalizable and must go to zero at infinity. Therefore:
+\begin{description}
+\item[I.] Works. it is normalizable (square integrable) and goes to zero at infinity.
+\item[II.] Doesn't work. Sinusoidal functions do not converge and therefore do not go to zero at infinity.
+\item[III.] Doesn't work. This function is not normalizable.
+\end{description}
+}
 
 
 
