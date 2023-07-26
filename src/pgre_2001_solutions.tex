@@ -793,6 +793,169 @@ So that at $t=0$ the voltage is $10\Units{V}$
 }
 
 
+\Problem{41}{E}{%
+Gauss's law for magnetism $\nabla \cdot \vec{B} = 0$ is the mathematic statement "Magnetic monopoles do not exist." Therefore, we can eliminate (A), (C), and (D) since they do not include II.\\
+\\
+If magnetic monopoles were to exist, Maxwell's Equations would be symmetric with their counterparts (divergence and curl). Therefore, we would have to change both II (as discussed above) and IV.
+}
+
+\Problem{42}{C}{%
+The induced current in loops $A$ and $B$ follows the equation
+
+\begin{gather}
+\mathcal{E} = -\frac{d \Phi_{B}}{d t} = -A \frac{d B}{dt}
+\end{gather}
+\\
+The minus sign in this equation is a statement that the current inducted opposes the changing field. Therefore as the current loop moves towards $A$ the magnetic field increases at $A$ and the induced current is clockwise. at the same time, the magnetic field decreases at $B$ and the induced current is counterclockwise.
+}
+
+
+
+\Problem{43}{D}{%
+\textbf{Memorize this identity}:
+
+\begin{gather}
+[AB, C] = B [A, C] + [B, C] A
+\end{gather}
+\\
+Using this, the given commutator comes out to
+
+\begin{align}
+[L_{x}L_{y}, L_{z}] &= L_{y} [L_{x}, L_{z}] + [L_{y}, L_{z}] L_{x}\nonumber\\
+&= L_{y} (-i \hbar L_{y}) + (i \hbar L_{x})L_{x} = i \hbar ( L_{x}^{2} -  L_{y}^{2} )\nonumber
+\end{align}
+}
+
+\Problem{44}{D}{%
+Everything that you need is given to you in the problem statement. If
+
+\begin{gather}
+E_n = \frac{n^{2} \pi^{2} \hbar^{2}}{2mL^{2}}
+\end{gather}
+\
+then
+\begin{align}
+E_1 &= \frac{\pi^{2} \hbar^{2}}{2mL^{2}}\nonumber\\
+\nonumber\\
+E_2 &= \frac{4 \pi^{2} \hbar^{2}}{2mL^{2}} = 4E_{1}\nonumber\\
+\nonumber\\
+E_3 &= \frac{9 \pi^{2} \hbar^{2}}{2mL^{2}} = \boxed{9E_{1}}\nonumber
+\end{align}
+}
+
+
+\Problem{45}{B}{%
+First, solve for the $H \ket{n}$ from $n = 1$ to $n = 3$:
+
+\begin{align}
+H \ket{1} &= \frac{3}{2} \hbar \omega  \ket{1}\nonumber\\
+\nonumber\\
+H \ket{2} &= \frac{5}{2} \hbar \omega  \ket{2}\nonumber\\
+\nonumber\\
+H \ket{3} &= \frac{7}{2} \hbar \omega  \ket{3}\nonumber
+\end{align}
+\\
+The inner product is therefore,
+
+\begin{align}
+\bra{\psi}H \ket{\psi} &= \frac{1}{14} \left(   \frac{3}{2} \hbar \omega\right)  + \frac{4}{14} \left(   \frac{5}{2} \hbar \omega\right) +  \frac{9}{14} \left(   \frac{7}{2} \hbar \omega \right) \nonumber\\
+\nonumber\\
+&= \left(   \frac{3}{28}  + \frac{20}{28}  + \frac{63}{28} \right) \hbar \omega = \frac{86}{28} \hbar \omega = \boxed{\frac{43}{14} \hbar \omega}   \nonumber
+\end{align}
+}
+
+
+
+\Problem{46}{E}{%
+The two equations that you need for this problem are the de Broglie formula and the kinetic energy equation:
+
+\begin{gather}
+\lambda = \frac{h}{p} \hspace{.1in} \\
+T = \frac{1}{2}mv^{2} = \frac{p^{2}}{2m}
+\end{gather}
+\\
+Noting that $h$ is a constant, we can rewrite the de Broglie formula:
+
+\begin{gather}
+\lambda_{0} p_{0} = h = \lambda_{f} p_{f} \hspace{.1in} \rightarrow \hspace{.1in} \lambda_{f} = \frac{\lambda_{0} p_{0}}{p_{f}} \nonumber
+\end{gather}
+\\
+Then we can rewrite the kinetic energy equations:
+
+\begin{gather}
+T_{0} = E = \frac{p_{0}^{2}}{2m} \hspace{.1in} \rightarrow \hspace{.1in} p_{0} = \sqrt{2mE}\nonumber\\
+T_{f} = E-V = \frac{p_{f}^{2}}{2m} \hspace{.1in} \rightarrow \hspace{.1in} p_{f} = \sqrt{2m(E-V)}\nonumber
+\end{gather}
+\\
+Therefore,
+
+\begin{gather}
+\lambda_{1} = \frac{\lambda_{0} \sqrt{2mE}}{\sqrt{2m(E-V)}} = \lambda_{0}\sqrt{\frac{E}{E-V}} = \lambda_{0}\sqrt{\frac{1}{1-V/E}} = \boxed{\lambda_{0} \left(  1- V/E \right)^{-1/2}}\nonumber
+\end{gather}
+}
+
+
+
+\Problem{47}{B}{%
+From the second law of thermodynamics we know that
+
+\begin{gather}
+\Delta S = \int{\frac{dQ}{T}} = \frac{1}{T} \int{dQ}
+\end{gather}
+\\
+because this container is sealed and thermally insulated $\Delta U = 0$. Therefore, from the first law of thermodynamics,   $d Q=dW$.
+
+\begin{gather}
+\Delta S = \int{\frac{dQ}{T}} = \frac{1}{T} \int{dW} = \frac{1}{T} \int{P dV} = nR \int{\frac{ dV}{V}}_{1}^{2} = nR\ln{(2/1)} = \boxed{n R \ln{(2)}}\nonumber
+\end{gather}
+}
+
+
+\Problem{48}{C}{%
+The rms velocity equation can be found by equating the kinetic energy of a gas particle to the total kinetic energy of the gas:
+
+\begin{gather}
+\frac{1}{2}mv^{2} = \frac{3}{2} k T \hspace{.1in} \rightarrow \hspace{.1in} v_{rms} = \sqrt{\frac{3kT}{m}}
+\end{gather}
+\\
+Therefore with constant temperature, the ratio of $v_{rms}(N_{2})$ to $v_{rms}(O_{2})$ is
+
+\begin{gather}
+\frac{v_{rms}(N_{2})}{v_{rms}(O_{2})} = \frac{\sqrt{m_{O_{2}}}}{\sqrt{m_{N_{2}}}} = \frac{\sqrt{32}}{\sqrt{28}} = \boxed{\sqrt{\frac{8}{7}}}\nonumber
+\end{gather}
+}
+
+
+\Problem{49}{E}{%
+The partition function, $Z$, of a non-degenerate system is
+
+\begin{gather}
+Z = \sum_{n}{e^{-E_{n}/kT}} = e^{-\epsilon/kT} + e^{-2 \epsilon/kT}
+\end{gather}
+\\
+Taking into account the degeneracy, $d$, of the system: the degenerate partition function, $Z_{D}$, is
+
+\begin{gather}
+Z_{D} = \sum_{n}{d_{n} e^{-E_{n}/kT}} =2 \left( e^{-\epsilon/kT} + e^{-2 \epsilon/kT}  \right)
+\end{gather}
+}
+
+
+\Problem{50}{B}{%
+From Wien's Law we know that $\lambda_{} T_{}  = const$. The wavelength is related to frequency by the equation  $\lambda_{} = c/\nu_{}$. Therefore
+
+\begin{gather}
+T_{1}  \frac{c_{1}}{\nu_{1}} = const = T_{2}  \frac{c_{2}}{\nu_{2}}\nonumber
+\end{gather}
+\\
+From the problem, we know that $T_{1} = T_{2}$, $\nu_{1} = 440\Units{Hz}$, and $c_{2}  = 0.97 \cdot c_{1}$. Plugging in:
+
+\begin{gather}
+\frac{c_{1}}{\nu_{1}} = \frac{0.97 c_{1}}{\nu_{2}} \hspace{.1in} \rightarrow \hspace{.1in} \nu_{2} = 0.97 \cdot \nu_{1} = 0.97 \cdot 440\Units{Hz} \approx \boxed{427\Units{Hz}}\nonumber
+\end{gather}
+}
+
+
 
 \end{document}
 
