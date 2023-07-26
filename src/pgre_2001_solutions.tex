@@ -956,6 +956,135 @@ From the problem, we know that $T_{1} = T_{2}$, $\nu_{1} = 440\Units{Hz}$, and $
 }
 
 
+\Problem{51}{B}{%
+The intensity light through the first polarizer, $I_{1}$, is half the the intensity of the initial beam:
+
+\begin{gather}
+I_{1} = \frac{I_{0}}{2}
+\end{gather}
+\\
+Now, we must use Malus' Law, $I_{f} = I_{i} \cos^{2}{\theta}$ where $\theta = 45^{\circ}$ for the second polarizer and then $\theta = 45^{\circ}$ again for the third and final polarizer.
+
+\begin{gather}
+I_{2} = I_{1} \cos^{2}{45^{\circ}} = \frac{I_{1}}{2} = \frac{I_{0}}{4}\nonumber\\
+I_{3} = I_{2} \cos^{2}{45^{\circ}} = \frac{I_{2}}{2} = \boxed{\frac{I_{0}}{8}}\nonumber
+\end{gather}
+}
+
+\Problem{52}{B}{%
+The volume of the primitive unit cell is the the volume of conventional unit cell divided by the number of lattice points in the Bravais lattice. A body-centered cubic lattice (BCC) has two lattice points (only count the sections inside the lattice) so that the volume is $\boxed{a^{3}/2}$\\
+\\
+In case you were wondering: A Bravais lattice is one that is isotropic at every point. A face centered cubic lattice (FCC) has four lattice points and a simple cubic lattice has one lattice point.
+}
+
+\Problem{53}{B}{%
+Recall the resistivity equation from elementary electrodynamics:
+
+\begin{gather}
+R = R_{0}  \left( 1 + \alpha \Delta T  \right) \hspace{.1in} \rightarrow \hspace{.1in} \rho = \rho_{0}  \left( 1 + \alpha \Delta T  \right)
+\end{gather}
+\\
+semiconductors have a negative coefficient of resistivity, $\alpha$, which means that the resistivity, $\rho$, should should decrease with increasing temperature. (B) choice
+}
+
+\Problem{54}{C}{%
+The total impulse, $j$, delivered to a particle can be found using the equation:
+
+\begin{gather}
+j = \int{F \cdot dt}
+\end{gather}
+\\
+Which is just the area under the curve of a Force vs time plot. The area is easy to calculate since the function forms a triangle:
+
+\begin{gather}
+j = \frac{1}{2}(2\Units{N} \cdot 2\Units{s}) = \boxed{2\Units{kg m/s}}\nonumber
+\end{gather}
+}
+
+\Problem{56}{D}{%
+This is a force balancing problem in which we imagine the ballon is stationary, i.e. the upward force is equal to the downward force.
+
+\begin{align}
+V g \rho_{air} &= mg + V g \rho_{He} \nonumber\\
+\nonumber\\
+V&= \frac{ m }{ \rho_{air} - \rho_{He} }  =  \frac{ 300\Units{kg}  }{ 1.29\Units{kg m$^{-3}$} - 0.18\Units{kg m$^{-3}$} } =
+\boxed{270\Units{m$^{3}$} }\nonumber
+\end{align}
+}
+
+\Problem{57}{A}{%
+The momentum of the stream is
+
+\begin{gather}
+p = v dm= v \rho \cdot dV = v \rho \cdot A (dx) = v \rho \cdot A (v dt )\nonumber
+\end{gather}
+\\
+We know from Newton's second law that $F =\dot{p}$ so that
+
+\begin{gather}
+F = \frac{d p}{d t} = \rho v^{2} A \frac{dt}{dt} =  \rho v^{2} A \nonumber
+\end{gather}
+}
+
+\Problem{58}{B}{%
+The Lorentz force equation is
+
+\begin{gather}
+\vec{F} = q (\vec{E} + \vec{v} \times \vec{B})
+\end{gather}
+\\
+we can find the velocity, $v$ , of the proton by equating the particle's translational kinetic energy to its kinetic energy in a potential, $V \hat{z}$.
+
+\begin{gather}
+\frac{1}{2} m \vec{v}^{2} = q V \hat{z} \hspace{.1in} \rightarrow \hspace{.1in} \vec{v} = \sqrt{\frac{2qV}{m}}\hat{z}
+\end{gather}
+\\
+The electric and magnetic fields are directed in the $+\hat{x}$ and $+\hat{y}$ direction, respectively, so that
+
+\begin{align}
+\vec{F} &= q (E\hat{x} + v\hat{z} \times B \hat{y}) \nonumber\\
+&= q (E\hat{x} - vB\hat{x})
+\end{align}
+\\
+When the particle's trajectory is not affected, $F = 0$ so that $E =vB$. However, if we are to increase the potential to $V' = 2V$ then
+
+\begin{gather}
+\vec{v'} = \sqrt{\frac{2qV'}{m}}\hat{z} = \sqrt{\frac{4qV}{m}}\hat{z} > \vec{v}
+\end{gather}
+\\
+With this potential $E < vB$ and the resultant force is therefore the $\boxed{-\hat{x}}$ direction.
+}
+
+\Problem{59}{B}{%
+The equation for simple harmonic motion of an oscillator is
+
+\begin{gather}
+m \frac{d^{2}x}{dt^{2}} + kx = 0
+\end{gather}
+\\
+The analogous equation for the given circuit must have $\boxed{L = m\text{, }Q = x\text{, and }C = \frac{1}{k}}$
+}
+
+
+\Problem{60}{D}{%
+The electric flux is
+
+\begin{gather}
+\Phi_{E} = \int{E \cdot dA} = \frac{Q}{\epsilon_{0}} = \frac{\sigma A}{\epsilon_{0}} = \frac{\sigma \pi c^{2}}{\epsilon_{0}}
+\end{gather}
+\\
+where $c$ is the radius of the sheet's affected area and can be calculated via the pythagorean theorem:
+
+\begin{gather}
+R^{2} = c^{2} + x^{2} \hspace{.1in} \rightarrow \hspace{.1in} c^{2} = R^{2} - x^{2}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} \boxed{\Phi_{E} = \frac{\sigma \pi \left(   R^{2} - x^{2}  \right)}{\epsilon_{0}}}\nonumber
+\end{gather}
+}
+
+
+
+
 
 \end{document}
 
