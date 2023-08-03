@@ -1,6 +1,4 @@
 rsync_recdir:= $(strip $(dir $(HOME)/Documents/))
-mkfile_dir  := $(strip $(dir $(realpath $(lastword $(MAKEFILE_LIST)))))
-rsync_opts   = -aAXH --delete --inplace --chmod 777 --out-format="%o %n"
 
 .PHONY: all info build clean
 
