@@ -1,7 +1,8 @@
 
 # https://texdoc.org/serve/latexmk.man1.pdf/0
 
-$aux_dir = './build';
+$do_cd   = 1;
+$aux_dir = '../build';
 $out_dir = '../pdfs';
 $jobname = '%A';
 
