@@ -1,4 +1,4 @@
-rsync_recdir:= $(strip $(dir $(HOME)/Documents/))
+mkfile_dir  := $(strip $(dir $(realpath $(lastword $(MAKEFILE_LIST)))))
 
 .PHONY: all info build clean
 
