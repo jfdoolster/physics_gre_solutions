@@ -165,5 +165,470 @@
 \end{multicols}
 \clearpage
 
+
+\Problem{1}{B}{%
+The capacitor will discharge when disconnected from the voltage source which mean that the current will have an exponential decay curve. Therefore, we can immediately eliminate choices (A), (C), and (E).\\\\
+Kirchoff's loop tells us that the initial circuit (when connected to \textit{a}) is
+
+\begin{gather}
+V - I(t) r - \frac{Q(t)}{C} = 0
+\end{gather}
+\\
+Therefore, when the switch is connected to \textit{b} we have
+
+\begin{gather}
+0 - I(t) R - \frac{Q(t)}{C} = 0 \hspace{.1in} \rightarrow \hspace{.1in} I(t) = \frac{Q(t)}{RC} \nonumber
+\end{gather}
+\\
+At $t = 0$ the capacitor has charge $Q_{0} = CV$. Therefore,
+
+\begin{gather}
+\boxed{I(0) = \frac{Q_{0}}{RC} = \frac{V}{R}}\nonumber
+\end{gather}
+}
+
+
+\Problem{2}{B}{%
+According to Faraday's Law the emf generated in the circuit is
+
+\begin{gather}
+\mathcal{E} = -\frac{\partial B}{\partial t} A
+\end{gather}
+\\
+the problem tells us that the magnetic field, $B$, is \textbf{decreasing} in magnitude at the rate of $150\Units{T/s}$.
+We calculate the area, $A$, of the circuit as $0.01\Units{m$^{2}$}$
+
+\begin{gather}
+\mathcal{E} = -(-150\Units{T/s}) \cdot 0.01\Units{m$^{2}$} = 1.5\Units{V}\nonumber
+\end{gather}
+\\
+We can then use Ohm's law to calculate the current through the circuit:
+
+\begin{gather}
+IR  = V - \mathcal{E}\\
+\nonumber\\
+I (10\Units{$\Omega$}) = 5.0\Units{V} - 1.5\Units{V} = 3.5\Units{V}
+\hspace{.1in} \rightarrow \hspace{.1in}
+\boxed{I = \frac{3.5\Units{V}}{10\Units{$\Omega$}} = 0.35\Units{A}}\nonumber
+\end{gather}
+}
+
+\Problem{3}{B}{%
+The equation for electrostatic potential is
+
+\begin{gather}
+V = \int{\vec{E} \cdot d\vec{l}} = \int{\frac{dq}{4 \pi \epsilon_{0} r}}
+\end{gather}
+\\
+where r is the distance from the charged ring to point $P$, which can be found via symmetry and the pythagorean theorem:
+
+\begin{gather}
+r^{2} = R^{2} +x^{2} \hspace{.1in} \rightarrow \hspace{.1in} r = \sqrt{R^{2} +x^{2}}\nonumber
+\end{gather}
+\\
+Therefore, the electric potential at point $P$ is
+
+\begin{gather}
+V = \int{\frac{dq}{4 \pi \epsilon_{0}}\frac{1}{\sqrt{R^{2} +x^{2}}}} = \frac{1}{4 \pi \epsilon_{0} \sqrt{R^{2} +x^{2}}} \int{dq} = \frac{Q}{4 \pi \epsilon_{0} \sqrt{R^{2} +x^{2}}} \nonumber
+\end{gather}
+}
+
+\Problem{4}{A}{%
+The equation for angular frequency in SHM, $\omega$, is
+
+\begin{gather}
+\omega = \sqrt{\frac{k}{m}}
+\end{gather}
+\\
+where $k$ is the spring constant and $m$ is the mass of the particle. We can solve for $k$ using the equation for force (equating Hooke's law with Coulomb's Law) and the potential found in the previous problem:
+
+\begin{gather}
+F = -k x = qE = -q \cdot \nabla V = -q \frac{dV}{dx} \\
+\nonumber\\
+kx =\frac{qQ}{4 \pi \epsilon_{0}} \cdot \frac{d}{dx} \left(  \frac{1}{\sqrt{R^{2} + x^{2}}}   \right) = \frac{qQ}{4 \pi \epsilon_{0}} \frac{x}{(R^{2} + x^{2})^{3/2}}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} k = \frac{qQ}{4 \pi \epsilon_{0} (R^{2} + x^{2})^{3/2}} \nonumber
+\end{gather}
+\\
+Plugging this into our equation for angular frequency we get the the solution
+
+\begin{gather}
+\omega = \sqrt{\frac{1}{m} \frac{qQ}{4 \pi \epsilon_{0} (R^{2} + x^{2})^{3/2}}}\nonumber
+\end{gather}
+\\
+Since $R \gg x$ we can cancel out x which give us the answer
+
+\begin{gather}
+\boxed{\omega = \sqrt{\frac{qQ}{4 \pi \epsilon_{0} m R^{3}}}}\nonumber
+\end{gather}
+}
+
+\Problem{5}{B}{%
+In order for the car to be traveling at a constant speed with $F_{air}$ opposing its direction of travel, it must have a tangential acceleration in the direction of $F_{C}$. As it travels around the circular road, the car experiences a centripetal acceleration in the direction of $F_{A}$. Therefore, to find the force of the road on the tires we must add the forces due to the car's tangential and centripetal acceleration. Using simple vector addition, we find that
+
+\begin{gather}
+\boxed{F_{tires} = F_{A} + F_{C} = F_{B}}\nonumber
+\end{gather}
+}
+
+\Problem{6}{B}{%
+The problem states that the block travels down the incline at a constant speed. Therefore, there is no change in the kinetic energy of the block. Since the block has potential energy $U = mgh$ at the top and $U = 0$ at the bottom of the incline, the energy dissipated by friction must be equal to $\boxed{mgh}$ (since $\Delta U$ is not transformed into kinetic energy).
+}
+
+\Problem{7}{A}{%
+The velocity of the center of mass follows the equation
+
+\begin{gather}
+V_{CM} =\frac{ \sum_{i}{m_{i}v_{i}} } { \sum_{i}{m_{i}} }\\
+\nonumber\\
+\therefore \hspace{.1in} V_{CM} = \frac{ m_{1}v_{1} + m_{2}v_{2}} { m_{1} + m_{2}} = \frac{ mv_{1} + 0} { 3m}= \frac{v_{1}}{3}\nonumber
+\end{gather}
+\\
+We can find $v_{1}$ through conservation of energy, equating potential energy at the starting height, $h$, to the kinetic energy at the time on the collision:
+
+\begin{gather}
+\frac{1}{2}mv_{1}^{2} = mgh \hspace{.1in} \rightarrow \hspace{.1in} v_{1} = \sqrt{2gh}\nonumber
+\end{gather}
+\\
+In the CM frame, when dealing with elastic collisions, $v_{i} = v_{f}$. The kinetic energy right at collision, $T$, is therefore
+
+\begin{gather}
+T = \frac{1}{2}mV_{CM}^{2} = \frac{1}{2}m \frac{v_{1}^{2}}{9} = \frac{mgh}{9}\nonumber
+\end{gather}
+\\
+We are looking for the height that the ball rises to after the collision, $h'$. Because energy is conserved the kinetic energy, $T$, is equal to the potential energy at $h'$:
+
+\begin{gather}
+\frac{mgh}{9} = mgh' \hspace{.1in} \rightarrow \hspace{.1in} \boxed{h' = \frac{h}{9}} \nonumber
+\end{gather}
+}
+
+\Problem{8}{A}{%
+The equation for simple harmonic motion comes from restoring force of the particle (Hooke's Law):
+
+\begin{gather}
+F = F_{rest} \hspace{.1in} \rightarrow \hspace{.1in} F - F_{rest} = m\ddot{x} + kx = 0
+\end{gather}
+\\
+Adding in the dampening force given in the problem statement give us
+
+\begin{gather}
+F = F_{rest} + f \hspace{.1in} \rightarrow \hspace{.1in} F - f - F_{rest}  = m\ddot{x} + b\dot{x} + kx = 0
+\end{gather}
+\\
+Which has the characteristic equation:
+
+\begin{gather}
+ m\omega^{2}+ b\omega + k = 0\nonumber
+\end{gather}
+\\
+using the quadratic equation we can find solutions for the frequency, $\omega$
+
+\begin{gather}
+\omega = \frac{-b \pm \sqrt{b^{2}-4mk}}{2m}\nonumber
+\end{gather}
+\\
+(notice that when $b = 0$ we get the SHM frequency $w = \sqrt{m/k}$)\\\\ The first term of this equation, $\left(  -\frac{b}{2m}  \right)$ is an exponentially decaying envelope. Therefore, in the presence of drag force the frequency of the oscillation is decreased which means that the period is increased (because $\omega \propto \frac{1}{T}$).
+}
+
+
+
+\Problem{9}{A}{%
+The problem calls for the use of the Rydberg formula for hydrogen:
+
+\begin{gather}
+\frac{1}{\lambda} = R \left(  \frac{1}{n_{f}^{2}} - \frac{1}{n_{i}^{2}}  \right)
+\end{gather}
+\\
+The \textbf{Lyman} series has $n_{f} = 1$ (given) and $n_{i} = 2  \rightarrow \infty$ (not given)\\
+The \textbf{Balmer} series has $n_{f} = 2$ (given) and $n_{i} = 3  \rightarrow \infty$ (not given)\\
+\\
+The problem is asking about the longest wavelength. The longest wavelength is produced when $n_{i}$ is at its minimum (because then the parenthetical part of the Rydberg formula is at a minimum). The ratio is therefore
+
+\begin{gather}
+\frac{\lambda_{L}}{\lambda_{B}} = \frac{ \left(  \frac{1}{2^{2}} - \frac{1}{3^{2}}  \right)}{ \left(  \frac{1}{1^{2}} - \frac{1}{2^{2}}  \right)}
+= \frac{ \left(  \frac{1}{4} - \frac{1}{9}  \right)}{ \left(  \frac{1}{1} - \frac{1}{4}  \right)} =  \frac{ \left(  \frac{9}{36} - \frac{4}{36}  \right)}{ \left(  \frac{3}{4} \right)} = \frac{\frac{5}{36}}{\frac{3}{4}} =  \frac{20}{108} = \boxed{\frac{5}{27} = \frac{\lambda_{L}}{\lambda_{B}}}\nonumber
+\end{gather}
+}
+
+\Problem{10}{B}{%
+Internal conversion is a radioactive decay process where the nucleus interacts with an orbital electron electromagnetically and causes that electron to be emitted. This is different from other processes in which the nucleus emits a particle after a nucleon decays. Since the problem expressly states that this is internal conversion, we can eliminate (C), (D), and (E). \\
+\\
+The emitted electron leaves a hole in the electron shell which is subsequently filled by other electrons. By doing so, the electrons emit X-rays or Auger electrons (an outer-shell electron that is ejected due to the filling of a inner-shell vacancy, see Auger Effect for more). With this information it is clear that (B) is the best choice.
+}
+
+\Problem{11}{D}{%
+In 1922, German physicists Otto Stern and Walther Gerlach conducted an experiment which showed the quantization of electron spin had two orientations. In this experiment, the Stern-Gerlach experiment, a beam of silver atoms was passed through an inhomogeneous magnetic field and deflected \textbf{vertically into two beams} before hitting a detector screen. Silver atoms have the electron configuration: \\
+
+\begin{center}
+$1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{6} 3d^{10} 4s^{2} 4p^{6} 4d^{10} 5s^{1}$ \hspace{.01in} or \hspace{.01in}  [Kr]  $4d^{10} 5s^1$
+\end{center}
+and neutral Hydrogen has the electron configuration:
+
+\begin{center}
+$1s^{1}$
+\end{center}
+notice that both configurations have only one electron in the outer $s$ orbital and therefore should behave similarly when passed through a non-uniform magnetic field.\\
+}
+
+\Problem{12}{C}{%
+The ground state energy of hydrogen is
+
+\begin{gather}
+E_{0,H} = -13.6\Units{eV} \propto \mu
+\end{gather}
+\\
+where $\mu$ is the reduced mass of the system given by the equation
+
+\begin{gather}
+\mu = \frac{m_{1} \cdot m_{2}}{m_{1} + m_{2}}
+\end{gather}
+\\
+For a normal hydrogen atom, $\mu \approx m_{e}$ (because $m_{p} \gg m_{e}$). For positronium:
+
+\begin{gather}
+\mu = \frac{m_{e} \cdot m_{e}}{m_{e} + m_{e}} = \frac{me}{2}\nonumber
+\end{gather}
+\\
+or 1/2 the reduced mass of hydrogen. Therefore the ground state energy of positronium is
+
+\begin{gather}
+E_{0,p} =\frac{-13.6\Units{eV}}{2} =\boxed{- 6.8\Units{eV}}\nonumber
+\end{gather}
+}
+
+\Problem{13}{B}{%
+This problem calls for the use of the specific heat equation
+\begin{gather}
+\label{eq:sp heat} Q = c m \Delta T = P t
+\end{gather}
+where $c$ is the specific heat, $m$ is the mass, $\Delta T$ is the change in temperature, $P$ is the power of the heating element, and $t$ is the time.
+To find the mass of the water we use the equation density equation, knowing that the density of water is $\rho = 1000\Units{kg/m$^{3}$}$.
+\begin{gather}
+m = \rho V\\
+\nonumber\\
+m = 1000\Units{kg/m$^{3}$} \cdot 1\Units{L} =
+1000\Units{kg/m$^{3}$} \cdot 0.001\Units{m$^{3}$} =
+1\Units{kg}\nonumber
+\end{gather}
+Plugging this and the other given values into equation (\ref{eq:sp heat}) and solving for time:
+\begin{gather}
+P t = 4200\Units{J/kg} \cdot 1\Units{kg} \cdot 1\Units{K} = 100\Units{W} \cdot t\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} t =
+\frac{4200\Units{J\,K}}{100\Units{J$\cdot$s}} =
+42\Units{K/s}\approx 40\Units{K/s} \nonumber
+\end{gather}
+Therefore is takes approximately $40\Units{s}$ for the water to cool by $1^{\circ}\Units{C}$
+}
+
+
+\Problem{14}{D}{%
+The equilibrium temperature is the arithmetic mean of the two blocks, $50^{\circ}$C.
+The heat energy (equation (\ref{eq:sp heat})) transferred to the cold block from the hot block is therefore
+
+\begin{gather}
+Q = c m \Delta T = 0.1\Units{kcal/(kg\,K)} \cdot 1\Units{kg} \cdot 50\Units{K} = \boxed{5\Units{kcal}}\nonumber
+\end{gather}
+}
+
+
+
+\Problem{15}{E}{%
+We need to look at each leg of the cycle individually, remembering the first law of thermodynamics
+
+\begin{gather}
+\Delta U = Q - W
+\end{gather}
+\\
+and that ideal gasses follow the equations:
+
+\begin{gather}
+PV = nRT\\
+\Delta U = C_{v} \Delta T\\
+W = P dV
+\end{gather}
+\\
+
+\begin{description}
+\item[$A \rightarrow B$:]
+\begin{gather}
+\Delta U = C_{v} \Delta T = 0\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{AB} = W = PdV =  nRT \int_{V_{1}}^{V_{2}} {\frac{d V}{V}} =  nRT \ln{\frac{V_{2}}{V_{1}}}\nonumber
+\end{gather}
+\\
+\item[$B \rightarrow C$:]
+\begin{gather}
+\Delta U = C_{v} (T_{c} - T_{h})\nonumber\\
+\nonumber\\
+W = P (V_{1} - V_{2}) = P V_{1} - P V_{2} = \frac{nRT_{c} V_{1}}{V_{1}} - \frac{nRT_{h} V_{2}}{V_{2}} = R (T_{c} - T_{h})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{BC} = \Delta U + W = C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h})\nonumber
+\end{gather}
+\\
+\item[$C \rightarrow A$:]
+\begin{gather}
+W = PdV = 0\nonumber\\
+\nonumber\\
+\Delta U = C_{v} (T_{h} - T_{c})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} Q_{CA} =  C_{v} (T_{h} - T_{c})\nonumber
+\end{gather}
+\\
+\end{description}
+Therefore, the summation of all of the added heat energy is
+
+\begin{align}
+Q_{AB} + Q_{BC} + Q_{CA} &= nRT \ln{\frac{V_{2}}{V_{1}}} + C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h}) + C_{v} (T_{h} - T_{c})\nonumber\\
+\nonumber\\
+&= nRT \ln{\frac{V_{2}}{V_{1}}} + C_{v} (T_{c} - T_{h}) + R (T_{c} - T_{h}) - C_{v} (T_{c} - T_{h}) \nonumber\\
+\nonumber\\
+&=nRT \ln{\frac{V_{2}}{V_{1}}} + R (T_{c} - T_{h}) = \boxed{nRT \ln{\frac{V_{2}}{V_{1}}} - R (T_{h} - T_{c})} \nonumber
+\end{align}
+\\\\
+This is a reversible, cycle process so $\Delta U_{ABCA} = 0$. Therefore, just adding up the work done during each leg would produce the same answer.
+}
+
+
+\Problem{16}{B}{%
+This problem is actually just a simple exercise in common sense. Knowing that the radius of an atom is about $10^{-10}\Units{m}$ eliminates choices (C), (D), and (E) since they are all less than or equal to this radius. Choice (A) is close to the width of human hair and thus is much larger than the expected mean free path at standard temperature and pressure, leaving us with (B).\\
+\\
+The problem can also be solved through rigorous calculations: The number density, $\eta$, is the number of atoms per volume. We can calculate this value using the ideal gas law
+
+\begin{gather}
+\eta = \frac{N}{V} = \frac{P}{kT}
+\end{gather}
+\\
+and using standard temperature and pressure values $T = 300\Units{K}$ and $P = 10^{5}\Units{Pa}$
+(Boltzmann's constant should be given to you on your equation sheet, $k = 1.38\e{-23}\Units{m$^{2}$\,kg/(s$^{2}$\,K)}$)
+
+\begin{gather}
+\eta = \frac{N}{V} = \frac{P}{kT} =
+\frac{10^{5}\Units{kg/(m\,s$^{2}$)}}{1.38\e{-23}\Units{m$^{2}$\,kg/(s$^{2}$\,K)} \cdot 300\Units{K}} =
+2.415\e{25}\Units{m$^{-3}$}\nonumber
+\end{gather}
+\\
+Now, the collision cross section is
+
+\begin{gather}
+\sigma = \pi r^{2}
+\end{gather}
+\\
+where $r$ is the radius of an atom, $\sim 10^{-10}\Units{m}$.
+
+\begin{gather}
+\sigma = \pi r^{2} = 3.141 \cdot 10^{-20}\Units{m$^{2}$} = 3.141\e{-20}\Units{m$^{2}$}\nonumber
+\end{gather}
+\\
+Therefore the mean free path is
+
+\begin{gather}
+\frac{1}{\eta \sigma } = \frac{1}{2.415\e{25}\Units{m$^{-3}$} \cdot 3.141\e{-20}\Units{m$^{2}$} } =
+\frac{1}{758839\Units{m$^{-1}$}} \approx \boxed{10^{-7}\Units{m}}\nonumber
+\end{gather}
+}
+
+
+\Problem{17}{E}{%
+The probability that the particle in the range $0 < x < 5$ is
+
+\begin{gather}
+{\psi * \psi}\biggr\rvert_{0}^{5} = { | \psi |^{2}}\biggr\rvert_{0}^{5} = 1^{2} + 1^{2} + 2^{2} + 3^{2} + 1^{2} = 1+1 +4 + 9 + 1 = 16\nonumber
+\end{gather}
+\\
+Notice that this is not the same as adding up the squares and squaring it. The probability that the particle in the range $2 < x < 4$ is
+
+\begin{gather}
+{ | \psi |^{2}}\biggr\rvert_{2}^{4} =  2^{2} + 3^{2} 4 + 9 = 13\nonumber
+\end{gather}
+\\
+Therefore the probability is $\boxed{\frac{13}{16}}$
+}
+
+
+\Problem{18}{C}{%
+Lets look at each of these answers individually
+
+\begin{description}
+
+\item[(A)] The wave function of a particle oscillates in free space. This diagram is ground state particle in an infinite square well. This is \textbf{incorrect}.
+
+\item[(B)] As expected, the amplitude of the wave function is decreased inside the potential. However, since $E < V_{0}$ the transmitted particle's wave function should have a lower amplitude than the incident wave function. This diagram is correct for the case where $E > V_{0}$ but is an \textbf{incorrect} solution to this problem.
+
+\item[(C)] This is the only diagram in which the wave function is oscillating before incidence, decaying while inside the potential, and have a transmitted wave function which oscillates with a smaller amplitude. This is \textbf{correct} because it carries the asymmetry expected for the case where $E < V_{0}$.
+
+\item[(D)] This picture states that the particle is most likely to be found inside the potential which is  \textbf{incorrect} for a typical particle.
+
+\item[(E)] The potential barrier is not changing the wave function of the particle in anyway and so must be \textbf{incorrect}.
+\\
+\end{description}
+}
+
+
+\Problem{19}{B}{%
+The best way to get the correct answer is to eliminate incorrect solutions. For instance, Since the backscatter is such a large angle we know that the coulomb repulsion much be very large which means that the distance of closest approach is going to very small, probably around the same order as a nucleus ($\sim 10^{-15}\Units{m}$). Therefore, we can eliminate solutions (C), (D), and (E). \\\\Now, (A) could probably be eliminated because it is so strange but lets actually figure out the value: $50^{1/3}$ is between 3 and 4 (closer to 4: $3^{3} = 27, 4^{3} = 64$) so it is somewhere around $1.22 \cdot 4 \approx 5$.
+Therefore (A) is about $5\Units{fm} = 5\e{-15}\Units{m}$ which is less than the size of a large nucleus like silver. Therefore, (B) is the best choice.\\
+\\
+Another, tougher, solution to the problem: Coulomb's law states that the potential electric potential energy is
+
+\begin{gather}
+V = \frac{(Z_{1}q_{1}) (Z_{2}q_{2})} {4 \pi \epsilon_{0} r}
+\end{gather}
+\\
+Because the alpha particle is scattered at an angle of $180^{\circ}$ we know that energy is conserved so that
+
+\begin{gather}
+E = 5\Units{MeV}  = 5\e{6}\Units{eV} = \frac{(Z_{1}q_{1}) (Z_{2}q_{2})} {4 \pi \epsilon_{0} r} = \frac{Z_{\alpha}Z_{Ag} q^{2}} {4 \pi \epsilon_{0} r} =  \frac{2 \cdot 50 \cdot q^{2}} {4 \pi \epsilon_{0} r} = \frac{100 \cdot q^{2}} {4 \pi \epsilon_{0} r}\nonumber
+\end{gather}
+\\
+Now, an electron volt is exactly what it should like: the electron charge multiplied by one volt. So, because $q = |e|$ we can rewrite this equation as
+
+\begin{gather}
+5\e{6}\Units{V} = \frac{100 \cdot q} {4 \pi \epsilon_{0} r}\nonumber
+\end{gather}
+\\
+Now, the term $(4 \pi \epsilon_{0})^{-1}$ is sometimes written as the constant $k$ which is equal to $9\e{9}\Units{s$^{4}$\,A$^{2}$/(m$^{3}$\,kg)}$ (NOT the Boltzmann constant).
+Lastly, the charge of an proton is $q =1.6\e{-19}\Units{C}$. Now we can solve for $r$:
+
+\begin{gather}
+r = \frac{100\cdot k \cdot q}{5\e{6}\Units{V}} =
+\frac{100\cdot 9\e{9}\Units{s$^{4}$\,A$^{2}$/(m$^{3}$\,kg)} \cdot 1.6\e{-19}\Units{C}}{5\e{6}\Units{V}} =
+2.88\e{-14}\Units{m} \approx 2.9\e{-14}\Units{m} \nonumber
+\end{gather}
+}
+
+
+
+\Problem{20}{D}{%
+This is an elastic collision and so the kinetic energy beforehand is the same as the kinetic energy afterwards.
+
+\begin{gather}
+T_{H,i} + T_{A, i} = T_{H,f} + T_{A, f}\nonumber\\
+\nonumber\\
+\frac{1}{2}m_{H} v^{2} + 0 = \frac{1}{2}m_{H} (0.6 v)^{2} + \frac{1}{2}m_{A} v'^{2}\nonumber\\
+\nonumber\\
+(1-0.6^{2})m_{H}v^{2} = (1-0.36)m_{H}v^{2} = 0.64 m_{H}v^{2} = m_{A} v'^{2}\nonumber
+\end{gather}
+\\
+No matter what type of collision, the momentum of the system is conserved. We can use this fact to determine $v'$:
+
+\begin{gather}
+m_{H}v = m_{A}v' - 0.6m_{H}v \hspace{.1in} \rightarrow \hspace{.1in} m_{A}v' = 0.6m_{H}v+ m_{H}v\nonumber\\
+\nonumber\\
+v' = \frac{1.6m_{H}v}{m_{A}}\nonumber
+\end{gather}
+\\
+Therefore,
+
+\begin{gather}
+0.64 m_{H}v^{2} = m_{A} v'^{2} = m_{A} \left(\frac{1.6m_{H}v}{m_{A}}\right)^{2} = \frac{\left(1.6m_{H}v\right)^{2}} {m_{A}} \hspace{.1in} \rightarrow \hspace{.1in} 0.64m_{A} = 1.6^{2} m_{H}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} m_{A} = \frac{1.6^{2} m_{H}}{0.64} = \frac{1.6^{2} m_{H}}{0.8^{2}} = 4m_{H}\nonumber
+\end{gather}
+\\
+The problem states that $m_{H} = 4u$. Therefore, $m_{A} = 4(4u) = \boxed{16u}$
+}
+
 \end{document}
 

@@ -1604,6 +1604,209 @@ T = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{M}{k_{eq}}}\\
 }
 
 
+\Problem{91}{B}{%
+Conservation of energy tells us that the total potential energy, $U$, at the top of the ramp must be equal to the the total kinetic energy, $T$, (translational and rotational) at the bottom of the ramp.
+
+\begin{align}
+T_{rot} + T_{trans} &= U \nonumber\\
+\frac{1}{2} I \omega^{2} + \frac{1}{2} M v^{2} &= MgH\nonumber
+\end{align}
+\\
+We know that, at the bottom of the ramp, $v = \sqrt{\frac{8gH}{7}}$ and so we need to solve for the rotational inertia, $I$,  of the system in terms of $v$:
+
+\begin{gather}
+I\omega^{2} = 2 M g H - Mv^{2} = \frac{14}{7} MgH - \frac{8}{7} M g H = \frac{6}{7} MgH\nonumber\\
+\rightarrow \hspace{.1in} I = \frac{6}{7} \frac{MgH }{\omega^{2}} = \frac{6}{7}  \frac{MgHR^{2}}{v^{2}} = \frac{6}{7} \frac{MgHR^{2}}{8gH/7} = \frac{6}{8} MR^{2} = \boxed{\frac{3}{4} MR^{2}} \nonumber
+\end{gather}
+}
+
+\Problem{92}{E}{%
+The hamiltonian of any system is equal to the total kinetic energy, $T_{tot}$, plus the total potential energy $U_{tot}$. The kinetic energy of a mass $m$ is
+
+\begin{gather}
+T = \frac{1}{2}mv^{2} = \frac{p^{2}}{2m}
+\end{gather}
+\\
+and the potential energy of a spring is
+
+\begin{gather}
+U = \frac{1}{2}kx^{2}
+\end{gather}
+\\
+where x is the distance from equilibrium length. Therefore, the Hamiltonian is
+
+\begin{align}
+H &= T_{tot} + U_{tot} \\
+&= \frac{p_{1}^{2}}{2m} + \frac{p_{2}^{2}}{2m} + \frac{1}{2} k (l-l_{0})^{2}\nonumber\\
+&=\frac{1}{2}\left[ \frac{p_{1}^{2}}{m} + \frac{p_{2}^{2}}{m} +k (l-l_{0})^{2}  \right]\nonumber
+\end{align}
+}
+
+\Problem{93}{C}{%
+The Bohr radius is always the most probable value for $r$ in a ground state H atom. \\
+\\
+For proof, recall that the most probable value is given by the maximum of the probability distribution (the probability of finding the particle between $r$ and $r + dr$), $P_{r}$.
+
+\begin{gather}
+P = \int{\left|  \psi(r) \right|^{2}}dV = \int{\left|  \psi(r) \right|^{2}} 4 \pi r^{2}dr = \int{P_{r}}dr
+\end{gather}
+\\
+Because this is a Gaussian distribution, the maximum is taken to be the only turning point of the probability distribution (when its first derivative is equal to zero):
+
+\begin{align}
+\frac{dP_{r}}{dr} &= \left|  \psi(r) \right|^{2} \frac{d(4 \pi r^{2})}{dr} + \frac{d\left|  \psi(r) \right|^{2}}{dr} 4 \pi r^{2}\nonumber\\
+ \nonumber\\
+&= \frac{e^{-2r/a_{0}}}{\pi a_{0}^{\hspace{.03in} 3}} (8 \pi r) + \frac{-2 e^{-2r/a_{0}}}{\pi a_{0}^{\hspace{.03in} 4}} (4 \pi r^{2})  = 0\nonumber
+\end{align}
+
+\begin{align}
+\rightarrow \hspace{.1in} \frac{e^{-2r/a_{0}}}{\pi a_{0}^{\hspace{.03in} 3}} (8 \pi r) &= \frac{e^{-2r/a_{0}}}{\pi a_{0}^{\hspace{.03in} 4}} (8 \pi r^{2}) \nonumber\\
+\frac{r}{a_{0}^{\hspace{.03in} 3}} &= \frac{r^{2}}{_{0}^{\hspace{.03in} 4}}\nonumber\\
+r &= \boxed{a_{0}}\nonumber
+\end{align}
+}
+
+
+\Problem{94}{E}{%
+This problem is much more simple than it looks:
+
+\begin{align}
+\Delta H \ket{n} &= V \left(   a  +  a^{\dag}  \right)^{2}\nonumber\\
+&= V \left(  \sqrt{n} \ket{n - 1} +  \sqrt{n + 1} \ket{n + 1}    \right)^{2} \nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} \Delta H \ket{2} &= V \left(  \sqrt{2} \ket{2- 1} +  \sqrt{2 + 1} \ket{2 + 1}    \right)^{2} \nonumber\\
+&= V \left( \sqrt{2} \ket{1} +  \sqrt{3} \ket{3}    \right) \cdot \left( \sqrt{2} \ket{1} +  \sqrt{3} \ket{3}    \right) \nonumber\\
+&= V \left(   2 \braket{1 | 1} + \sqrt{6}\braket{1 | 3} +  \sqrt{6}\braket{3 | 1}  + 3\braket{3 | 3}  \right)\nonumber\\
+&= V (2 + 3) = \boxed{5 V}\nonumber
+\end{align}
+}
+
+
+\Problem{95}{A}{%
+The equation for electric field per unit area is
+
+\begin{gather}
+E = \frac{Q_{enc}}{A \cdot \epsilon }
+\end{gather}
+\\
+In free space, $\epsilon = \epsilon_{0}$. However, when a material is added with dielectric constant $K$, $\epsilon = K \epsilon_{0}$. Therefore, the electric field in the material is
+
+\begin{gather}
+E = \frac{Q_{enc}}{A\cdot K \epsilon_{0} } = \frac{E_{0}}{K}\nonumber
+\end{gather}
+}
+
+\Problem{96}{E}{%
+An oscillating charge produces \textbf{no} radiation along its axis of oscillation. In order to have radiation you must have a magnetic field. The electric flux through the axis of oscillation does not change (Gauss's Law) and so no magnetic field is created in that direction. \\
+\\
+A uniformly expanding and contracting sphere has an axis of oscillation in the radial direction and therefore does not produce radiation in any direction. \\
+}
+
+
+\Problem{97}{E}{%
+This is an intensive application of Snell's Law (and some identities) where $n_{1} = 1$ (vacuum) and $n_{2} = n(\lambda)$.
+
+\begin{gather}
+n_{1}\sin{(\theta_{1})} = n_{2}\sin{(\theta_{2})}\\
+\nonumber\\
+\sin{(\theta)} = n(\lambda) \sin{(\theta')}\nonumber
+\end{gather}
+\\
+Now differentiate both sides with respect to $\lambda$ (remembering that $\theta'$ is a function of $\lambda$)
+
+\begin{gather}
+\frac{d}{d\lambda}\sin{(\theta)} = \frac{d}{d\lambda}\left( n(\lambda) \sin{(\theta')} \right)\nonumber \\
+\nonumber \\
+0 =  \frac{dn(\lambda)} {d\lambda}\cdot  \sin{(\theta')} + n(\lambda) \cdot \cos{(\theta')} \cdot \frac{d\theta'}{d\lambda}\nonumber
+\end{gather}
+
+\begin{align}
+\rightarrow \hspace{.1in} \frac{d\theta'}{d\lambda} &= -\frac{\sin{(\theta')}}{\cos{(\theta')}} \cdot \frac{d n(\lambda)}{d \lambda} \frac{1}{n(\lambda)}\nonumber\\
+\nonumber\\
+&= -\tan{(\theta')}\cdot \frac{d n(\lambda)}{d \lambda} \frac{1}{n(\lambda)}\nonumber
+\end{align}
+
+\begin{gather}
+\therefore \hspace{.1in} \boxed{d\theta' = \left|  \frac{\tan{(\theta')}}{n(\lambda)} \cdot \frac{d n(\lambda)}{d \lambda}   d \lambda \right|}\nonumber
+\end{gather}
+}
+
+
+\Problem{98}{A}{%
+The probability of a system being in a state $n$ is given by
+
+\begin{gather}
+p_{n} = \frac{e^{-\beta E_{n}}}{Z}
+\end{gather}
+\\
+where $\beta = 1/k_{B} T$ and $Z = \sum_{n}{e^{-\beta E_{n}}}$. With this equation, we can find the average (or expectation) value of any state variable though the equation
+
+\begin{gather}
+\braket{O} = \sum_{n}{p_{i} O_{i}}
+\end{gather}
+\\
+The equation that is given in this problem is therefore the average energy of the system because
+
+\begin{gather}
+\frac{\sum_{i}{E_{i}e^{-E_{i}/kT}}}{\sum_{i}{e^{-E_{i}/kT}}} = \frac{\sum_{i}{E_{i}e^{-\beta E_{i}}}}{\sum_{i}{e^{-\beta E_{i}}}} = \frac{\sum_{i}{E_{i}e^{-\beta E_{i}}}}{Z}  = \boxed{\sum_{i}{p_{i} E_{i} } = \braket{E}}\nonumber
+\end{gather}
+}
+
+\Problem{99}{D}{%
+Conservation of 4-momentum dictates that
+
+\begin{gather}
+P_{\gamma} + P_{e,1} = 3 P_{e,2}\nonumber
+\end{gather}
+\\
+squaring both sides of the equation we get
+
+\begin{gather}
+P_{\gamma}P_{\gamma} + 2 P_{\gamma}P_{e,1} + P_{e,1} P_{e,1}  = 9P_{e,2}P_{e,2}\nonumber
+\end{gather}
+\\
+Now, the four - momentum vectors are as follows:
+
+\begin{gather}
+P_{\gamma} = \left( \frac{E}{c}, \frac{E}{c}, 0 , 0    \right)\nonumber\\
+P_{e,1} = \left( mc, 0, 0 , 0    \right)\nonumber
+\end{gather}
+\\
+We dont care about the form of $P_{e,2}$ because $P \cdot P$ is invariant and therefore $P_{e,1}P_{e,1} = P_{e,2}P_{e,2} = -m^{2}c^{2}$. \\
+\\
+Remembering that for $P = (a,b,c,d)$, $P^{2} = d^{2}+c^{2}+b^{2}-a^{2}$:
+
+\begin{gather}
+P_{\gamma}P_{\gamma} + 2 P_{\gamma}P_{e,1} + P_{e,1} P_{e,1}  = 9P_{e,2}P_{e,2}\nonumber\\
+\nonumber\\
+0 + 2 \frac{E}{c} \cdot mc - m^{2}c^{2} = -9 m^{2}c^{2} \nonumber\\
+\nonumber\\
+2Em = - 8m^{2}c^{2} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{|E| = 4mc^{2}}\nonumber
+\end{gather}
+}
+
+
+\Problem{100}{B}{%
+The equation for the fringeshift in an interferometer is
+
+\begin{gather}
+m = \frac{2d}{\lambda} \hspace{.1in} \rightarrow \hspace{.1in} d = \frac{\lambda m}{2}
+\end{gather}
+\\
+where $m$ is the number of fringes, $d$ is the distance travelled by the beam, and $\lambda$ is the wavelength. Since both beams travel the same distance we can easily solve for $\lambda_{g}$ in terms of $\lambda_{r}$, $m_{r}$, and $m_{g}$:
+
+\begin{gather}
+d = \frac{\lambda_{g} m_{g}}{2} = \frac{\lambda_{r} m_{r}}{2} \hspace{.1in} \rightarrow \hspace{.1in} \lambda_{g}  = \frac{\lambda_{r} m_{r}}{m_{g}} \approx
+\frac{633\Units{nm} \cdot 85,865\Units{fringes}}{100,000\Units{fringes}} \approx
+543\Units{nm}
+\end{gather}
+\\
+Knowledge of the electromagnetic spectrum would also be enough to get the correct answer: Visible light has wavelengths between $400\Units{nm}$ and $700\Units{nm}$ (eliminate (D) and (E)). Violet is $\lambda = 400\Units{nm}$ and red is between $\lambda = 600\Units{nm}$ and $\lambda = 700\Units{nm}$. We can eliminate choice (C) because it is close to $\lambda = 600\Units{nm}$ and therefore most likely in the yellow-orange range. Between choice (A) and (B), (A) is closer to the violet side of the visible spectrum and further from yellow so (B) is a better choice.\\
+\\
+One can also remember the fact that green light has $\lambda \approx 550\Units{nm}$\\
+}
+
+
 
 
 
