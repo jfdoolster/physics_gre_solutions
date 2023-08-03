@@ -400,7 +400,7 @@ E_{0,p} =\frac{-13.6\Units{eV}}{2} =\boxed{- 6.8\Units{eV}}\nonumber
 \Problem{13}{B}{%
 This problem calls for the use of the specific heat equation
 \begin{gather}
-\label{eq:sp heat} Q = c m \Delta T = P t
+\label{eq:sp_heat} Q = c m \Delta T = P t
 \end{gather}
 where $c$ is the specific heat, $m$ is the mass, $\Delta T$ is the change in temperature, $P$ is the power of the heating element, and $t$ is the time.
 To find the mass of the water we use the equation density equation, knowing that the density of water is $\rho = 1000\Units{kg/m$^{3}$}$.
@@ -411,7 +411,7 @@ m = 1000\Units{kg/m$^{3}$} \cdot 1\Units{L} =
 1000\Units{kg/m$^{3}$} \cdot 0.001\Units{m$^{3}$} =
 1\Units{kg}\nonumber
 \end{gather}
-Plugging this and the other given values into equation (\ref{eq:sp heat}) and solving for time:
+Plugging this and the other given values into equation (\ref{eq:sp_heat}) and solving for time:
 \begin{gather}
 P t = 4200\Units{J/kg} \cdot 1\Units{kg} \cdot 1\Units{K} = 100\Units{W} \cdot t\nonumber\\
 \nonumber\\
@@ -425,7 +425,7 @@ Therefore is takes approximately $40\Units{s}$ for the water to cool by $1^{\cir
 
 \Problem{14}{D}{%
 The equilibrium temperature is the arithmetic mean of the two blocks, $50^{\circ}$C.
-The heat energy (equation (\ref{eq:sp heat})) transferred to the cold block from the hot block is therefore
+The heat energy (equation (\ref{eq:sp_heat})) transferred to the cold block from the hot block is therefore
 
 \begin{gather}
 Q = c m \Delta T = 0.1\Units{kcal/(kg\,K)} \cdot 1\Units{kg} \cdot 50\Units{K} = \boxed{5\Units{kcal}}\nonumber
@@ -629,6 +629,1004 @@ Therefore,
 \\
 The problem states that $m_{H} = 4u$. Therefore, $m_{A} = 4(4u) = \boxed{16u}$
 }
+
+
+\Problem{21}{C}{%
+Recall the parallel axis theorem:
+
+\begin{gather}
+\label{eq:parax} I = I_{CM} + mr^{2}
+\end{gather}
+\\
+Where $r$ is the distance from the from the point to the center of mass.
+In this problem, the circular hoop is hanging form a nail so that $r = d = 20\Units{cm}$.
+The moment of inertia for a hoop (thin hollow cylinder) is $I_{hoop} = mr^{2}$.Therefore, the moment of inertia for the set up is
+
+\begin{gather}
+I = I_{hoop} + mr^{2} = md^{2} + md^{2} = 2md^{2}\nonumber
+\end{gather}
+\\
+Plugging this into the given equation for the period we get
+
+\begin{gather}
+T = 2 \pi \sqrt{\frac{I}{mgd}} = 2 \pi \sqrt{\frac{2md^{2}}{mgd}} = 2 \pi \sqrt{\frac{2d}{g}} \nonumber
+\end{gather}
+\\
+Unfortunately, we now need to plug in numbers. Using $\pi \approx 3$ and $g \approx 10$ we can approximate the solution
+
+\begin{gather}
+T = 2 \cdot 3 \sqrt{\frac{2 \cdot 0.2\Units{m}}{10\Units{m/s$^{2}$}}}  =
+6 \sqrt{0.04\Units{s$^{2}$}} = 1.2\Units{s} \approx \boxed{1.3\Units{s}} \nonumber
+\end{gather}
+}
+
+\Problem{22}{C}{%
+We need to start by calculating the radius of Mars. We are told that for ever $3600\Units{m}$ the surface drops $2\Units{m}$.
+We can picture this as a right triangle with legs $3600\Units{m}$, $R - 2\Units{m}$ and a hypotenuse $R$ (which is the radius of the planet).
+Using the pythagorean theorem to solve for $R$:
+
+\begin{gather}
+R^{2} = (3600\Units{m})^{2} + (R - 2\Units{m})^{2} =
+3600^{2}\Units{m$^{2}$} + R^{2} - 4\Units{m} \cdot R +4\Units{m$^{2}$}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in} 4\Units{m}\cdot R = 3600^{2}\Units{m$^{2}$} + 4\Units{m$^{2}$}\nonumber\\
+\nonumber\\
+\rightarrow \hspace{.1in}
+R = \frac{3600^{2}\Units{m$^{2}$}}{4\Units{m}} + 1\Units{m$^{2}$} \approx
+\frac{3600^{2}\Units{m}}{4}\nonumber
+\end{gather}
+\\
+In order to get a golf ball to orbit Mars the force of gravity and the centripetal force must be equal.
+
+\begin{gather}
+F_{cent} = F_{grav, M} \hspace{.1in} \rightarrow \hspace{.1in} m \frac{v^{2}}{R} = mg_{M}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} v = \sqrt{g_{M}R} = \sqrt{0.4gR} = \sqrt{4R} =
+\sqrt{4\Units{m/s$^{2}$} \cdot \frac{3600^{2}\Units{m}}{4}} = 3600\Units{m/s} = \boxed{3.6\Units{km/s}}\nonumber
+\end{gather}
+}
+
+
+\Problem{23}{D}{%
+Process of elimination:
+
+\begin{description}
+
+\item[(A)] The new gravitational force law does not introduce any damping or frictional forces so the total mechanical energy should still be conserved. This is \textbf{not necessarily false}.
+
+\item[(B)] Angular momentum is always conserved in planetary orbits. The problem's proposed gravitational force law does not change that. This is \textbf{not necessarily false}.
+
+\item[(C)] Kepler's Third Law states that the square of planet's period, $T$, is proportional to the the cube of the orbit's semi-major axis.
+
+\begin{gather}
+T^{2} \propto a^{3} \hspace{.1in} \rightarrow \hspace{.1in} T \propto a^{3/2}
+\end{gather}
+\\
+For a circular orbit, $a = r$. Therefore, tith the addition of the small positive number, $\epsilon$, Kepler's Third Law reads as
+
+\begin{gather}
+T^{2} \propto r^{3 + \epsilon} \hspace{.1in} \rightarrow \hspace{.1in} T \propto r^{(3 + \epsilon)/2}\nonumber
+\end{gather}
+\\
+This is \textbf{not false}.
+
+\item[(D)] There are only two types of central force potentials what allow \textbf{all} stable non-circular orbits. These are inverse square central force potentials where
+
+\begin{gather}
+V \propto \frac{1}{r}\nonumber
+\end{gather}
+\\
+or radial harmonic oscillator potentials where
+
+\begin{gather}
+V = \frac{1}{2} k r^{2}\nonumber
+\end{gather}
+\\
+This is a statement of Bertrand's theorem. \\
+\\
+The problem's given central force equation is not an inverse-square potential or a radial harmonic oscillator so it can not have a stable non-circular orbit about the sun. This is \textbf{false}.
+
+\item[(E)] A stable circular orbit can exist in a potential,$V$, if the following conditions are satisfied:
+
+\begin{gather}
+V_{eff}' = 0\\
+V_{eff}'' > 0
+\end{gather}
+\\
+where
+
+\begin{gather}
+V_{eff} = \frac{L^{2}}{2Mr^{2}} + V(r) = \frac{L^{2}}{2Mr^{2}} - \int{F}dx
+\end{gather}
+\\
+From here, one could derive the $V_{eff}$ and see that both of the above conditions are met. This, however, would be a huge waste of time on the test. Since we already know that (D) is the correct answer and that circular orbits can exist for basically any potential we should not do more work than is needed.
+\\
+\end{description}
+}
+
+
+
+\Problem{24}{D}{%
+The equation for the coulomb force is
+
+\begin{gather}
+F = \frac{q_{1}q_{2}}{4 \pi \epsilon_{0} r^{2}} = k \frac{q^{2}}{r^{2}}\nonumber
+\end{gather}
+\\
+When sphere $C$ comes in contact with $A$, it is imbued with half of $q$ so that $q_{C,1} = q_{A} = \frac{q}{2}$\\
+\\
+When $C$ is then touched to $B$ both spheres come away with half of the total charge on each sphere is
+
+\begin{gather}
+q_{B} = q_{C,2} =  \frac{1}{2} (q + q_{C,1}) = \frac{1}{2} \left(\frac{2q}{2} + \frac{q}{2}\right) = \frac{3q}{4}\nonumber
+\end{gather}
+\\
+Therefore, the force between $A$ and $B$ is now
+
+\begin{gather}
+F = k \frac{q_{A} \cdot q_{B}}{r^{2}} = k \frac{3q^{2}}{8r^{2}} =\boxed{\frac{3F}{8}}\nonumber
+\end{gather}
+}
+
+
+
+\Problem{25}{E}{%
+ Lets look at each answer individually:
+
+\begin{description}
+
+\item[(A)] The voltage across two capacitors in parallel is equivalent. When the switch is open $C_{1}$ carries the charge $Q_{0}$ and $C_{2}$ is uncharged. Therefore, conservation of charge tells us that this must be \textbf{correct}
+
+\item[(B)] $V$ is equivalent across both capacitors and $C_{1} = C_{2}$ so the equation
+
+\begin{gather}
+Q = CV
+\end{gather}
+\\
+Tells us that this must be \textbf{correct}.
+
+\item[(C)] Once again, the voltage across two capacitors in parallel is equivalent. This is therefore \textbf{correct}.
+
+\item[(D)] The equation for energy stored in a capacitor is
+
+\begin{gather}
+\label{eq:capen} U = \frac{1}{2}CV^{2} =  \frac{1}{2}QV =  \frac{1}{2}\frac{Q^{2}}{C}
+\end{gather}
+\\
+From (A), (B), and (C) we know that this must be \textbf{correct} which leaves
+
+\item[(E)] From equation (\ref{eq:capen}) we know that $U_{0} =  \frac{1}{2}CV^{2}$. When the switch is closed, each capacitor has energy $U = \frac{1}{2}CV^{2}$ so that
+
+\begin{gather}
+U_{tot} = U_{1} + U_{2} = \frac{1}{2}CV^{2} + \frac{1}{2}CV^{2} = 2U_{0} \neq U_{0}\nonumber
+\end{gather}
+\\
+So this is the only \textbf{incorrect} statement.
+\\
+\end{description}
+}
+
+
+
+\Problem{26}{C}{%
+The hardest part of this problem is the fact that you must do all the calculations without a calculator. The resonance frequency of an LRC circuit is
+
+\begin{gather}
+\label{eq:angfreq}\omega^{2} = \frac{1}{LC}
+\end{gather}
+\\
+The problem tells us that the frequency of broadcast is $f = 103.7\Units{MHz}$ which means that the resonance frequency is
+
+\begin{gather}
+\omega = 2 \pi f = 2 \pi \cdot 103.7\Units{MHz}
+\approx 6.2 \cdot 103.7\e{6}\Units{Hz} \approx 650\e{6}\Units{Hz}\nonumber
+\end{gather}
+\\
+solving equation (\ref{eq:angfreq}) for $C$ and plugging in $\omega$ we get
+
+\begin{gather}
+C =  \frac{1}{L \omega^{2}} = \frac{1}{2.0\e{-6}\Units{H} \cdot (650\e{6}\Units{Hz})^{2}} =
+\frac{1}{8.45\e{11}\Units{m$^{2}$\,kg/(s$^{4}$\,A$^{2}$}} = 1.18\e{-12}\Units{F} \approx \boxed{1\Units{pf}}\nonumber
+\end{gather}
+\\
+Notice that we don't care about the resistance because a radio circuit has all of its components in parallel.
+}
+
+
+\Problem{27}{D}{%
+Any physical phenomenon that can be described using an exponential is best expressed using a Log or semi-log diagram. Therefore, we can eliminate (A), (C), and (E). \\
+\\
+Choice (B) can be rewritten into the form
+
+\begin{gather}
+f = \frac{e}{h} V_{s} + \frac{W}{h} \nonumber
+\end{gather}
+\\
+which is in the form $f{x} = mx + b$, a linear function. Therefore (D) is the only graph that is not appropriate for the mathematical relation.
+}
+
+
+
+\Problem{28}{D}{%
+The simple way to solve this problem is to find the beat frequency, the difference between the two interfering waves' frequencies.
+From the graph, we see that the wavelength is $\lambda \approx 1\Units{cm}$.
+Since we are given the velocity, $v$, of the spot we can use the equation $v = \lambda f$ to find the beat frequency:
+
+\begin{gather}
+f = \frac{v}{\lambda} = \frac{0.5\Units{cm/ms}}{1\Units{cm}} =
+0.5\Units{ms$^{-1}$} = 500\Units{Hz} \nonumber
+\end{gather}
+\\
+Which is closest to the difference in frequencies of (D). \\
+}
+
+
+
+\Problem{29}{E}{%
+The plank length is
+
+\begin{gather}
+l_{p} = \sqrt{\frac{\hbar G}{c^{3}}}
+\end{gather}
+\\
+For students that have not learned this in their undergraduate career: dimensional analysis will also give you the correct answer, (E). \\
+
+\begin{gather}
+[G] = \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right]\\
+[\hbar] = \left[   \frac{m^{2} \cdot kg}{s}   \right]\\
+[c] = \left[  \frac{m}{s} \right]
+\end{gather}
+\\
+But don't waste your time looking at the dimensions of each solution!
+Knowing that $l_{p}$ must have units of meters tells us that the kilograms in both $G$ and $\hbar$ must cancel out.
+This eliminates (B),(C), and (E). Dimensional analysis of (A) gives us:
+
+\begin{gather}
+[G \hbar c] = \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right] \cdot \left[   \frac{m^{2} \cdot kg}{s}   \right] \cdot \left[  \frac{m}{s} \right] = \left[   \frac{m^{5}}{s^{4}}   \right] \nonumber
+\end{gather} Which is incorrect. Therefore, that (E) is the correct answer. For the sake of completeness:
+
+\begin{gather}
+\left[   \frac{G \hbar} {c^{3}}  \right]^{\frac{1}{2}}  =  \left(  \left[   \frac{m^{3}}{kg \cdot s^{2}}   \right] \cdot \left[   \frac{m^{2} \cdot kg}{s}   \right] \cdot \left[  \frac{s^{3}}{m^{3}} \right] \right)^{\frac{1}{2}}=\left[   m^{2}   \right]^\frac{1}{2} = [m] \nonumber
+\end{gather}
+}
+
+
+
+
+\Problem{30}{C}{%
+The pressure due to a fluid follows the equation
+
+\begin{gather}
+P = \rho g h
+\end{gather}
+\\
+Let us say that $x$ is the distance that the water is displaced after the dark fluid is introduced to the system. $h_{1}$ can be defined as:
+
+\begin{gather}
+h_{1} = h_{d} + (h_{1,i} - x) = 5\Units{cm} + (20\Units{cm} - x)\nonumber
+\end{gather}
+\\
+Then $h_{2}$ is
+
+\begin{gather}
+h_{2} = h_{2,i} + x = 20\Units{cm} + x \nonumber
+\end{gather}
+\\
+We then combine these two equations to get
+
+\begin{gather}
+h_{1} + h_{2} =  [5\Units{cm} + (20\Units{cm} - x)] + [  20\Units{cm} + x ] = 45\Units{cm}\nonumber\\
+\nonumber\\
+h_{1} - h_{2} =  [5\Units{cm} + (20\Units{cm} - x)] - [  20\Units{cm} + x ] = 5\Units{cm} - 2x\nonumber
+\end{gather}
+\\
+Therefore:
+
+\begin{gather}
+2 \cdot h_{1} = 50\Units{cm} -2x \hspace{.1in} \rightarrow \hspace{.1in}  h_{1} = 25\Units{cm} -x\nonumber\\
+\nonumber\\
+2 \cdot h_{2} = 40 +2x \hspace{.1in} \rightarrow \hspace{.1in} h_{2}  = 20\Units{cm} + x \nonumber
+\end{gather}
+\\
+Then assign any number to $x$ (I'll use $x = 10\Units{cm}$) and solve $h_{2}/h_{1}$:
+
+\begin{gather}
+\frac{h_{2}}{h_{1}} =  \frac{20\Units{cm} + 10\Units{cm}}{25\Units{cm} - 10\Units{cm}} = \frac{30\Units{cm}}{15\Units{cm}} = \boxed{\frac{2}{1}} \nonumber
+\end{gather}
+}
+
+\Problem{31}{E}{%
+Process of elimination:
+
+\begin{description}
+
+\item[(A)] As the sphere falls under the force of gravity, it is velocity is increased due to the acceleration of gravity. As the velocity increases the kinetic energy increases. So this is \textbf{incorrect}.
+
+\item[(B)] The retarding force keeps the sphere from exceeding the terminal velocity but does not stop it. Therefore, the kinetic energy is not decreased to zero due to the retarding force. This is \textbf{incorrect}.
+
+\item[(C)] The terminal velocity is the maximum velocity the sphere can achieve in the presence of a retarding force. Therefore, this solution makes no physical sense and is \textbf{incorrect}.
+
+\item[(D)] The force equation is
+
+\begin{gather}
+F_{net} = m a = b v_{t} - m g \hspace{.1in} \rightarrow \hspace{.1in} v_{t} = \frac{m a + m g}{b}\nonumber
+\end{gather}
+\\
+Obviously, the terminal speed, $v_{t}$, does depend on both $b$ and $m$. So this is \textbf{incorrect}.
+
+\item[(E)] This is the \textbf{correct} answer. See argument in (D)
+
+\end{description}
+
+}
+
+
+\Problem{32}{B}{%
+ The rotational kinetic energy follows the equation:
+
+\begin{gather}
+T = \frac{1}{2} I \omega^{2}
+\end{gather}
+\\
+For this problem we must  compare the kinetic energy at $A$ and $B$:
+
+\begin{gather}
+\frac{T_{B}}{T_{A}} = \frac{I_{B}}{I_{A}}
+\end{gather}
+\\
+Therefore, we must find $I_{A}$ and $I_{B}$. For $I_{A}$, simply use the summation:
+
+\begin{gather}
+I_{A} = \sum_{i}{m_{i}r_{i}} = 3mr\nonumber
+\end{gather}
+\\
+where $r$ is the distance from the center of the triangle to the corner: $l \cos{\left(  \frac{\pi}{3}  \right)} = \frac{l}{3}$. To find $I_{B}$ we must use the parallel axis theorem:
+
+\begin{gather}
+I_{B} = I_{cm} +  \sum_{i}{m_{i}r_{i}} = I_{A} + 3mr = 2I_{A} \nonumber
+\end{gather}
+\\
+Therefore,
+
+\begin{gather}
+\frac{T_{B}}{T_{A}} = \frac{I_{B}}{I_{A}} =  \frac{2I_{A} }{I_{A}} = \boxed{2}\nonumber
+\end{gather}
+}
+
+
+
+\Problem{33}{B}{%
+Quantum mechanical probability is always found using the equation
+
+\begin{gather}
+P = \int{\left| \braket{\psi | \psi} \right|}^{2} dx
+\end{gather}
+\\
+The question asks for the probability of obtaining the result $l = 5$ which has the wavefunction
+
+\begin{gather}
+\bra{\psi} = \frac{(3 Y^{1}_{5} + 2Y^{-1}_{5})}{\sqrt{38}}\nonumber
+\end{gather}
+\\
+which then gives us the probability
+
+\begin{gather}
+P_{l=5} = \frac{3^{2} + 2^{2}}{38} = \frac{9 + 4}{38} = \boxed{\frac{13}{38}}\nonumber
+\end{gather}
+}
+
+
+\Problem{34}{D}{%
+ We can and should immediately eliminate choices (A) and (B) since gauge and and time invariance stem from the conservation of energy and charge, respectively. The violation of either of these is therefore physically impossible. \\
+\\
+Translational and rotational invariance deal with conservation of momentum and angular momentum. Therefore, the answer must be (D) since it is the only solution that does not break any conservation laws.
+}
+
+
+\Problem{35}{A}{%
+You should go into the test knowing that the Pauli-Exclusion principle states that no two fermions can occupy the same quantum state.
+This comes from the fact that the total wave function of two identical fermions is antisymmetric under particle exchange.
+}
+
+\Problem{36}{D}{%
+This calls for the use of the relativistic energy equation:
+
+\begin{gather}
+E = mc^{2} =  \gamma m_{0}c^{2}
+\end{gather}
+\\
+where $\gamma$ is the Lorentz factor:
+
+\begin{gather}
+\gamma = \frac{1}{\sqrt{1- \left(   \frac{v}{c}    \right)^{2}}}
+\end{gather}
+\\
+Since the lumps of clay are traveling at $v = \frac{3c}{5}$, they both have
+
+\begin{gather}
+\gamma = \left(  1- \frac{9}{25} \right)^{-1} = \left( \frac{16}{25} \right)^{-1} = \frac{5}{4}\nonumber
+\end{gather}
+\\
+when the masses collide and are at rest they have total mass $M$ and energy $Mc^{2}$. Setting this equal to the summation of each lump's energy we get
+
+\begin{gather}
+2 \gamma m_{0}c^{2} = Mc^{2} \hspace{.1in} \rightarrow \hspace{.1in} 2 \gamma m_{0} = M = 2 \cdot  \frac{5}{4} \cdot 4\Units{kg} = \boxed{10\Units{kg}}\nonumber
+\end{gather}
+}
+
+\Problem{37}{D}{%
+This is a simple application of the relativistic velocity addition formula:
+
+\begin{gather}
+u' = \frac{u+v}{1+\frac{uv}{c^{2}}}
+\end{gather}
+\\
+where $v$ is the speed of the atom, $u$ is the speed of the emitted electron, and $u'$ is the speed of the electron in the lab frame.
+
+\begin{gather}
+u' = \frac{0.6c+0.3c}{1+0.18 \cdot \frac{c^{2}}{c^{2}}} = \frac{0.9c}{1.18} = \frac{90}{118} c = \boxed{0.76c}\nonumber
+\end{gather}
+\\
+you don't actually need to now that $90/118 = 0.76$, you can just look at the answers. it must be less than (E) but greater than (A), (B), and (C). So it must be (D).
+}
+
+
+\Problem{38}{D}{%
+The total relativistic energy and momentum equations are
+\begin{gather}
+E = \gamma m c^{2}\\
+p = \gamma m v
+\end{gather}
+We know that $p = 5\Units{MeV/c}$ and $E = 10\Units{MeV}$ so that. We can solve for $v$ by dividing these two equations
+\begin{gather}
+\frac{p}{E} = \frac{\gamma m v}{\gamma m c^{2}} = \frac{v}{c^{2}} = \frac{5\Units{MeV/c}}{10\Units{MeV}} = \frac{1}{2c} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{v = \frac{c}{2}} \nonumber
+\end{gather}
+}
+
+\Problem{39}{E}{%
+Ionization potential is the amount of energy required to remove an electron from an atom of molecules. Noble gases (He, Ne, Ar, Kr, Xe, and Rn) all have full outer orbital shells which means that they have a high ionization potential. Therefore, since they are neither atom is an ion, we can immediately eliminate (A) and (D). \\
+\\
+O and N have the majority of their outer shell filled and so they have a much higher potential then Cs which only have one electron in its outer shell. Because Cs is an alkali metal, it has a low ionization potential.
+}
+
+
+\Problem{40}{A}{%
+$E_{f}$ of this singly ionized Helium atom (Z=2) can be calculated using the formula
+
+\begin{gather}
+\label{eq:bohrE}E = E_{f} - E_{i} = \frac{Z^{2}E_{0}}{n_{f}^{2}} - \frac{Z^{2}E_{0}}{n_{i}^{2}} = Z^{2}E_{0} \left(  \frac{1}{n_{f}^{2}}  - \frac{1}{n_{i}^{2}} \right) =
+\end{gather}
+\\
+where $E_{0} = 13.6\Units{eV}$ since this is a hydrogen-like atom. The total energy $E$ is defined by the simple equation
+
+\begin{gather}
+\label{eq:Energywave}E = \frac{hc}{\lambda}
+\end{gather}
+\\
+You should memorize the fact that $hc = 1240\Units{eV\,nm}$ becuase it is often used in these tests. With this number, and the given wavelength, we can solve for energy released:
+
+\begin{gather}
+E = \frac{1240\Units{eV\,nm}}{470\Units{nm}} \approx 2.6\Units{eV}\nonumber
+\end{gather}
+\\
+Going back to equation (\ref{eq:bohrE}) we can now solve for $n_{f}$
+
+\begin{gather}
+\frac{E}{Z^{2}E_{0} } = \left(  \frac{1}{n_{f}^{2}}  - \frac{1}{n_{i}^{2}} \right)\hspace{.1in} \rightarrow \hspace{.1in} \frac{E}{Z^{2}E_{0} } + \frac{1}{n_{i}^{2}} = \frac{1}{n_{f}^{2}}\nonumber\\
+\nonumber\\
+\frac{2.6\Units{eV}}{2^{2} \cdot 13.6\Units{eV} } + \frac{1}{4^{2}} =
+\frac{2.6\Units{eV}}{54.4\Units{eV}} + \frac{1}{16}  \approx 0.047 + 0.063 = 0.11 = \frac{1}{9} = \frac{1}{n_{f}^{2}} \hspace{.1in}\rightarrow \hspace{.1in} \boxed{n_{f} = 3}\nonumber
+\end{gather}
+\\
+The math is tricky to do in your head but making approximations like $1/16 \approx 6\%$ and $26/544 \approx 4\%$ will give you $1/n_{f}^{2} = 1/10$ which is closest to $n_{f} = 3$. To check our work lets plug $n_{f}$ to see what we get for $E_{f}$
+
+\begin{gather}
+E_{f} = \frac{Z^{2}E_{0}}{n_{f}^{2}}= \frac{4 \cdot 13.6\Units{eV}}{9} = \frac{54.4\Units{eV}}{9} = \boxed{6}\nonumber
+\end{gather}
+}
+
+
+
+
+\Problem{41}{A}{%
+Lets talk about spectroscopic notation: The general form is \textbf{$N^{2s+1}L_{j}$} where $N$ is the principle quantum number (often omitted), $s$ is the total spin quantum number ($m = 2s+1$ is the number of quantum states), L is the orbital angular momentum quantum number (but is written as  $L$ = $S$, $P$, $D$, $F$, ... instead of $l$ = $0$, $1$, $2$, $3$, ...), and $j$ is the total angular momentum quantum number\\
+\\
+Remembering the selection rules
+
+\begin{gather}
+\Delta l = \pm 1\\
+\Delta m = -1 , 0 , 1
+\end{gather}
+\\
+lets look at each of these problems individually:
+\\
+\begin{description}
+
+\item[(A)] This is \textbf{allowed} because $\Delta l = -1$ ($P \rightarrow S$) and $\Delta m = -1$ ($3 \rightarrow 2$)
+
+\item[(B)] While $\Delta m = -1$ works, $\Delta l = 0$ which is \textbf{not allowed}.
+
+\item[(C)] Remember that $L = P$ is just another way of saying  $l = 1$. Therefore this is \textbf{not an allowed solution} since $l=3$ corresponds to the $L = F$
+
+\item[(D)] An electron cannot have $j = l$ or $s= 3/2$ because it has spin value $s = 1/2$. So this is \textbf{not allowed}.
+\item[(E)] While this could possibly be true, it would take far too much time to try and prove mathematically and solution (A) is known to be correct.
+\end{description}
+}
+
+
+\Problem{42}{B}{%
+Einstein's equation for the photoelectric effect is
+
+\begin{gather}
+E = h \nu + \phi
+\end{gather}
+\\
+where $h \nu$ is the kinetic energy of the of the ejected electrons. We can determine the energy of the incident photons using equation (\ref{eq:Energywave})
+
+\begin{gather}
+E = \frac{1240\Units{eV\,nm}}{500\Units{nm}} \approx 2.5\Units{eV}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} h \nu = E + \phi = 2.5\Units{eV} - 2.28\Units{eV} \approx \boxed{0.2\Units{eV}}\nonumber
+\end{gather}
+}
+
+\Problem{43}{C}{%
+Remember that we can allows use Stokes Theorem to express a closed boundary line integral as an integral over its area:
+
+\begin{gather}
+\oint{\vec{F} \cdot d\vec{r}} = \iint{\left(\nabla \times \vec{F} \right) d\vec{A}}
+\end{gather}
+\\
+So lets solve the right hand side of this equation using $\vec{F} = \vec{u}$:
+
+\begin{gather}
+\iint{\left(\nabla \times \vec{F} \right) d\vec{A}} = \left(\nabla \times \vec{F} \right) \vec{A} = (2) \cdot \pi R^{2} = \boxed{2 \pi R^{2} }\nonumber
+\end{gather}
+}
+
+
+\Problem{44}{A}{%
+Acceleration is just the first derivative of the velocity with respect to time. Because $v$ is not directly dependent on t so we must us the chain rule:
+
+\begin{gather}
+a = \dot{v} = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = \frac{dv}{dx} v = -n\beta x^{-n-1} \cdot \beta x^{-n} = \boxed{-n \beta^{2} x^{-2n-1}}
+\end{gather}
+}
+
+
+\Problem{45}{E}{%
+The problem is asking which set up is a high pass filer. High pass and low pass filters a created using a capacitor and resistor or an inductor and resistor in different configurations. Therefore, immediately eliminate (B) and (C).\\
+\\
+ A high-pass filter is a series combination of a \textbf{Capacitor followed by a Resistor} or a \textbf{Resistor followed by an Inductor} (CR or RL)\\
+\\
+The inverse is a low-pass filter: a series combination of a\textbf{Resistor followed by a Capacitor} or an \textbf{Inductor followed by a Resistor} (RC or LR)\\
+\\
+Therefore, (E) is the only high pass configuration.
+}
+
+
+
+\Problem{46}{C}{%
+Recall Faraday's law using the magnetic flux $\Phi = B \cdot dA$:
+
+\begin{gather}
+\label{eq:faraday}\mathcal{E} = -  \frac{d \Phi}{dt} = - B\frac{dA}{dt}
+\end{gather}
+\\
+Plugging in the give values gives us
+
+\begin{gather}
+\mathcal{E} = \varepsilon_{0}  \sin{(\omega t)} = -B\frac{d}{dt}\cos{(wt)}\pi R^{2} = B \omega \sin{(\omega t)} \pi R^{2}\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in} \varepsilon_{0} = B \omega \pi R^{2} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{\omega = \frac{\varepsilon_{0}}{B \pi R^{2}}}\nonumber
+\end{gather}
+}
+
+
+
+
+
+\Problem{47}{C}{%
+Yet another application of Faraday's Law, equation (\ref{eq:faraday}). This time, $A = \pi R^{2} n(t)$ where n(t) is the number of turns in the wire. Therefore, the voltage induced by the magnetic field (EMF) is
+\begin{gather}
+\mathcal{E} = - B \pi R^{2} \frac{dn}{dt} = - B \pi R^{2} N
+\end{gather}
+\\
+and so the potential difference between the two open ends in $\boxed{\pi NB R^{2}}$\\\\
+}
+
+
+
+\Problem{48}{C}{%
+Recall the invariance low of general relativity
+
+\begin{gather}
+\label{eq:interval}\Delta x^{2} + \Delta y^{2} + \Delta z^{2} - c^{2} \Delta t^{2} = \Delta x'^{2} +  \Delta y'^{2} + \Delta z'^{2} - c^{2}\Delta t'^{2}
+\end{gather}
+\\
+Let us say that $S$ is the lab frame and $S'$ is the frame of the $\pi^{+}$ meson.
+
+\begin{gather}
+- c^{2}\Delta t'^{2} = \Delta x^{2} - c^{2} \Delta t^{2} \hspace{.1in} \rightarrow \hspace{.1in} c^{2} \Delta t^{2} = c^{2}\Delta t'^{2} + \Delta x^{2}
+\end{gather}
+\\
+The problem tells us that $t' = 2.5\e{-8}\Units{s}$, $x = 15\Units{m}$, and you should know that $c = 3\e{8}\Units{m/s}$. Plugging in:
+
+\begin{align}
+c^{2} \Delta t^{2} &= \left(3\e{8}\Units{m/s} \cdot 2.5\e{-8}\Units{s}\right)^{2} +\left( 15\Units{m}\right)^{2} =
+(7.5\Units{m})^{2}+ (15\Units{m})^{2} \nonumber\\
+ \nonumber\\
+&= \left(   \frac{15\Units{m}}{2}   \right)^{2} + (15\Units{m})^{2} = (15\Units{m} )^{2} \left(   \frac{1}{2^{2}} + 1  \right) = (15\Units{m} )^{2}\left(  \frac{5}{4}  \right)\nonumber
+\end{align}
+
+\begin{gather}
+\therefore \hspace{.1in} \Delta t = 15\Units{m} \left(  \frac{\sqrt{5}}{2c^{2}}  \right)
+\end{gather}
+\\
+But since we are looking for the velocity of the mesons in the lab frame we must divide the distance, $x$, by the time, $t$.
+
+\begin{gather}
+v = \frac{x}{t} = \frac{15\Units{m}  }   {    15\Units{m}  \left(  \frac{\sqrt{5}}{2c^{2}} \right) } = \boxed{\frac{2c}{\sqrt{5}}}
+\end{gather}
+}
+
+
+
+\Problem{49}{C}{%
+Recall the equation for electric field of an infinite charged surface:
+
+\begin{gather}
+E = \frac{\sigma}{2 \epsilon_{0}}
+\end{gather}
+\\
+Now, the surface charge density is defined by the equation.
+
+\begin{gather}
+\sigma = \frac{Q}{A} = \frac{Q}{\hat{x} \times \hat{y}}\nonumber
+\end{gather}
+\\
+Here we are looking at a unit cell to represent the area, $A =1\hat{x} \times 1\hat{y}$. Because second observer is moving in the $x$ direction there is a length contraction in along the $x$-axis:
+
+\begin{gather}
+\hat{x}' = \frac{\hat{x}}{\gamma} = \sqrt{1 - \frac{v^{2}}{c^{2}}}  \hat{x}  \nonumber
+\end{gather}
+\\
+Therefore, the second observer measures an electric field equal to
+
+\begin{gather}
+E' = \frac{1}{2 \epsilon_{0}} \frac{Q}{\sqrt{1 - \frac{v^{2}}{c^{2}}}  \hat{x} \times \hat{y}} = \boxed{\frac{\sigma}{2 \epsilon_{0} \sqrt{1 - \frac{v^{2}}{c^{2}}}}\hat{z}}\nonumber
+\end{gather}
+}
+
+
+\Problem{50}{C}{%
+Going back to equation (\ref{eq:interval}) we have
+
+\begin{gather}
+\Delta x^{2} = \Delta x'^{2} -c^{2} \Delta t'^{2}\nonumber\\
+\nonumber\\
+(3c)^{2} = (5c)^{2} - c^{2}\Delta t'^{2} \hspace{.1in} \rightarrow \hspace{.1in} \Delta t' = \sqrt{\Delta t'^{2} }= \sqrt{25-9} = \sqrt{16} = \boxed{4\Units{min}}\nonumber
+\end{gather}
+}
+
+
+\Problem{51}{B}{%
+Recall that the probability density is $\left| \psi  \right|^{2}$ and the wave function for an infinite well of size $l$ is
+
+\begin{gather}
+\psi_{n} = \sqrt{\frac{2}{l}} \sin{\left(  \frac{n \pi x}{l}  \right)}
+\end{gather}
+\\
+because we are interested in the probability density in the middle of the well, let us set $x= l/2$ so that
+
+\begin{gather}
+\psi_{n} = \sqrt{\frac{2}{l}} \sin{\left(  \frac{n \pi}{2}  \right)}\nonumber
+\end{gather}
+\\
+the probability density vanishes when $\psi_{n} = 0$ and only even values for $n$  meet this criteria (because $\sin{(\pi)} = 0$).
+\\\\
+}
+
+
+
+\Problem{52}{C}{%
+ Like many of the physics GRE problems, there is both an easy way and a hard way to solve this problem. The easy way is to commit the first few spherical harmonics ($Y^{m}_{l}$) to memory.
+
+\begin{gather}
+Y^{0}_{0} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{1}{\pi}} = const\\
+Y^{0}_{1} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{3}{\pi}} \cos{\theta} = const \cdot \cos{\theta}\\
+Y^{\pm 1}_{1} (\theta , \phi) = \frac{1}{2} \sqrt{\frac{3}{4\pi}} \sin{\theta} \cdot e^{\pm i \phi} = const \cdot \cos{\theta}\cdot e^{\pm i \phi}
+\end{gather}
+\\
+Noting the that given equation is equivalent to $Y^{\pm 1}_{1}$ tells us that $m = \pm 1$. We can then find the eigenstates of the z-component of angular momentum using the equation
+
+\begin{gather}
+\label {eq:Lz} L_{z} Y^{m}_{l} = m\hbar Y^{m}_{l}
+\end{gather}
+\\
+So that $L_{z} = \pm \hbar$. Solution (C).\\
+\\
+The harder way to solve this problem is to start with the equation for the angular momentum operator in the z-direction, $L_{z}$:
+
+\begin{gather}
+L_{z} = - i \hbar \frac{\partial}{\partial \phi}
+\end{gather}
+\\
+combining this with equation (\ref{eq:Lz}) we get
+
+\begin{gather}
+- i \hbar \frac{\partial}{\partial \phi} Y^{m}_{l} = m\hbar Y^{m}_{l}
+\hspace{.1in} \rightarrow \hspace{.1in}
+\frac{\partial (Y^{m}_{l})}{\partial \phi}  = \frac{m}{-i} \cdot Y^{m}_{l} = i m Y^{m}_{l} \nonumber\\
+ \nonumber\\
+\therefore \hspace{.1in} Y^{m}_{l} = Ae^{i m \phi} \nonumber
+\end{gather}
+\\
+Where $A$ is some constant. Equating this to the given wave function we get
+
+\begin{align}
+Y^{m}_{l}(\theta , \phi) &= \psi (\theta , \phi)\nonumber\\
+\nonumber\\
+Ae^{i m \phi} &= \sqrt{3/4 \pi} \sin{\theta} \sin{\phi}\nonumber
+\end{align}
+\\
+Therefore, all the information about $m$ is contained in the $\sin{\phi}$ term. Recalling the identity
+
+\begin{gather}
+\sin{\phi} = \frac{e^{i \phi} - e^{-i \phi}}{2i}
+\end{gather}
+\\
+we can see that $m = \pm 1$. Therefore, from equation (\ref{eq:Lz}), we see that $L_{z} = \pm \hbar$
+}
+
+
+\Problem{53}{C}{%
+Because positronium is unstable the two particles (electron and positron) will quickly annihilate with one another, producing photons. We can therefore eliminate choice (A). Due to conservation of momentum we know that the annihilation cannot produce only one photon, so we are left with choices (C), (D), and (E).\\
+\\
+There are two types of positronium:
+
+\begin{description}\centering
+
+\item[Para-positronium:] Singlet state with antiparallel spins ($S = 0$, $M_{s} = 0$)
+
+\item[Ortho-positronium:] Triplet state with parallel spins ($S = 1$, $M_{s} = -1, 0, 1$)
+
+\end{description}
+The problem is asking about Para-positronium which can only decay an even number of photons (due to C-symmetry rules). Therefore, we can have either 2 or 4 photons produced in this decay. However, the probability for decay into 2 photons is much higher than the probability of decay into 4 photons so the best answer is (C).\\
+\\
+(In case you were wondering: ortho-positronium decays into an odd number of photons with 3 being the most probable number)
+}
+
+
+\Problem{54}{B}{%
+Lets ignore the phase shift $\pi$ in the $\hat{y}$ term for now. Since $E_{1} = E_{2}$ the slope of the trajectory is 1 and the so, from $y = mx$, the angle is $\theta = 45^{\circ}$ (Quadrant I). With this information we can eliminate (C), (D), and (E).\\
+\\
+Now, because the phase shift does occur, we are dealing with a trajectory the follows the equation $-y = mx$ since the shift moves the line second term from $\hat{y}$ to $-\hat{y}$. Therefore we now have $\theta= - 45^{\circ}$ (Quadrant IV). \\
+\\
+Heres the tricky part: the final angle is $45^{\circ}$ away from the +$x$-axis but in the negative direction and so it is actually $315^{\circ}$ away from the +$x$-axis! This is because of convention, which has the angle increasing in the counter-clockwise direction. Because $315^{\circ}$ is not an option we must continue the line through the origin and into Quadrant II where it is $135^{\circ}$ ($90^{\circ}+ 45^{\circ}$) from the +$x$-axis.
+}
+
+
+\Problem{55}{A}{%
+From Malus's Law we know that the transmitted intensity trhough a polarizer is equivalent to
+
+\begin{gather}
+I = I_{0} \cos^{2}{\theta}
+\end{gather}
+\\
+Where $I_{0}$ is the incident intensity on the polarizer, $I_{0} = E_{0}^{2}$. Since we are dealing with two polarizers with incident energy $E_{1}$ and $E_{2}$, the intensity of the final beam is
+
+\begin{gather}
+I = I_{1} + I_{2} = E_{1}^{2}\cos^{2}{\theta} + E_{2}^{2}\cos^{2}{\theta} = cos^{2}{\theta} (E_{1}^{2} + E_{2}^{2})\nonumber\\
+\nonumber\\
+\therefore \hspace{.1in}  \boxed{I \propto E_{1}^{2} + E_{2}^{2}}\nonumber
+\end{gather}
+}
+
+
+
+\Problem{57}{C}{%
+Recall Snell's Law:
+
+\begin{gather}
+n_{1}\sin{\theta_{1}} = n_{2}\sin{\theta_{2}}
+\end{gather}
+\\
+Now, if all of the light is reflected at the surface then there is no transmitted light and $\theta_{2} = 90^{\circ}$. This is the definition of critical angle, $\theta_{C}$.
+
+\begin{gather}
+n_{1}\sin{\theta_{C}} = n_{2}\sin{90^{\circ}} \hspace{.1in} \rightarrow \hspace{.1in} \sin{\theta_{C}} = \frac{n_{2}}{n_{1}}  \hspace{.1in} \rightarrow \hspace{.1in} \theta_{C} = \arcsin{\frac{n_{2}}{n_{1}}}\\
+\nonumber
+\end{gather}
+\\
+Plugging in our numbers:
+
+\begin{gather}
+\theta_{C} = \arcsin{\left(\frac{1}{1.33}\right)} = \arcsin{\left(\frac{3}{4}\right)} = \arcsin{\left(\frac{1.5}{2}\right)} \approx  \arcsin{\left(\frac{1.4}{2}\right)} = \arcsin{\left(\frac{\sqrt{2}}{2}\right)} = 45^{\circ}\nonumber
+\end{gather}
+\\
+Which is closest to $50^{\circ}$.
+}
+
+
+\Problem{57}{C}{%
+The formula for single slit diffraction is
+
+\begin{gather}
+d \sin{\theta} = m \lambda
+\end{gather}
+\\
+For this problem $m = 1$ (first minimum), $\sin{\theta} = \theta = 4\e{-3}\Units{rads}$ (small angle in radians), and $\lambda = 400\Units{nm}$. Solving for $d$ and plugging in our values we get
+
+\begin{gather}
+d = \frac{m \lambda}{\theta} = \frac{400\Units{nm}}{4\e{-3}\Units{rads}} = 100,000\Units{nm} = \boxed{1\e{-4}\Units{m}}\nonumber
+\end{gather}
+}
+
+
+\Problem{58}{E}{%
+This is a beam expander which 1) has the focal length of both lenses located at the same point between them so that
+
+\begin{gather}
+\label {eq:beam_expander} f_{1} + f_{2} = d
+\end{gather}
+\\
+and 2) has magnifying power based upon the focal length of the objective lens ($f_{2}$) and image lens ($f_{1}$).
+
+\begin{gather}
+M = \frac{f_{2}}{f_{1}}
+\end{gather}
+\\
+Since the beam is expanded from $1\Units{mm}$ to $10\Units{mm}$ the magnifying power is $M = 10$.
+
+\begin{gather}
+M = 10 = \frac{f_{2}}{1.5\Units{cm}} \hspace{.1in} \rightarrow \hspace{.1in} \boxed{f_{2} = \Units15{[cm]}}\nonumber
+\end{gather}
+\\
+and from equation (\ref {eq:beam_expander}) we get
+
+\begin{gather}
+d = f_{1} + f_{2} = 1.5\Units{cm} + 15\Units{cm} = \boxed{16.5\Units{cm}}
+\end{gather}
+}
+
+\Problem{59}{B}{%
+The energy of beam, $E_{b}$, is equivilent to the number of photons, $n$, in the beam times the energy of each photon, $E_{\gamma}$ (equation \ref{eq:Energywave}).
+
+\begin{gather}
+E_{b} = nE_{\gamma} = n \frac{hc}{\lambda}
+\end{gather}
+\\
+The power of a beam of light is the energy divided by the time. This is easy to remember since the unit for power, Watts, is the unit for energy, Joules, divided but seconds ($[W] = \left[  \frac{J}{s} \right]$).
+
+\begin{gather}
+P = \frac{E_{b}}{t} = n \frac{hc}{\lambda t}\nonumber
+\end{gather}
+\\
+Solving for $n$ and plugging in gives us
+
+\begin{align}
+%
+n &= P \frac{\lambda t}{hc}
+%
+= 10^{4}\Units{W} \cdot  \frac{ 6\e{-7}\Units{m} \cdot 10^{-15}\Units{s} }{6.6\e{-34}\Units{J\,s} \cdot 3\e{8}\Units{m/s}} \nonumber\\
+%
+\nonumber\\
+%
+&=  \frac{10^{-11}\Units{J} \cdot 6\e{-7}\Units{m}}{6.6\e{-34}\Units{J\,s} \cdot 3\e{8}\Units{m/s}}
+%
+= \frac{6\e{-18}\Units{J\,m}}{(6.6\cdot 3)\e{-26}\Units{J\,m}}
+%
+= \frac{2}{6.6} \cdot 10^{8} \nonumber
+%
+\end{align}
+\\
+Which is closest to $\boxed{10^{7}\Units{photons}}$
+}
+
+
+
+\Problem{60}{B}{%
+The two source are moving towards earth ($\lambda_{t}$) and away from earth ($\lambda_{a}$) at the same time so the doppler shift is
+
+\begin{gather}
+%
+\lambda_{t} - \lambda_{a} = \Delta \lambda
+%
+= \lambda \left(   \sqrt{   \frac  {1+\beta}   {1- \beta}   }   -    \sqrt{ \frac   {1-\beta}    {1+\beta}  }  \right)   %
+= \lambda \left(  \sqrt{   \frac    {(1+\beta)^{2} - (1-\beta)^{2}}    {(1-\beta)(1+\beta)}    }    \right)
+%
+= \lambda \left(   \frac{2\beta}{\sqrt{1- \beta^{2}}}  \right)\nonumber
+\end{gather}
+\\
+Because the sun is moving at non-relativistic speeds we can approximate $1-\beta^{2} \approx 1$ leaving us with
+
+\begin{gather}
+\frac{\Delta \lambda } {\lambda} = 2 \beta = \frac{2v}{c} \nonumber
+\end{gather}
+
+\begin{align}
+\therefore \hspace{.1in}  v  &= \frac{\Delta \lambda } {\lambda} \frac{c}{2} =
+\frac{1.8\e{-12}\Units{m}} {122\e{-9}\Units{m}} \frac{3\e{8}\Units{m/s}}{2}  =
+\frac{180\e{-14}\Units{m}} {244\e{-9}\Units{m}}\cdot 3\e{8}\Units{m/s}\nonumber\\
+\nonumber\\
+&\approx 7.5\e{-6} \cdot 3\e{8}\Units{m/s} = 22\e{2}\Units{m/s} = \boxed{2.2\Units{km/s}}\nonumber
+\end{align}
+}
+
+\Problem{61}{B}{%
+This is a simple application of Gauss's Law:
+
+\begin{gather}
+\vec{E} \cdot d\vec{A}= \frac{Q}{\epsilon_{0}}
+\end{gather}
+\\
+Let us first solve for $Q$:
+
+\begin{align}
+Q &= \int^{2\pi}_{0} \int^{\pi}_{0} \int^{R/2}_{0}{\rho r^{2} \sin{(\theta)} dr d\theta d\phi}
+%
+=  \int^{2\pi}_{0}{d\phi}      \int^{\pi}_{0}{\sin{(\theta)}d\theta}      \int^{R/2}_{0}{\rho r^{2} dr} \nonumber\\
+%
+\nonumber\\
+%
+&= 4\pi \int^{R/2}_{0}{A r^{4}dr} = 4 \pi A  \frac{r^{5}}{5} \biggr\rvert^{R/2}_{0} = A \pi \frac{R^{5}}{2^{3} \cdot 5} = A \pi \frac{R^{5}}{40}\nonumber
+\end{align}
+\\
+Now solve for $E$ (Remembering that $A = 4 \pi (R/2)^{2}$ \textbf{NOT} $A = 4 \pi R^{2}$):
+
+\begin{gather}
+E = \frac{Q}{ \pi R^{2}\epsilon_{0}} =  \frac{A \pi R^{5}}{40 \pi R^{2}\epsilon_{0}} = \boxed{\frac{A R^{3}}{40 \epsilon_{0}}}\nonumber
+\end{gather}
+}
+
+
+
+
+\Problem{62}{C}{%
+Each capacitor is is initially charged using a $5\Units{V}$ battery so that $C_{1}$ and $C_{2}$ have charges:
+
+\begin{gather}
+Q_{1} = C_{1} V = 1.0\Units{$\mu$F} \cdot 5\Units{V} = 5 \Units{$\mu$C}\nonumber\\
+Q_{2} = C_{2} V = 2.0\Units{$\mu$F} \cdot 5\Units{V} = 10\Units{$\mu$C}\nonumber
+\end{gather}
+\\
+When the capacitors are connected with plates of opposite charge connected together they will both have the same voltage so that
+
+\begin{gather}
+V_{f} = \frac{q_{1}}{C_{1}} = \frac{q_{2}}{C_{2}}\nonumber
+\end{gather}
+\\
+From conservation of charge we know that
+
+\begin{gather}
+Q_{1} - Q_{2} = -5\Units{$\mu$C} =  q_{1} + q_{2}\nonumber
+\end{gather}
+\\
+(The LHS uses subtraction because they are connected with opposite charges together). Therefore, putting the last two equations together
+
+\begin{gather}
+-5\Units{$\mu$C} =  q_{1} + q_{2} = q_{2} \frac{C_{1}} {C_{2}}   + q_{2} \hspace{.1in}
+\rightarrow \hspace{.1in} q_{2} (1.5) = -5\Units{$\mu$C} \hspace{.1in} \rightarrow \hspace{.1in} q_{2} =
+-3.33\Units{$\mu$C}\nonumber
+\end{gather}
+\\
+And now we can find the voltage across $C_{2}$:
+
+\begin{gather}
+V = \frac{q_{2}}{C_{2}} = \frac{3.33\Units{$\mu$C}}{2.0\Units{$\mu$F}} = 10/6\Units{V} \approx \boxed{1.7\Units{V}}\nonumber
+\end{gather}
+}
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
 
