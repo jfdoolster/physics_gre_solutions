@@ -9,15 +9,15 @@ info:
 	@:
 
 build:
-	latexmk ./src/pgre_2008_solutions
-	latexmk ./src/pgre_2001_solutions
-	latexmk ./src/pgre_1996_solutions
-	latexmk ./src/pgre_1992_solutions
-	latexmk ./src/pgre_1986_solutions
+	latexmk src/pgre_2008_solutions
+	latexmk src/pgre_2001_solutions
+	latexmk src/pgre_1996_solutions
+	latexmk src/pgre_1992_solutions
+	latexmk src/pgre_1986_solutions
 
 clean:
-	latexmk ./src/pgre_2008_solutions -c
-	latexmk ./src/pgre_2001_solutions -c
-	latexmk ./src/pgre_1996_solutions -c
-	latexmk ./src/pgre_1992_solutions -c
-	latexmk ./src/pgre_1986_solutions -c
+	latexmk src/pgre_2008_solutions -c
+	latexmk src/pgre_2001_solutions -c
+	latexmk src/pgre_1996_solutions -c
+	latexmk src/pgre_1992_solutions -c
+	latexmk src/pgre_1986_solutions -c

@@ -1,1 +1,7 @@
-build
+build/
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.log
+*.synctex.gz

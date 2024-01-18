@@ -9,7 +9,7 @@
 
 \input{lib/preamble}
 \usepackage{pgre}
-\usepackage{multicol}
+\usepackage{tabularray}
 
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{\Ident\xspace Solutions v\Version}
@@ -17,153 +17,190 @@
 \begin{document}
 \TitlePage{\Year}{\Ident}{\Version}
 
-\begin{center}
-\boxed{\text{\large Q = Question \hspace{.2in} A = Answer \hspace{.2in}  P+ = Percent Correct in \Year }}
-\end{center}
-\begin{multicols}{5}
-\begin{enumerate}
-\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
-\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
-\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
-\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
-\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
-\end{enumerate}
-\end{multicols}
+\begin{table}
+\centering
+\begin{tabular}{rcrc rcrc rcrc rcrc rcc}
+\textbf{Q} & \textbf{A} & \textbf{\%} &&
+\textbf{Q} & \textbf{A} & \textbf{\%} &&
+\textbf{Q} & \textbf{A} & \textbf{\%} &&
+\textbf{Q} & \textbf{A} & \textbf{\%} &&
+\textbf{Q} & \textbf{A} & \textbf{\%} \\
+1  & C & 54 && 21 & B & 60 && 41 & E & 66 && 61 & C & 18 && 81  & B & 50  \\
+2  & D & 30 && 22 & A & 54 && 42 & C & 64 && 62 & A & 35 && 82  & D & 16  \\
+3  & D & 71 && 23 & C & 45 && 43 & D & 39 && 63 & D & 52 && 83  & C & 30  \\
+4  & C & 62 && 24 & C & 86 && 44 & D & 54 && 64 & A & 56 && 84  & D & 26  \\
+5  & D & 28 && 25 & E & 49 && 45 & B & 50 && 65 & D & 44 && 85  & A & 25  \\
+   &   &    &&    &   &    &&    &   &    &&    &   &    &&     &   &     \\
+6  & E & 34 && 26 & C & 30 && 46 & E & 29 && 66 & D & 33 && 86  & E & 24  \\
+7  & B & 89 && 27 & A & 82 && 47 & B & 46 && 67 & E & 19 && 87  & A & 42  \\
+8  & D & 65 && 28 & E & 61 && 48 & C & 57 && 68 & E & 51 && 88  & C & 42  \\
+9  & A & 63 && 29 & C & 63 && 49 & E & 61 && 69 & B & 26 && 89  & E & 37  \\
+10 & A & 53 && 30 & A & 44 && 50 & B & 50 && 70 & B & 53 && 90  & A & 33  \\
+   &   &    &&    &   &    &&    &   &    &&    &   &    &&     &   &     \\
+11 & A & 28 && 31 & A & 53 && 51 & B & 45 && 71 & D & 32 && 91  & B & 41  \\
+12 & E & 40 && 32 & D & 62 && 52 & C & 12 && 72 & E & 39 && 92  & E & 45  \\
+13 & B & 42 && 33 & D & 31 && 53 & B & 32 && 73 & D & 43 && 93  & C & 42  \\
+14 & C & 27 && 34 & C & 23 && 54 & C & 77 && 74 & D & 50 && 94  & E & 29  \\
+15 & A & 68 && 35 & E & 82 && 55 & E & 62 && 75 & E & 57 && 95  & A & 42  \\
+   &   &    &&    &   &    &&    &   &    &&    &   &    &&     &   &     \\
+16 & D & 14 && 36 & E & 70 && 56 & D & 54 && 76 & C & 49 && 96  & E & 13  \\
+17 & B & 81 && 37 & D & 36 && 57 & A & 68 && 77 & E & 44 && 97  & E & 20  \\
+18 & A & 45 && 38 & D & 35 && 58 & B & 58 && 78 & E & 52 && 98  & A & 72  \\
+19 & B & 36 && 39 & D & 45 && 59 & B & 87 && 79 & D & 69 && 99  & D & 20  \\
+20 & E & 49 && 40 & D & 40 && 60 & D & 55 && 80 & D & 28 && 100 & B & 72
+\end{tabular}
+\end{table}
+{\centering\boxed{\text{\textbf{Q}: Question \hspace{.2in} \textbf{A}: Answer \hspace{.2in} \textbf{\%}: Percent Correct in \Year}}}
+\clearpage{}
 
-\begin{multicols}{5}
-\begin{enumerate}
-\item[1] \begin{tabular}{cc} C & 54\%\end{tabular}
-\item[2] \begin{tabular}{cc} D & 30\%\end{tabular}
-\item[3] \begin{tabular}{cc} D & 71\%\end{tabular}
-\item[4] \begin{tabular}{cc} C & 62\%\end{tabular}
-\item[5] \begin{tabular}{cc} D & 28\%\end{tabular}
-\item[]
-\item[6] \begin{tabular}{cc} E & 34\%\end{tabular}
-\item[7] \begin{tabular}{cc} B & 89\%\end{tabular}
-\item[8] \begin{tabular}{cc} D & 65\%\end{tabular}
-\item[9] \begin{tabular}{cc} A & 63\%\end{tabular}
-\item[10] \begin{tabular}{cc} A & 53\%\end{tabular}
-\item[]
-\item[11] \begin{tabular}{cc} A & 28\%\end{tabular}
-\item[12] \begin{tabular}{cc} E & 40\%\end{tabular}
-\item[13] \begin{tabular}{cc} B & 42\%\end{tabular}
-\item[14] \begin{tabular}{cc} C & 27\%\end{tabular}
-\item[15] \begin{tabular}{cc} A & 68\%\end{tabular}
-\item[]
-\item[16] \begin{tabular}{cc} D & 14\%\end{tabular}
-\item[17] \begin{tabular}{cc} B & 81\%\end{tabular}
-\item[18] \begin{tabular}{cc} A & 45\%\end{tabular}
-\item[19] \begin{tabular}{cc} B & 36\%\end{tabular}
-\item[20] \begin{tabular}{cc} E & 49\%\end{tabular}
 
-\item[]
+%\begin{center}
+%\boxed{\text{\large Q = Question \hspace{.2in} A = Answer \hspace{.2in}  P+ = Percent Correct in \Year }}
+%\end{center}
+%\begin{multicols}{5}
+%\begin{enumerate}
+%\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
+%\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
+%\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
+%\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
+%\item[Q] \begin{tabular}{cc} A & P+\end{tabular}
+%\end{enumerate}
+%\end{multicols}
 
-\item[21] \begin{tabular}{cc} B & 60\%\end{tabular}
-\item[22] \begin{tabular}{cc} A & 54\%\end{tabular}
-\item[23] \begin{tabular}{cc} C & 45\%\end{tabular}
-\item[24] \begin{tabular}{cc} C & 86\%\end{tabular}
-\item[25] \begin{tabular}{cc} E & 49\%\end{tabular}
-\item[]
-\item[26] \begin{tabular}{cc} C & 30\%\end{tabular}
-\item[27] \begin{tabular}{cc} A & 82\%\end{tabular}
-\item[28] \begin{tabular}{cc} E & 61\%\end{tabular}
-\item[29] \begin{tabular}{cc} C & 63\%\end{tabular}
-\item[30] \begin{tabular}{cc} A & 44\%\end{tabular}
-\item[]
-\item[31] \begin{tabular}{cc} A & 53\%\end{tabular}
-\item[32] \begin{tabular}{cc} D & 62\%\end{tabular}
-\item[33] \begin{tabular}{cc} D & 31\%\end{tabular}
-\item[34] \begin{tabular}{cc} C & 23\%\end{tabular}
-\item[35] \begin{tabular}{cc} E & 82\%\end{tabular}
-\item[]
-\item[36] \begin{tabular}{cc} E & 70\%\end{tabular}
-\item[37] \begin{tabular}{cc} D & 36\%\end{tabular}
-\item[38] \begin{tabular}{cc} D & 35\%\end{tabular}
-\item[39] \begin{tabular}{cc} D & 45\%\end{tabular}
-\item[40] \begin{tabular}{cc} D & 40\%\end{tabular}
+%\begin{multicols}{5}
+%\begin{enumerate}
+%\item[1] \begin{tabular}{cc} C & 54\%\end{tabular}
+%\item[2] \begin{tabular}{cc} D & 30\%\end{tabular}
+%\item[3] \begin{tabular}{cc} D & 71\%\end{tabular}
+%\item[4] \begin{tabular}{cc} C & 62\%\end{tabular}
+%\item[5] \begin{tabular}{cc} D & 28\%\end{tabular}
+%\item[]
+%\item[6] \begin{tabular}{cc} E & 34\%\end{tabular}
+%\item[7] \begin{tabular}{cc} B & 89\%\end{tabular}
+%\item[8] \begin{tabular}{cc} D & 65\%\end{tabular}
+%\item[9] \begin{tabular}{cc} A & 63\%\end{tabular}
+%\item[10] \begin{tabular}{cc} A & 53\%\end{tabular}
+%\item[]
+%\item[11] \begin{tabular}{cc} A & 28\%\end{tabular}
+%\item[12] \begin{tabular}{cc} E & 40\%\end{tabular}
+%\item[13] \begin{tabular}{cc} B & 42\%\end{tabular}
+%\item[14] \begin{tabular}{cc} C & 27\%\end{tabular}
+%\item[15] \begin{tabular}{cc} A & 68\%\end{tabular}
+%\item[]
+%\item[16] \begin{tabular}{cc} D & 14\%\end{tabular}
+%\item[17] \begin{tabular}{cc} B & 81\%\end{tabular}
+%\item[18] \begin{tabular}{cc} A & 45\%\end{tabular}
+%\item[19] \begin{tabular}{cc} B & 36\%\end{tabular}
+%\item[20] \begin{tabular}{cc} E & 49\%\end{tabular}
 
-\item[]
+%\item[]
 
-\item[41] \begin{tabular}{cc} E & 66\%\end{tabular}
-\item[42] \begin{tabular}{cc} C & 64\%\end{tabular}
-\item[43] \begin{tabular}{cc} D & 39\%\end{tabular}
-\item[44] \begin{tabular}{cc} D & 54\%\end{tabular}
-\item[45] \begin{tabular}{cc} B & 50\%\end{tabular}
-\item[]
-\item[46] \begin{tabular}{cc} E & 29\%\end{tabular}
-\item[47] \begin{tabular}{cc} B & 46\%\end{tabular}
-\item[48] \begin{tabular}{cc} C & 57\%\end{tabular}
-\item[49] \begin{tabular}{cc} E & 61\%\end{tabular}
-\item[50] \begin{tabular}{cc} B & 50\%\end{tabular}
-\item[]
-\item[51] \begin{tabular}{cc} B & 45\%\end{tabular}
-\item[52] \begin{tabular}{cc} C & 12\%\end{tabular}
-\item[53] \begin{tabular}{cc} B & 32\%\end{tabular}
-\item[54] \begin{tabular}{cc} C & 77\%\end{tabular}
-\item[55] \begin{tabular}{cc} E & 62\%\end{tabular}
-\item[]
-\item[56] \begin{tabular}{cc} D & 54\%\end{tabular}
-\item[57] \begin{tabular}{cc} A & 68\%\end{tabular}
-\item[58] \begin{tabular}{cc} B & 58\%\end{tabular}
-\item[59] \begin{tabular}{cc} B & 87\%\end{tabular}
-\item[60] \begin{tabular}{cc} D & 55\%\end{tabular}
+%\item[21] \begin{tabular}{cc} B & 60\%\end{tabular}
+%\item[22] \begin{tabular}{cc} A & 54\%\end{tabular}
+%\item[23] \begin{tabular}{cc} C & 45\%\end{tabular}
+%\item[24] \begin{tabular}{cc} C & 86\%\end{tabular}
+%\item[25] \begin{tabular}{cc} E & 49\%\end{tabular}
+%\item[]
+%\item[26] \begin{tabular}{cc} C & 30\%\end{tabular}
+%\item[27] \begin{tabular}{cc} A & 82\%\end{tabular}
+%\item[28] \begin{tabular}{cc} E & 61\%\end{tabular}
+%\item[29] \begin{tabular}{cc} C & 63\%\end{tabular}
+%\item[30] \begin{tabular}{cc} A & 44\%\end{tabular}
+%\item[]
+%\item[31] \begin{tabular}{cc} A & 53\%\end{tabular}
+%\item[32] \begin{tabular}{cc} D & 62\%\end{tabular}
+%\item[33] \begin{tabular}{cc} D & 31\%\end{tabular}
+%\item[34] \begin{tabular}{cc} C & 23\%\end{tabular}
+%\item[35] \begin{tabular}{cc} E & 82\%\end{tabular}
+%\item[]
+%\item[36] \begin{tabular}{cc} E & 70\%\end{tabular}
+%\item[37] \begin{tabular}{cc} D & 36\%\end{tabular}
+%\item[38] \begin{tabular}{cc} D & 35\%\end{tabular}
+%\item[39] \begin{tabular}{cc} D & 45\%\end{tabular}
+%\item[40] \begin{tabular}{cc} D & 40\%\end{tabular}
 
-\item[]
+%\item[]
 
-\item[61] \begin{tabular}{cc} C & 18\%\end{tabular}
-\item[62] \begin{tabular}{cc} A & 35\%\end{tabular}
-\item[63] \begin{tabular}{cc} D & 52\%\end{tabular}
-\item[64] \begin{tabular}{cc} A & 56\%\end{tabular}
-\item[65] \begin{tabular}{cc} D & 44\%\end{tabular}
-\item[]
-\item[66] \begin{tabular}{cc} D & 33\%\end{tabular}
-\item[67] \begin{tabular}{cc} E & 19\%\end{tabular}
-\item[68] \begin{tabular}{cc} E & 51\%\end{tabular}
-\item[69] \begin{tabular}{cc} B & 26\%\end{tabular}
-\item[70] \begin{tabular}{cc} B & 53\%\end{tabular}
-\item[]
-\item[71] \begin{tabular}{cc} D & 32\%\end{tabular}
-\item[72] \begin{tabular}{cc} E & 39\%\end{tabular}
-\item[73] \begin{tabular}{cc} D & 43\%\end{tabular}
-\item[74] \begin{tabular}{cc} D & 50\%\end{tabular}
-\item[75] \begin{tabular}{cc} E & 57\%\end{tabular}
-\item[]
-\item[76] \begin{tabular}{cc} C & 49\%\end{tabular}
-\item[77] \begin{tabular}{cc} E & 44\%\end{tabular}
-\item[78] \begin{tabular}{cc} E & 52\%\end{tabular}
-\item[79] \begin{tabular}{cc} D & 69\%\end{tabular}
-\item[80] \begin{tabular}{cc} D & 28\%\end{tabular}
+%\item[41] \begin{tabular}{cc} E & 66\%\end{tabular}
+%\item[42] \begin{tabular}{cc} C & 64\%\end{tabular}
+%\item[43] \begin{tabular}{cc} D & 39\%\end{tabular}
+%\item[44] \begin{tabular}{cc} D & 54\%\end{tabular}
+%\item[45] \begin{tabular}{cc} B & 50\%\end{tabular}
+%\item[]
+%\item[46] \begin{tabular}{cc} E & 29\%\end{tabular}
+%\item[47] \begin{tabular}{cc} B & 46\%\end{tabular}
+%\item[48] \begin{tabular}{cc} C & 57\%\end{tabular}
+%\item[49] \begin{tabular}{cc} E & 61\%\end{tabular}
+%\item[50] \begin{tabular}{cc} B & 50\%\end{tabular}
+%\item[]
+%\item[51] \begin{tabular}{cc} B & 45\%\end{tabular}
+%\item[52] \begin{tabular}{cc} C & 12\%\end{tabular}
+%\item[53] \begin{tabular}{cc} B & 32\%\end{tabular}
+%\item[54] \begin{tabular}{cc} C & 77\%\end{tabular}
+%\item[55] \begin{tabular}{cc} E & 62\%\end{tabular}
+%\item[]
+%\item[56] \begin{tabular}{cc} D & 54\%\end{tabular}
+%\item[57] \begin{tabular}{cc} A & 68\%\end{tabular}
+%\item[58] \begin{tabular}{cc} B & 58\%\end{tabular}
+%\item[59] \begin{tabular}{cc} B & 87\%\end{tabular}
+%\item[60] \begin{tabular}{cc} D & 55\%\end{tabular}
 
-\item[]
+%\item[]
 
-\item[81] \begin{tabular}{cc} B & 50\%\end{tabular}
-\item[82] \begin{tabular}{cc} D & 16\%\end{tabular}
-\item[83] \begin{tabular}{cc} C & 30\%\end{tabular}
-\item[84] \begin{tabular}{cc} D & 26\%\end{tabular}
-\item[85] \begin{tabular}{cc} A & 25\%\end{tabular}
-\item[]
-\item[86] \begin{tabular}{cc} E & 24\%\end{tabular}
-\item[87] \begin{tabular}{cc} A & 42\%\end{tabular}
-\item[88] \begin{tabular}{cc} C & 42\%\end{tabular}
-\item[89] \begin{tabular}{cc} E & 37\%\end{tabular}
-\item[90] \begin{tabular}{cc} A & 33\%\end{tabular}
-\item[]
-\item[91] \begin{tabular}{cc} B & 41\%\end{tabular}
-\item[92] \begin{tabular}{cc} E & 45\%\end{tabular}
-\item[93] \begin{tabular}{cc} C & 42\%\end{tabular}
-\item[94] \begin{tabular}{cc} E & 29\%\end{tabular}
-\item[95] \begin{tabular}{cc} A & 42\%\end{tabular}
-\item[]
-\item[96] \begin{tabular}{cc} E & 13\%\end{tabular}
-\item[97] \begin{tabular}{cc} E & 20\%\end{tabular}
-\item[98] \begin{tabular}{cc} A & 72\%\end{tabular}
-\item[99] \begin{tabular}{cc} D & 20\%\end{tabular}
-\item[100] \begin{tabular}{cc} B & 72\%\end{tabular}
+%\item[61] \begin{tabular}{cc} C & 18\%\end{tabular}
+%\item[62] \begin{tabular}{cc} A & 35\%\end{tabular}
+%\item[63] \begin{tabular}{cc} D & 52\%\end{tabular}
+%\item[64] \begin{tabular}{cc} A & 56\%\end{tabular}
+%\item[65] \begin{tabular}{cc} D & 44\%\end{tabular}
+%\item[]
+%\item[66] \begin{tabular}{cc} D & 33\%\end{tabular}
+%\item[67] \begin{tabular}{cc} E & 19\%\end{tabular}
+%\item[68] \begin{tabular}{cc} E & 51\%\end{tabular}
+%\item[69] \begin{tabular}{cc} B & 26\%\end{tabular}
+%\item[70] \begin{tabular}{cc} B & 53\%\end{tabular}
+%\item[]
+%\item[71] \begin{tabular}{cc} D & 32\%\end{tabular}
+%\item[72] \begin{tabular}{cc} E & 39\%\end{tabular}
+%\item[73] \begin{tabular}{cc} D & 43\%\end{tabular}
+%\item[74] \begin{tabular}{cc} D & 50\%\end{tabular}
+%\item[75] \begin{tabular}{cc} E & 57\%\end{tabular}
+%\item[]
+%\item[76] \begin{tabular}{cc} C & 49\%\end{tabular}
+%\item[77] \begin{tabular}{cc} E & 44\%\end{tabular}
+%\item[78] \begin{tabular}{cc} E & 52\%\end{tabular}
+%\item[79] \begin{tabular}{cc} D & 69\%\end{tabular}
+%\item[80] \begin{tabular}{cc} D & 28\%\end{tabular}
 
-\item[]
-\end{enumerate}
-\end{multicols}
-\clearpage
+%\item[]
+
+%\item[81] \begin{tabular}{cc} B & 50\%\end{tabular}
+%\item[82] \begin{tabular}{cc} D & 16\%\end{tabular}
+%\item[83] \begin{tabular}{cc} C & 30\%\end{tabular}
+%\item[84] \begin{tabular}{cc} D & 26\%\end{tabular}
+%\item[85] \begin{tabular}{cc} A & 25\%\end{tabular}
+%\item[]
+%\item[86] \begin{tabular}{cc} E & 24\%\end{tabular}
+%\item[87] \begin{tabular}{cc} A & 42\%\end{tabular}
+%\item[88] \begin{tabular}{cc} C & 42\%\end{tabular}
+%\item[89] \begin{tabular}{cc} E & 37\%\end{tabular}
+%\item[90] \begin{tabular}{cc} A & 33\%\end{tabular}
+%\item[]
+%\item[91] \begin{tabular}{cc} B & 41\%\end{tabular}
+%\item[92] \begin{tabular}{cc} E & 45\%\end{tabular}
+%\item[93] \begin{tabular}{cc} C & 42\%\end{tabular}
+%\item[94] \begin{tabular}{cc} E & 29\%\end{tabular}
+%\item[95] \begin{tabular}{cc} A & 42\%\end{tabular}
+%\item[]
+%\item[96] \begin{tabular}{cc} E & 13\%\end{tabular}
+%\item[97] \begin{tabular}{cc} E & 20\%\end{tabular}
+%\item[98] \begin{tabular}{cc} A & 72\%\end{tabular}
+%\item[99] \begin{tabular}{cc} D & 20\%\end{tabular}
+%\item[100] \begin{tabular}{cc} B & 72\%\end{tabular}
+
+%\item[]
+%\end{enumerate}
+%\end{multicols}
+%\clearpage
 
 \Problem{1}{C}{%
 The acceleration on the pendulum is the sum of the tangential and centripetal accelerations: $\vec{a} = \vec{a}_{tan} + \vec{a}_{cent}$ where
