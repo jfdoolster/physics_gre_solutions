@@ -5,11 +5,15 @@
 \renewcommand{\footrulewidth}{0pt}
 \pagestyle{fancy}
 
+\newcommand{\Title}[2]{%
+    {\Huge Solutions to #1 Physics GRE}\par%
+    {\LARGE Detailed Solutions to #2}\par%
+}
+
 \newcommand{\TitlePage}[3]{%
 \begin{titlepage}%
     \centering%
-    {\Huge Solutions to #1 Physics GRE}\par
-    {\LARGE Detailed Solutions to #2}\par\vfill
+    \Title{#1}{#2}\vfill
     {\LARGE Version #3}\par
     {\large \today}\par\vfill
     This solution manual is not officially endorsed by ETS.\\
