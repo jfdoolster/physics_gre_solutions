@@ -1,0 +1,4 @@
+[submodule "src/lib"]
+	path = src/lib
+	url = git@github.com:jfdoolster/jfd_latex_preamble.git
+	branch = main

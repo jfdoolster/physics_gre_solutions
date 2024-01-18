@@ -7,9 +7,10 @@
 \title{Solutions to \Year Physics GRE}
 \author{Jonathan F. Dooley}
 
+\usepackage{lib/pagesetup}
+\usepackage{lib/shortcuts}
 \input{lib/preamble}
 \usepackage{pgre}
-\usepackage{tabularray}
 
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{\Ident\xspace Solutions v\Version}
@@ -310,7 +311,7 @@ L = m(r \times v) = mrv = n\hbar \hspace{.1in}  \rightarrow \hspace{.1in}  mv = 
 here we have assumed $v$ to be tangential so that $m(r \times v) = m r v \sin{(90^{\circ})} = mrv$
 }
 
-\Problem{13}{A}{
+\Problem{13}{A} {
 A straight line on a log-log plot has the functional form: \textbf{$y = ax^{m}$} where $m$ is the slope and $a$ is a constant. The line clearly passes through points $(x_{1}, y_{1} ) = (3,10)$ and $(x_{2}, y_{2} ) = (300,100)$. Therefore, we can find $m$ using the equation:
 \begin{align}
 m =\frac{\Delta y}{ \Delta x} = \frac{\log_{10} y_{2} - \log_{10} y_{1}}{\log_{10} x_{2} - \log_{10} x_{1}} = \frac{\log_{10}\left(\frac{y_{2}}{y_{1}}\right)}{\log_{10}\left(\frac{x_{2}}{x_{1}}\right)} = \frac{\log_{10}\left(\frac{100}{10}\right)}{\log_{10}\left(\frac{300}{3}\right)} = \frac{\log_{10}10}{\log_{10}100} = \frac{1}{2}\nonumber
@@ -356,12 +357,12 @@ As the magnet leaves the loop, the flux decreases and the current flows clockwis
 }
 
 \Problem{19}{A}{
-Wein's Law stats the the maximum wavelength of the blackbody is inversely proportional to the temperature:
+Wein's Law stats the maximum wavelength of the blackbody is inversely proportional to the temperature:
 \begin{align}
 \lambda_{\max}  &= \frac{2.897\e-3}{T}\\
 \nonumber\\
 \therefore \hspace{.1in} \frac{\lambda_{1}}{\lambda_{2}} &= \frac{T_2}{T_1}\nonumber \\
-\rightarrow \hspace{.1in} \lambda_2 &= \frac{\lambda_1T_1}{T_2} =  \frac{500\Units{nm}\cdot 6000\Units{K}}{300\Units{K}} = \boxed{10\Units{\micro m}}\nonumber
+\rightarrow \hspace{.1in} \lambda_2 &= \frac{\lambda_1T_1}{T_2} =  \frac{500\Units{nm}\cdot 6000\Units{K}}{300\Units{K}} = \boxed{10\Units{$\mu$ m}}\nonumber
 \end{align}
 }
 
